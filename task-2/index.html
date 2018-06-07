@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Чи можу я... | </title>
+	<title>Чи можу я... | Flex-box</title>
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -11,19 +11,41 @@
 <body>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
-		<nav class = "centered">
-			<ul >
-				<li><a href="#">Головна</a></li>
-				<li><a href="#">Про</a></li>
-				<li><a href="#">Новини</a></li>
-				<li class = 'important'><a href="#" >Поріняння браузерів</a></li>
-			</ul>
-		</nav>
-		<div id="search" class='centered'>
-			Чи можу я <input type="text"> ?  <a href = '#'>Налаштування</a>
-			
-			
+	<nav class = "centered">
+		<ul >
+			<li><a href="#">Головна</a></li>
+			<li><a href="#">Про</a></li>
+			<li><a href="#">Новини</a></li>
+			<li class = 'important'><a href="#" >Поріняння браузерів</a></li>
+		</ul>
+	</nav>
+	<div id="search" class='centered'>
+		Чи можу я <input type="text"> ?  <a href = '#'>Налаштування</a>	
+	</div>
+	<div class='centered item-block'>
+		<h1>Модуль гнучкості в CSS </h1>
+		<p>Метод позиціонування елементів у горизонтальних або вертикальних групи. Підтримка включає в себе всі властивості, що складаються з <code>flex</code>, а також <code>display: flex</code>, <code>display: inline-flex</code>, <code>align-content</code>, <code>align-items</code>, <code>align-self</code>, <code>justify-content</code> та <code>order</code>.</p>
+
+		<div class = 'statistic-block'>
+			<div class='select-static'>
+				<span>Використання</span>
+				<span>% від <select id="type-stat" value = ''>
+					<option value="">усіх</option>
+					<option value="">відстежуваних</option>
+					<option value="">настільних</option>
+					<option value="">мобільних</option>
+				</select></span>
+			</div>
+			<div class = 'show-statistic'>
+				<span class = 'h-stat'>Загальна</span>
+				<span >
+					<span class = 'std'>93.84%</span> + 
+					<span class = 'stf'>3.47%</span> = 
+					<span class = 'result'>97.32%</span>
+				</span>
+			</div>
 		</div>
+	</div>
 
 </body>
 </html>
