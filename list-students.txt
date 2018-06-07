@@ -2,7 +2,6 @@
 2. Главацький Сергій - ShtopSlowo
 4. Пробачай Дмитрий dimabendera
 11. Несміянов Олександр - Sanello92
->>>>>>> origin/Develop
 12. Несміянов Микола - nesmeyanov
 13. Лученко Богдан - b.luchenko
 15. Тяпкін Олександр - TeVeTed
