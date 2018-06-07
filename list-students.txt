@@ -1,11 +1,11 @@
 ﻿1. Бачу Михайло - Misha-Bachu
 2. Главацький Сергій - ShtopSlowo
-<<<<<<< HEAD
 4. Пробачай Дмитрий dimabendera
+11. Несміянов Олександр - Sanello92
+>>>>>>> origin/Develop
 12. Несміянов Микола - nesmeyanov
 13. Лученко Богдан - b.luchenko
 15. Тяпкін Олександр - TeVeTed
 16. Ushakova Ilona - ilonaush
 17. Chegarovskiy Vlad - chegarovskiy
 20. Diana Klymchyk - LittleSmileSun
->>>>>>> origin/Develop
