@@ -186,3 +186,119 @@ nav>ul>li>a
 {
 	background-color: rgba(1,1,1,0.2);
 }
+
+#main-table
+{
+	font-size: 60%;
+	clear: both;
+	margin: 10px;
+
+}
+
+
+#main-table>ul>li
+{
+	display: inline-block;
+	padding: 0;
+	float: left;
+	width: 10%;
+
+	
+
+}
+#main-table>ul
+{
+	padding: 0;
+	margin: 0;
+
+}
+#main-table>ul>li>ul
+{
+	padding: 0;
+	margin-left: 4px;
+	margin-right: 4px;
+	
+	list-style-type: none;
+
+
+}
+#main-table>ul>li>ul>li:empty
+{
+	
+
+	width: 100%;
+	height: 18px;
+	background-color: #edd;
+
+}
+#main-table>ul>li>ul>li
+{
+	color: #fff;
+	font-weight: 100;
+	font-size: 11pt;
+	width: 100%;
+	text-align: center;
+	height: 18px;
+	display: block;
+	margin: 3px 0 3px 0;
+	background-color: #39B54A;
+	padding-top: 10%;
+}
+
+
+.browser 
+{
+	width: 95%;
+	margin-left: 2%;
+	display: table;
+	vertical-align: middle;
+	border-bottom: 3px solid gray;
+	text-align: center;
+	padding-bottom: 3px;
+	height: 25px;
+
+
+}
+.browser>div
+{
+	width: 100%;
+	table-layout: fixed;
+	display: table-cell;
+	vertical-align: middle;
+	
+	
+}
+
+.chrome
+{
+	border-color: #3F77BB;
+}
+
+.ie
+{
+	border-color: #385884;
+}
+.edge
+{
+	border-color: #385884;
+}
+
+.firefox
+{
+	border-color: #A36223;
+}
+
+.ios
+{
+	border-color: #333;
+}
+
+.safari
+{
+	border-color: #666;
+}
+
+.opera
+{
+	border-color: #992626;
+}
