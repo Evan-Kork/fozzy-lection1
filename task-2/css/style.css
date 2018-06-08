@@ -240,7 +240,7 @@ nav>ul>li>a
 	text-align: center;
 	height: 18px;
 	display: block;
-	margin: 3px 0 3px 0;
+	margin: 5px 0 5px 0;
 	background-color: #39B54A;
 	padding-top: 10%;
 }
@@ -301,4 +301,23 @@ nav>ul>li>a
 .opera
 {
 	border-color: #992626;
+}
+.andus
+{
+	border-color: black;
+}
+
+.samsung
+{
+	border-color: #9753FF;
+}
+
+#main-table>ul>li>ul>li.actual
+{
+
+	border: 3px solid #442;
+	border-left-width: 4px;
+	border-right-width: 4px;
+	margin: -3px -4px -3px -4px;
+	
 }
