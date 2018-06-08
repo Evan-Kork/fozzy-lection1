@@ -229,6 +229,10 @@ nav>ul>li>a
 	width: 100%;
 	height: 18px;
 	background-color: #edd;
+	
+	
+	
+
 
 }
 #main-table>ul>li>ul>li
@@ -319,5 +323,10 @@ nav>ul>li>a
 	border-left-width: 4px;
 	border-right-width: 4px;
 	margin: -3px -4px -3px -4px;
+	position: relative;
 	
+}
+#main-table>ul>li>ul>li.feature
+{
+	background-color: #67C26D;
 }
