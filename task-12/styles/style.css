@@ -1,0 +1,114 @@
+body {
+	background: #F2E8D5;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin: 0 5px 0 5px;
+}
+
+td {
+	text-align: center;
+}
+
+.red-section {
+	background: #C44230;
+}
+
+.green-section {
+	background: #39B54A;
+}
+
+.grey-section{ 
+background: #838383;
+}
+
+table td, th{
+	width: 117px;
+	height: 30px;
+}
+
+.grey-background {
+	background: #EAE1CE;
+}
+
+.ie	{
+	border-bottom: 4px solid #385884;
+}
+
+/*.ie-11 :after {
+	content: "../img/ie-11.jpg";
+}
+
+.ie-11 :after :hover {
+	content: "../img/ie-11.jpg";
+}*/
+
+.edge {
+	border-bottom: 4px solid #385884;
+}
+
+.firefox {
+	border-bottom: 4px solid #A36223;
+}
+
+.chrome {
+	border-bottom: 4px solid #3F77BB;
+}
+
+.safari {
+	border-bottom: 4px solid #666666;
+}
+
+.ios-safari {
+	border-bottom: 4px solid #333333;
+}
+
+.opera-mini {
+	border-bottom: 4px solid #992626;
+}
+
+.chrome-andr {
+	border-bottom: 4px solid #3F77BB;
+}
+
+.ucb {
+	border-bottom: 4px solid #000000;
+}
+
+.si {
+	border-bottom: 4px solid #9753FF;
+}
+
+th {
+	font-weight: 400;
+}
+
+.bold-border {
+	border: 5px solid #584E3B;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.chrome-49 :hover{
+	background: red;
+	color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*body {
+	background: #000;
+	color: #fff;
+}
+
+.header {
+	color: red;
+	text-decoration: underline;
+}*/
