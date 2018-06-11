@@ -1,0 +1,48 @@
+/*.header{
+	color: blue;
+	text-decoration: underline;
+}
+#block-element{
+	color: green;
+}*/
+.table{
+	width: 100%;
+	border: 2px solid white;
+	text-align: center;
+	table-layout: fixed;
+	color: white;
+}
+.text-black{
+	color: black;
+}
+.border{
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+.border-black{
+	border-bottom: 2px solid black;
+}
+.border-blue{
+	border-bottom: 2px solid blue;
+}
+.border-sky-blue{
+	border-bottom: 2px solid lightskyblue;
+}
+.border-pink{
+	border-bottom: 2px solid pink;
+}
+.border-brown{
+	border-bottom: 2px solid brown;
+}
+.green{
+	background-color: #39B54A;
+}
+.lime{
+	background-color: #67C16C;
+}
+.gray{
+	background-color: #EAE1CE;
+}
+.white{
+	background-color: white;
+}
