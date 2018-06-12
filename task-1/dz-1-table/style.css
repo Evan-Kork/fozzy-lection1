@@ -32,8 +32,8 @@ td{
 .n{
 	color: white;
 }
-.k{
-	background: black;
+tr td.k{
+	border: 1px solid black;
 }
 .date_red{
 	background: #c44230;
