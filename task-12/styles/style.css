@@ -5,28 +5,33 @@ body {
 	margin: 0 5px 0 5px;
 }
 
-td {
+.browser-table td {
 	text-align: center;
 }
 
-.red-section {
+.browser-not-accepted {
 	background: #C44230;
 }
 
-.green-section {
+.browser-accepted {
 	background: #39B54A;
 }
 
-.grey-section{ 
+.borwser-accepted-not-all { 
 background: #838383;
 }
 
-table td, th{
-	width: 117px;
+.global-wraper {
+	max-width: 100%;
+	min-width: 1000px;
+}
+
+.browser-table td, th{
+	width: 10%;
 	height: 30px;
 }
 
-.grey-background {
+.not-active {
 	background: #EAE1CE;
 }
 
