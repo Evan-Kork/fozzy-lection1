@@ -79,85 +79,105 @@
 
 	<h1>Table</h1>
 <table class="table">
-	<tr class="text-black">
-		<th class="border-blue">IE</th>
-		<th class="border-blue">Edge *</th>
-		<th class="border-brown">Firefox</th>
-		<th class="border-sky-blue">Chrome</th>
-		<th class="border-brown">Safari *</th>
-		<th class="border-black">IOS Safari</th>
-		<th class="border-brown">Opera mini *</th>
-		<th class="border-sky-blue">Chrome android</th>
-		<th class="border-black">Uc for Android</th>
-		<th class="border-pink">Samsung internet</th>
+	<tr class="titles">
+		<th class="IE">IE</th>
+		<th class="Edge">Edge *</th>
+		<th class="Firefox">Firefox</th>
+		<th class="Chrome">Chrome</th>
+		<th class="Safari">Safari *</th>
+		<th class="IOS_Safari">IOS Safari</th>
+		<th class="Opera_mini">Opera mini *</th>
+		<th class="Chrome_for_android">Chrome for android</th>
+		<th class="Uc_for_Android">Uc for Android</th>
+		<th class="Samsung_internet">Samsung internet</th>
 	</tr>
-	<tr class="green">
-		<td rowspan="2" class="gray"></td>
-		<td class="gray"></td>
-		<td class="gray"></td>
-		<td bgcolor="red">49</td>
-		<td rowspan="2" class="gray"></td>
-		<td>10.3</td>
-		<td rowspan="2" class="gray"></td>
-		<td rowspan="2" class="gray"></td>
-		<td rowspan="2" class="gray"></td>
-		<td class="gray"></td>
+	<tr>
+		<td rowspan="2" class="support_unknown"></td>
+		<td class="support_unknown"></td>
+		<td class="support_unknown"></td>
+		<td class="not_supported">49</td>
+		<td rowspan="2" class="support_unknown"></td>
+		<td class="supported">10.3</td>
+		<td rowspan="2" class="support_unknown"></td>
+		<td rowspan="2" class="support_unknown"></td>
+		<td rowspan="2" class="support_unknown"></td>
+		<td class="support_unknown"></td>
 	</tr>
-	<tr class="green">
-		<td>16</td>
-		<td>59</td>
-		<td>65</td>
-		<td>11.2</td>
-		<td bgcolor="red">4</td>
+	<tr>
+		<td class="supported">16</td>
+		<td class="supported">59</td>
+		<td class="supported">65</td>
+		<td class="supported">11.2</td>
+		<td class="not_supported">4</td>
 	</tr>
-	<tr class="green">
-		<td bgcolor="orange">11</td>
-		<td>17</td>
-		<td>60</td>
-		<td>66</td>
-		<td>11.1</td>
-		<td>11.3</td>
-		<td bgcolor="red">all</td>
-		<td>66</td>
-		<td>11.8</td>
-		<td>6.2</td>
+	<tr>
+		<td class="partial_support">11</td>
+		<td class="supported">17</td>
+		<td class="supported">60</td>
+		<td class="supported">66</td>
+		<td class="supported">11.1</td>
+		<td class="supported">11.3</td>
+		<td class="not_supported">all</td>
+		<td class="supported">66</td>
+		<td class="supported">11.8</td>
+		<td class="supported">6.2</td>
 	</tr>
-	<tr class="lime">
-		<td class="white"></td>
-		<td>18</td>
-		<td>61</td>
-		<td>67</td>
-		<td>12</td>
-		<td class="white"></td>
-		<td class="white"></td>
-		<td class="white"></td>
-		<td class="white"></td>
-		<td class="white"></td>
+	<tr>
+		<td class="support_unknown"></td>
+		<td class="supported">18</td>
+		<td class="supported">61</td>
+		<td class="supported">67</td>
+		<td class="supported">12</td>
+		<td class="support_unknown"></td>
+		<td class="support_unknown"></td>
+		<td class="support_unknown"></td>
+		<td class="support_unknown"></td>
+		<td class="support_unknown"></td>
 	</tr>
-	<tr class="lime">
-		<td class="white"></td>
-		<td class="white"></td>
-		<td>62</td>
-		<td>68</td>
-		<td>TP</td>
-		<td class="white"></td>
-		<td class="white"></td>
-		<td class="white"></td>
-		<td class="white"></td>
-		<td class="white"></td>
+	<tr>
+		<td class="support_unknown"></td>
+		<td class="support_unknown"></td>
+		<td class="supported">62</td>
+		<td class="supported">68</td>
+		<td class="supported">TP</td>
+		<td class="support_unknown"></td>
+		<td class="support_unknown"></td>
+		<td class="support_unknown"></td>
+		<td class="support_unknown"></td>
+		<td class="support_unknown"></td>
 	</tr>
-	<tr class="lime">
-		<td class="white"></td>
-		<td class="white"></td>
-		<td class="white"></td>
-		<td>69</td>
-		<td class="white"></td>
-		<td class="white"></td>
-		<td class="white"></td>
-		<td class="white"></td>
-		<td class="white"></td>
-		<td class="white"></td>
+	<tr>
+		<td class="support_unknown"></td>
+		<td class="support_unknown"></td>
+		<td class="support_unknown"></td>
+		<td class="supported">69</td>
+		<td class="support_unknown"></td>
+		<td class="support_unknown"></td>
+		<td class="support_unknown"></td>
+		<td class="support_unknown"></td>
+		<td class="support_unknown"></td>
+		<td class="support_unknown"></td>
 	</tr>
 </table>
+<table>
+	<h2>legend</h2>
+	<tr >
+		<td class="supported" width="20%"></td>
+		<td> - Supported</td>
+	</tr>
+	<tr>
+		<td class="not_supported"></td>
+		<td> - Not supported</td>
+	</tr>
+	<tr>
+		<td class="partial_support"></td>
+		<td> - Partial support</td>
+	</tr>
+	<tr>
+		<td class="support_unknown"></td>
+		<td> - Support unknown</td>
+	</tr>
+</table>
+<p>Eneble accessible colors</p>
 </body>
 </html>

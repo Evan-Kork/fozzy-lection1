@@ -12,37 +12,49 @@
 	table-layout: fixed;
 	color: white;
 }
-.text-black{
+.titles{
 	color: black;
 }
-.border{
-    font-weight: normal;
-    padding-bottom: 5px;
+
+.IE{
+	border-bottom: 2px solid #385884;
 }
-.border-black{
-	border-bottom: 2px solid black;
+.Edge{
+	border-bottom: 2px solid #385884;
 }
-.border-blue{
-	border-bottom: 2px solid blue;
+.Firefox{
+	border-bottom: 2px solid #A36223;
 }
-.border-sky-blue{
-	border-bottom: 2px solid lightskyblue;
+.Chrome{
+	border-bottom: 2px solid #3F77BB;
 }
-.border-pink{
-	border-bottom: 2px solid pink;
+.Chrome_for_android{
+	border-bottom: 2px solid #3F77BB;
 }
-.border-brown{
-	border-bottom: 2px solid brown;
+.Safari{
+	border-bottom: 2px solid #666666;
 }
-.green{
+.IOS_Safari{
+	border-bottom: 2px solid #333333;
+}
+.Opera_mini{
+	border-bottom: 2px solid #992626;
+}
+.Uc_for_Android{
+	border-bottom: 2px solid #000000;
+}
+.Samsung_internet{
+	border-bottom: 2px solid #9753FF;
+}
+.supported{
 	background-color: #39B54A;
 }
-.lime{
-	background-color: #67C16C;
+.not_supported{
+	background-color: #C44230;
 }
-.gray{
+.partial_support{
+	background-color: #A8BD04;
+}
+.support_unknown{
 	background-color: #EAE1CE;
-}
-.white{
-	background-color: white;
 }
