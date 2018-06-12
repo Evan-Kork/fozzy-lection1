@@ -348,7 +348,10 @@ nav>ul>li>a
 {
 	background-color: #C44230;
 }
-
+#main-table li.partial
+{
+	background-color: #aa1;
+}
 
 
 /*tooltip*/
