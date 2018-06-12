@@ -1,0 +1,79 @@
+
+#head>td
+{
+	background-color: #fff;
+	border-bottom: 6px solid;
+
+}
+
+table td
+{
+	width: 100px;
+	height: 30px;
+	background-color: #ddd;
+}
+
+table 
+{
+	border-spacing: 5px;
+	text-align: center;
+	font-size: 10pt;
+	font-weight: bold;
+	width: 100%;
+	font-family: sans-serif;
+}
+#head .ie
+{
+	border-color: red;
+
+}
+#head .edge
+{
+	border-color: blue;
+}
+#head .firefox
+{
+	border-color: brown;
+}
+#head .chrome
+{
+	border-color: yellow;
+}
+#head .safari
+{
+	border-color: pink;
+}
+#head .ios
+{
+	border-color: grey;
+}
+#head .opera
+{
+	border-color: green;
+}
+#head .chand
+{
+	border-color: orange;
+}
+#head .usand
+{
+	border-color: black;
+}
+#head .samsung
+{
+	border-color: indigo;
+}
+
+td.full
+{
+	background-color: green;
+	color: white;
+	font-family: sans-serif;
+}
+
+.main
+{
+	padding: 20px;
+	border: 1px solid red;
+	background-color: red;
+}
