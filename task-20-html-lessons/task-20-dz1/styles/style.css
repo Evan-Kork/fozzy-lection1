@@ -1,0 +1,457 @@
+/*...........................1.GENERAL STYLES..........................*/
+body
+{
+    background-image:url('../img/fon.jpg');
+    color:rgb(24, 21, 21);
+    font-size:14px;
+    font-family: 'News Cycle', sans-serif;
+}
+
+body a 
+{
+    text-decoration: none;
+}
+
+@media(max-width:1000px)
+{
+    .left_punkts, .right_punkt
+    {
+        margin-bottom:30px;
+    }
+}
+@media(max-width:800px)
+{
+    .main_top_menu .right_punkts li a
+    {
+        padding:5px;
+    }
+    .choose_country .choose_links a
+    {
+        padding: 2px 10px;
+        margin:30px 20px;
+        font-size:0.9rem;
+    }
+    .information .methods, .information_footer  .notes
+    {
+        width:90%;
+        margin:0 auto;
+    }
+    .reclame_block 
+    {
+        display: none;
+    }
+}
+
+@media(max-width:600px)
+{
+    #area_color
+    {
+        font-size: 0.9rem;
+        width:100px;
+        height:20px;
+    }
+}
+
+.clear 
+{
+    width:100%;
+    height:1px;
+    clear:both;
+}
+
+.general_conteyner 
+{
+    width:88%;
+    margin:0 auto;
+}
+
+/*..........................END GENERAL STYLES..........................*/
+
+/*.................................2.TOP................................*/
+.main_top_menu
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    font-size: 1.2rem;
+    margin-top:-6px;
+    margin-bottom:20px;
+}
+
+.main_top_menu ul
+{
+    margin:0;
+    padding:0;
+}
+
+.main_top_menu li
+{
+    margin:0;
+    display:inline;
+}
+
+.main_top_menu a
+{
+    color:white;
+}
+
+.main_top_menu li a
+{
+    background-color:rgba(255, 255, 255, 0.2);
+    padding: 15px 15px 6px 15px;
+}
+
+.main_top_menu li a:hover
+{
+    background-color:rgba(247, 156, 20, 0.863);
+}
+
+.main_top_menu .news_text
+{
+    font-size: 1rem;
+    color:gray;
+    margin-left:10px;
+}
+
+.main_top_menu .orange_link:hover
+{
+    color:rgba(247, 156, 20, 0.842);
+}
+
+/*...............................END TOP................................*/
+
+/*.............................3.CHANGE USING...........................*/
+.what_can_i_use
+{
+    background-color: rgba(255, 94, 0, 0.767);
+    color:white;
+    font-size:2.2rem;
+    text-align: center;
+    margin-bottom:10px;
+    padding-bottom:20px;
+    padding-top:10px;
+}
+
+.what_can_i_use textarea
+{
+    width:40%;
+    height:45px;
+    color:white;
+    font-size:2.2rem;
+    text-align:center;
+    background:transparent;
+    border-bottom:1px solid white;
+    margin-bottom:-5px;
+    margin-top:10px;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+}
+
+#textarea_id
+{
+    background-color:transparent;
+}
+
+.what_can_i_use .settings a
+{
+    color:rgba(255, 255, 255, 0.4);
+    text-decoration:none;
+    font-size:1.5rem;
+    margin:0 10px;
+}
+
+.what_can_i_use .results
+{
+    font-size:1rem;
+}
+
+.choose_country
+{
+    background-color:rgb(243, 230, 210);
+    font-size:1rem;
+    text-align:center;
+    padding-bottom:15px;
+    padding-top:10px;
+}
+
+.choose_country a
+{
+    padding-top:10px;
+    background-color: white;
+    padding:0 20px;
+    margin:10px;
+    font-size:1.1rem;
+    color:rgb(187, 25, 25);
+}
+
+.choose_country a:hover
+{
+    color:white;
+    background-color: rgba(255, 94, 0, 0.767);
+}
+
+/*............................AND CHANGE USING..........................*/
+
+/*.............................5.PAGE CONTENT...........................*/
+
+.page_content
+{
+    background-color:rgb(243, 230, 210);
+    margin:10px 0;
+}
+
+.information
+{
+    padding:0 10px;
+}
+.information .header
+{
+    font-size: 1.5rem;
+}
+.information .icon
+{
+    width:15px;
+    margin-left:5px;
+}
+.information .green
+{
+    color:green;
+    font-size:0.8rem;
+}
+
+.methods
+{
+    width:43%;
+    padding:10px;
+    font-size:1.1rem;
+    float:left;
+}
+.methods .marker
+{
+    background-color:rgba(255, 255, 255, 0.479);
+    font-family: 'Courier New', Courier, monospace;
+    font-size:1rem;
+    color:black;
+}
+
+.control_panel
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:0 20px;
+}
+
+.control_panel a
+{
+    color:gray;
+    font-size:1rem;
+    padding:1px 5px;
+}
+.control_panel a:hover, .control_panel .activ_link
+{
+    color:white;
+    background-color:orange;
+}
+
+/*........................Page content => General table....................*/
+
+.general_table
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-x: scroll;
+    overflow-y: auto; 
+    min-height:340px;
+    margin-left:17px;
+    margin-right:17px;
+    font-size:1rem;
+}
+
+/* Horizontal lines */
+
+.general_table hr
+{
+    height:5px;
+}
+.blue
+{
+    background-color:rgb(20, 53, 143);
+}
+.lightbrown
+{
+    background-color:rgb(156, 92, 39);
+}
+.lightblue
+{
+    background-color:rgb(73, 104, 189);
+}
+.gray
+{
+    background-color:rgb(86, 91, 104);
+}
+.darkgray
+{
+    background-color:rgb(39, 41, 46);
+}
+.brown
+{
+    background-color:rgb(112, 28, 25);
+}
+.black
+{
+    background-color:rgb(0, 0, 0);
+}
+.violet
+{
+    background-color:rgb(120, 34, 160);
+}
+
+/* Columns style */
+
+.general_table .columns
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}  
+
+.columns .column
+{
+    margin:4px;
+    height:180px;
+}
+
+.header_contayner div,
+ .columns div
+{
+    height:30px;
+    text-align:center;
+    color:white;
+}
+
+.general_table .header
+{
+    color:rgb(24, 21, 21);
+    height:52px;
+    width:102px;
+    margin:5px 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.columns .noborder
+{
+    width:102px;
+    height:34px;
+    margin:4px 0;
+} 
+
+
+.columns .border
+{
+    border:3px solid rgb(56, 27, 27);
+    margin:2px 0;
+    width:96px;
+    height:30px;
+}
+
+.general_table .empty
+{
+    background-color:silver;
+}
+
+.general_table .greenyellow
+{
+    background-color:rgb(152, 190, 13);
+}
+.general_table .darkgreen
+{
+    background-color: rgb(14, 145, 58);
+}
+.general_table .lightgreen
+{
+    background-color: rgb(71, 163, 102);
+}
+
+.darkgreen:hover, .lightgreen:hover
+{
+    background-color: rgb(88, 172, 116);
+}
+
+/* Information footer */
+
+.information_footer
+{
+    background-color: rgb(179, 138, 77);
+}
+.notes
+{
+    font-size:1.2rem;
+    padding:20px;
+    width:60%;
+}
+
+.border
+{
+    border:3px solid rgb(56, 27, 27);
+    margin:2px 0;
+    width:96px;
+    height:30px;
+}
+
+/* FOOTER STYLES */
+
+.reclame_block
+{
+    width:60%;
+    height:100px;
+    text-align: center;
+    margin:10px auto;
+    background-image:url('../img/banner.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+.reclame_block:hover
+{
+    cursor:pointer;
+}
+
+.bottom_conteyner
+{
+    margin: 10px 0;
+}
+.bottom_conteyner .silver
+{
+    height:3px;
+    background-color:rgb(110, 107, 108);
+    border:0px solid transparent;
+}
+
+.menu-item
+{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width:96px;
+    height:30px;
+}
+
+.menu-item .submenu
+{
+    margin-left:100px;
+    margin-top:-40px;
+    z-index: 9999;
+    text-align:center;
+    padding:10px;
+    position:absolute;
+    cursor: pointer;
+    height:40px;
+    width:140px;
+    background-color:yellowgreen;
+    -moz-box-shadow:0 5px 5px rgba(2,2,2,0.5);
+    -webkit-box-shadow:0 5px 5px rgba(2,2,2,0.5);
+    box-shadow:0 5px 5px rgba(2,2,2,0.5);
+}
