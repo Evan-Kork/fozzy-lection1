@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forms</title>
+	<link rel="stylesheet" type="text/css" href="formstyles.css">
+</head>
+<body>
+
+	<h2>Form method get</h2>
+
+		<form action="https://www.google.com/" method="get" target="_blank">
+		<input type="text" name="q">
+		<button>Button</button>
+		<div>
+		<label for="instruments">Instruments</label>
+		<select name="instruments" id="instruments">
+			<option value="" selected >From any country</option>
+			<option value="">Country: Ukraine</option>			
+		</select>
+		</div>	
+		<div>
+		<label for="instruments">           </label>
+		<select name="instruments" id="instruments">
+			<option value="" selected >In any language</option>
+			<option value="">Pages in Ukrainian</option>			
+		</select>
+		</div>
+		<div>
+		<label for="instruments">           </label>
+		<select name="instruments" id="instruments">
+			<option value="" selected >Anytime</option>
+			<option value="">In the past hour</option>	
+			<option value="">Over the past 24 hours</option>	
+			<option value="">Last week</option>			
+			<option value="">Last month</option>			
+			<option value="">Over the past year</option>					
+		</select>
+		</div>	
+		<div>
+		<label for="instruments">           </label>
+		<select name="instruments" id="instruments">
+			<option value="" selected >All results</option>
+			<option value="">Literally</option>			
+		</select>
+		</div>
+
+	<h1>Form method post</h1>
+	<form action="#" method="post">
+	<fieldset>
+		<legend>Main information</legend>
+		<div>
+		<label for="name">Name</label>
+		<input id="name" name="name" type="text" value="Alphach">	
+		</div>
+		<div>
+		<label for="surname">Surname</label>
+		<input id="surname" name="surname" type="text" value="surname" disabled>	
+		</div>
+		<div>
+		<label for="email">Email</label>
+		<input id="email" name="email" type="email" placeholder="test@mail.com">	
+		</div>	
+		<div>
+		<label for="password">Password</label>
+		<input id="password" name="password" type="password" >	
+		</div>	
+		<div>
+		<label for="repassword">Password repeat</label>
+		<input id="repassword" name="repassword" type="password" >	
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Personal information</legend>
+		<div>
+		<label for="birthday">Birthday</label>
+		<input id="birthday" type="date">	
+		</div>
+		<div>
+		<label for="age">Age</label>
+		<input id="age" type="number" min="1" max="200" step="3">	
+		</div>
+		<div>
+		<label for="male">Male</label>
+		<input id="male" name="male" type="radio" value="male" checked><i>Male</i>	
+		<input name="male" type="radio" value="female"><i>Female</i>
+		</div>
+		<div>
+		<label for="maried">Maried</label>
+		<input id="male" name="maried" type="checkbox" value="male">
+		</div>	
+		<div>
+		<label for="country">Country</label>
+		<select name="country" id="country">
+			<option value="" selected >Select country</option>
+			<optgroup label="Europe">
+			<option value="ua" >Ukraine</option>
+			<option value="gb">Great Brinait</option>
+			</optgroup>
+			
+			<optgroup label="North America">
+			<option value="us">USA</option>
+			</optgroup>
+		</select>
+		</div>	
+	</fieldset>
+
+	<fieldset>
+		<legend>Interests</legend>
+		<div>
+		<label for="info">About me</label>
+		<textarea name="info" id="info" cols="30" rows="5" readonly="false"> Something about me... </textarea>
+		</div>
+		<div>
+		<label for="photo">Photo</label>
+			<input id="photo" type="file" name="photo">
+		</div>
+	</fieldset>
+
+		<fieldset>
+			<legend>Submit</legend>
+			<input type="button" value="Button input">
+			<input type="submit" value="Submit input">
+			<button>Button</button>
+		</fieldset>
+	</form>
+</body>
+</html>

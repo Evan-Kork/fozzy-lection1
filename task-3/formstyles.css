@@ -1,0 +1,80 @@
+input{
+	border-radius: 5px;
+	margin: 6px;
+	border-color: #fff;	
+}
+label{
+	color: #fff;
+	font-size: 20px;
+	display:inline-block;
+	width: 30%;
+
+}
+fieldset{
+	background-color: #8C3896;
+	margin: auto;
+	border-radius: 10px;
+}
+legend{
+	font-size: 32px;
+	color: #fff;
+}
+body{
+	background-color: #702D77;
+}
+i{
+	font-size: 18px;
+	color: #fff;
+}
+button{
+	border-radius: 5px;
+	margin: 6px;
+	border-color: #fff;
+	
+}
+h1{
+	font-size: 44px;
+	color: #fff;
+	width: 80%;
+	display: block;
+	
+}
+h2{
+	font-size: 44px;
+	color: #fff;
+	width: 80%;
+	display: block;
+	
+}
+form{
+	margin: auto;
+	width: 35%;
+}
+i::selection{
+	color: #fff;
+	background: #800080;
+}
+input::selection{
+	color: #fff;
+	background: #800080;
+}
+h1::selection{
+	color: #fff;
+	background: #800080;
+}
+legend::selection{
+	color: #fff;
+	background: #800080;
+}
+label::selection{
+	color: #fff;
+	background: #800080;
+}
+button::selection{
+	color: #fff;
+	background: #800080;
+}
+textarea::selection{
+	color: #fff;
+	background: #800080;
+}
