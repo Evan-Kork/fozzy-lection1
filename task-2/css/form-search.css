@@ -1,0 +1,13 @@
+label, input, select
+{
+
+	display: inline-block;
+	width: 120px;
+
+}
+
+form
+{
+	width: 400px;
+}
+

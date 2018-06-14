@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Google search</title>
+	<link rel="stylesheet" href="css/form-search.css">
 </head>
 <body>
 	<form action="https://www.google.com.ua/search" target="_blank">
@@ -11,24 +12,60 @@
 			<div>
 				<input type="text" name="q" id ="q">
 			</div>
-			<button>Button</button>
+			
 		</fieldset>
 		<fieldset>
 			<legend>Instruments</legend>
 			<div>
-				<select name="" id=""></select>
-				<select name="" id=""></select>
-				<select name="" id=""></select>
-				<select name="" id=""></select>
-				<select name="" id=""></select>
-				<select name="" id=""></select>
-				<select name="" id=""></select>
-				<select name="" id=""></select>
-				<select name="" id=""></select>
-				<select name="" id=""></select>
+				<label for="tbm">Content type: </label>
+				<select name="tbm" id="">
+					<option value="">
+						All
+					</option>
+					<option value="isch">
+						Image
+					</option>
+					<option value="vid">
+						Video
+					</option>
+					<option value="nws">
+						News
+					</option>
+				</select>
 			</div>
-			<button>Button</button>
+			<div>
+				<label for="time">Time:</label>
+				<select name="tbs" id="">
+					<option value="qdr" selected>All time</option>
+					<option value="qdr:h">Hour</option>
+					<option value="qdr:d">Day</option>
+					<option value="qdr:w">Week</option>
+					<option value="qdr:m">Mounth</option>
+					<option value="qdr:y">Year</option>
+				</select>
+			</div>
+			<div>
+				<label for="lang">Language:</label>
+				<select name="lr" id="lang">
+					<option value="lang_en" selected>English</option>
+					<option value="lang_fr">France</option>
+					<option value="lang_ua">Ukraine</option>
+					<option value="lang_ru">Russian</option>
+					
+				</select>
+			</div>
+			<div>
+				<label for="as_filetype">Filetype:</label>
+				<select name="as_filetype" id="as_filetype">
+					<option value="" selected>All</option>
+					<option value="pdf">.pdf</option>
+					<option value="doc">doc</option>
+				</select>
+			</div>
+
+			
 		</fieldset>
+		<button>Button</button>
 	</form>
 </body>
 </html>
