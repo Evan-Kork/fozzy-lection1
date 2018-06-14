@@ -1,0 +1,45 @@
+html, body {
+	margin: 0;
+	height: 100%;
+}
+header,
+main,
+footer {
+	color: white;
+	font-size: 30px;
+}
+header {
+	background-color: red;
+	height: 100px;
+	min-height: 100px;
+}
+main {
+	background-color: green;
+	flex: 1 0 auto;
+	display: flex;
+}
+aside {
+	background-color: pink;
+	width: 30%;
+	min-width: 30%;
+}
+article {
+	background-color: grey;
+	padding: 15px;
+}
+footer {
+	height: 200px;
+	min-height: 200px;
+	background-color: blue;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+@media (max-width: 575px) {
+	main { flex-direction: column;}
+	aside {
+		width: 100%;
+	}
+}
