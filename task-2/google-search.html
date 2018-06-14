@@ -10,17 +10,15 @@
 		<fieldset>
 			<legend>Query</legend>
 			<div>
-				<input type="text" name="q" id ="q">
+				<input type="text" name="q" id ="q"> <button>Search</button>
 			</div>
 			
 		</fieldset>
 		<fieldset>
 			<legend>Instruments</legend>
-			<div>
-				<label for="tbm">Content type: </label>
 				<select name="tbm" id="">
-					<option value="">
-						All
+					<option selected>
+						Type
 					</option>
 					<option value="isch">
 						Image
@@ -32,40 +30,40 @@
 						News
 					</option>
 				</select>
-			</div>
-			<div>
-				<label for="time">Time:</label>
+			
 				<select name="tbs" id="">
-					<option value="qdr" selected>All time</option>
+					<option selected>Time</option>
 					<option value="qdr:h">Hour</option>
 					<option value="qdr:d">Day</option>
 					<option value="qdr:w">Week</option>
 					<option value="qdr:m">Mounth</option>
 					<option value="qdr:y">Year</option>
 				</select>
-			</div>
-			<div>
-				<label for="lang">Language:</label>
+			
+				<select name="cr" id="country">
+					<option  selected>Country</option>
+					<option value="countryUK">United Kindom</option>
+					<option value="countryUA">Ukraine</option>
+				</select>
+			
 				<select name="lr" id="lang">
-					<option value="lang_en" selected>English</option>
+					<option selected>Language</option>
+					<option value="lang_en" >English</option>
 					<option value="lang_fr">France</option>
 					<option value="lang_ua">Ukraine</option>
 					<option value="lang_ru">Russian</option>
 					
 				</select>
-			</div>
-			<div>
-				<label for="as_filetype">Filetype:</label>
-				<select name="as_filetype" id="as_filetype">
-					<option value="" selected>All</option>
+		
+				<select name="as_filetype" id="filetype">
+					<option value="" selected>Filetype</option>
 					<option value="pdf">.pdf</option>
 					<option value="doc">doc</option>
 				</select>
-			</div>
-
+			
 			
 		</fieldset>
-		<button>Button</button>
+		
 	</form>
 </body>
 </html>

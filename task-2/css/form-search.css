@@ -8,6 +8,16 @@ label, input, select
 
 form
 {
-	width: 400px;
+	width: 100%;
+}
+div.instrument
+{
+	display: inline-block;
+}
+
+.instrument
+{
+
+	background-color: red;
 }
 
