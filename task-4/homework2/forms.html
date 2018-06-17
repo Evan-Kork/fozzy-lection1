@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<center><h1>Form method get</h1></center>
+	<form action="https://www.google.com/search" method="get" target="_blank" novalidate>
+		<fieldset class="google">
+			<legend>Evil Gooogle</legend>
+			<div>	
+				<input type="text" name="q" id="query" placeholder="Gooogle">
+			</div>
+			<div>
+				<select name="tbs">
+					<option value="" selected>Normal </option>	
+					<option value="li:1">Exact match</option>
+				</select>
+				<select name="tbs">
+					<option value="" selected>Country </option>	
+					<option value="ctr:countryUA">UK</option>
+				</select>
+				<select name="tbs">
+					<option value="" selected>Languge</option>	
+					<option value="lr:lang_1ru">RU</option>
+				</select>
+				<select name="tbs">
+					<option value="" selected>For all time</option>	
+					<option value="qdr:h">For hour</option>
+					<option value="qdr:d">For day</option>
+					<option value="qdr:w">For week</option>
+					<option value="qdr:m">For month</option>
+					<option value="qdr:y">For year</option>
+				</select>
+			</div>
+		</fieldset>
+	</form>
+	<center><h1>Form method post</h1></center>	
+	<form action="#" method="post" class="form-post">
+		<div class="two-blocks">
+		<fieldset class="left">
+			<legend>Main Information</legend>
+			<div>
+				<label for="name">Name</label>
+				<input type="text" placeholder="your evil name" id="name" name="name" >
+			</div>
+			<div>
+				<label for="sername">SerName</label>
+				<input type="text" id="sername" placeholder="your evil sername" name="sername" disabled>
+			</div>
+			<div>
+				<label for="email">Email</label>
+				<input type="email" id="email" placeholder="evil@mail.com" name="email">
+			</div>
+			<div>
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" placeholder="your evil password" required>
+			</div>
+			<div>
+				<label for="repassword">Repeat password</label>
+				<input type="password" placeholder="your evil repassword" id="repassword" name="repassword" required>
+			</div>
+		</fieldset>
+		<fieldset class="right">	
+			<legend>Personal Information</legend>
+			<div>	
+				<label for="bithday">Bithday</label>
+				<input type="date" id="bithday" name="bithday">
+			</div>
+			<div>	
+				<label for="age">Age</label>
+				<input type="number" placeholder="your evil age" id="age" min="0" max="200" name="age" step="10">
+			</div>
+			<div>	
+				<label for="male">Male</label>
+				<input type="radio" name="male" id="male" value="male" checked>
+				<label for="female">Female</label>
+				<input type="radio" name="male" id="female" value="female">
+			</div>
+			<div>	
+				<label for="maried">Maried
+						<input type="checkbox" name="maried" id="maried">
+				</label>
+			</div>
+			<div>	
+				<label for="country">Country</label>
+				<select name="country" id="country">
+					<option value="" selected>Select Country</option>
+					<optgroup label="Europe">
+						<option value="ua">Ukraine</option>
+						<option value="gb">Great Britain</option>
+					</optgroup>
+					<optgroup label="America">	
+						<option value="us">USA</option>
+					</optgroup>
+				</select>
+			</div>
+			<div>	
+					<label for="photo">Photo</label>
+					<input id="photo" name="photo" type="file">
+			</div>
+		</fieldset>
+	</div>
+		<fieldset class="botton-form">	
+				<legend>Interests</legend>
+				<div>
+					<label for="aboutme">Information</label>
+						<textarea name="aboutme" id="aboutme" cols="150" rows="5" readonly>About me</textarea>
+				</div>
+		</fieldset>
+		<fieldset>	
+			<legend>Submit</legend>
+			<input type="button" value="not evil button">
+			<input type="submit" value="evil button">
+			<button>Very evil button</button>
+		</fieldset>
+	</form>
+</body>
+</html>
