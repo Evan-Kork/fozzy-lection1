@@ -2,8 +2,6 @@ body{
 	background: #000;
 	color: #ddd;
 	font-family: sans-serif;
-
-
 }
 form{
 	width: 400px;
@@ -21,9 +19,7 @@ form>fieldset{
 	margin: 10px;
 	font-family: cursive;
 }
-form>fieldset>legend
-{
-
+form>fieldset>legend{
 	text-transform: lowercase;
 	color: #fff;
 	background-color: #449;
@@ -31,40 +27,30 @@ form>fieldset>legend
 	padding: 4px;
 	font-family: monospace;
 }
-form>fieldset>div
-{
+form>fieldset>div{
 	width: 50%;
 	margin: auto;
 	padding: 0;
 }
-form>fieldset>div>label
-{
-	
+form>fieldset>div>label{	
 	padding: 0;
 	margin: 0;
 	display: inline-block;
 	font-weight: bold;
 	font-size: 11pt;
-	
-	
-	
 }
-form>fieldset>div>input
-{
-
-	
+form>fieldset>div>input{	
 	width: 100%;
 	border: 1px solid #000;
 	padding: 5px;
-	margin: 5px 0 5px 0;
-	
+	margin: 5px 0 5px 0;	
 }
-form>fieldset>div>select
-{
+form>fieldset>div>select{
 	display: inline-block;
 }
-.country-select, .maried-status, .photo-select
-{
+.country-select, 
+.maried-status, 
+.photo-select{
 	width: 100%;
 	padding: 5px;
 	margin: 0;
@@ -72,8 +58,7 @@ form>fieldset>div>select
 	text-align: center;
 	overflow: hidden;
 }
-.gender-checkboxs
-{
+.gender-checkboxs{
 	text-align: center;
 	font-family: sans-serif;
 	border: 1px solid #000;
@@ -84,57 +69,34 @@ form>fieldset>div>select
 	text-transform: uppercase;
 	font-size: 10pt;
 	font-weight: bold;
-
 }
-.photo-select>input
-{
+.photo-select>input{
 	display: inline-block;
 }
-
-
-
 label{
 	display: inline-block;
 	width: 140px;
 }
-
-
-input
-{
+input{
 	border: none;
-
 	padding: 4px;
-	
 	outline: none;
 }
-
 h1{
 	display: inline-block;
 	padding-bottom: 4px;
 	border-bottom: 2px solid red;
 }
-
-
-form label:after
-{
+form label:after{
 	content: ':';
 }
-
 
 form div{
 	margin: 5px;
 }
-
-
-
-input[require]
-{
-	border-color: #f00;
-
-	
+input[require]{
+	border-color: #f00;	
 }
-.conteiner
-{
-	
+.conteiner{	
 	border: 1px solid red;
 }

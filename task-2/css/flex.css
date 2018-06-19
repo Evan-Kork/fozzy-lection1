@@ -5,18 +5,15 @@ html, body{
 
 header,
 main,
-footer
-{
+footer{
 	color: #fff;
 	font-size: 30px;
 }
-
 header{
 	background-color: red;
 	height: 100px;
 	min-height: 100px;
 }
-
 main{
 	background-color: green;
 }
@@ -34,7 +31,6 @@ footer{
 	height: 200px;
 	min-height: 200px;
 }
-
 .container{
 	display: flex;
 	flex-direction: column;
@@ -47,7 +43,6 @@ main{
 	align-items: stretch;
 
 }
-
 @media (max-width: 575px)  {
 	aside{
 		width: 100%;
@@ -55,5 +50,4 @@ main{
 	main{
 		flex-direction: column;
 	}
-	
 }
