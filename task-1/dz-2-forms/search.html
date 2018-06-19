@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form action="https://www.google.com.ua/search" method="get" target="_blank">
+		<div>
+			<label for="q">Search :</label>
+			<input id="q" type="text" name="q">
+		</div>
+		<fieldset>
+			<legend>Engineering</legend>
+			<div>
+				<input type="radio" name="tbs" value="li:1">Verbatim
+			</div>
+			<div>
+				<label for="cr">Country</label>
+				<select name="cr" id="cr">
+					<option value="">All</option>
+					<optgroup label="Europ">
+						<option value="countryUA">Ukraine</option>
+					</optgroup>
+				</select>
+			</div>
+			<div>
+				<label for="lr">Lang</label>
+				<select name="lr" id="lr">
+					<option value="" selected>None</option>
+					<option value="lang_ru">RU</option>
+				</select>
+			</div>
+			<div>
+				<input type="radio" name="tbm" value="">All
+				<input type="radio" name="tbm" value="isch">Images
+				<input type="radio" name="tbm" value="bks">Books
+				<input type="radio" name="tbm" value="nws">News
+			</div>
+			<div>
+				<label for="tbs">Time</label>
+				<select name="tbs" id="tbs">
+					<option value="">Any time</option>
+					<option value="qdr:h">Past hour</option>
+					<option value="qdr:d">Past 24 hours</option>
+					<option value="qdr:w">Past week</option>
+					<option value="qdr:m">Past month</option>
+					<option value="qdr:y">Past year</option>
+				</select>
+			</div>
+		</fieldset>	
+		<button>Search</button>
+	</form>
+	
+</body>
+</html>
