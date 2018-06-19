@@ -1,6 +1,9 @@
-
-form[method=post] {
+body {
+    margin: 0;
     background-color: #F0978B;
+}
+
+form {
     padding: 20px 0;
 }
 
@@ -47,12 +50,16 @@ legend {
     line-height: 30px;
 }
 
-form[method=post] input {
+input {
     background-color: #ffe6e2;
     border-color: transparent;
 }
 
-form[method=post] input:focus, select:focus, input[type="date"]:focus, input[type="number"]:focus {
+input:required {
+    border: 1px solid red;
+}
+
+form input:focus, select:focus, input[type="date"]:focus, input[type="number"]:focus {
     border: 3px solid #85D6BF;
     outline: none;
     background-color: white;
@@ -113,7 +120,7 @@ p {
     text-align: center;
 }
 
-form[method=post] .buttons button, input[type=button], input[type=submit]  {
+form .buttons button, input[type=button], input[type=submit]  {
     max-width: 100%;
     width: 145px;
     padding: 13px 15px;
