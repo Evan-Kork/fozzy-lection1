@@ -33,26 +33,40 @@ header img{
 	width: 40px;
 }
 header input{
-	margin-left: 20px;
+	margin: 0 20px 0 20px;
 	height: 24px;
 	border-radius: 24px;
-	padding-left: 10px;
+	padding-left: 25px;
 	border: none;
 	background-color: #123B6A;
 	outline: none;
 }
+.search-panel{
+	margin-left: 20px;
+}
 header input::placeholder{
 	color: #aaf;
-
 }
 header div{
 	font-size: 20px;
-	margin-left: 20px;
+	padding: 0 7px 0 7px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.h-btn:hover{
+	background-color: #258;
+	cursor: pointer;
+}
+header div img{
+	width: 30px;
 	padding: 5px;
 }
-header div:hover{
-	background-color: #123B6A;
-	cursor: pointer;
+#search-img{
+	width: 18px;
+	margin-right: -50px;
+	position: relative;
+	z-index: 5;
 }
 header input:focus::placeholder{
 	opacity: 0;
@@ -91,11 +105,9 @@ main{
 	height: 50px;
 	margin-bottom: 10px;
 	padding: 10px 0 10px 0;
-	
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-
 }
 .add-entry-panel img{
 
@@ -103,7 +115,6 @@ main{
 	width: 35px;
 	padding: 10px;
 	border-radius: 100%;
-
 }
 .add-entry-panel input{
 	height: 100%;
@@ -132,7 +143,6 @@ main{
 	text-decoration: underline;
 }
 .news .content{
-	
 	width: 90%;
 }
 
@@ -166,7 +176,6 @@ main{
 	padding: 10px;
 }
 .buttons button{
-
 	border: none;
 	display: inline-block;
 	height: 30px;
@@ -178,13 +187,15 @@ main{
 	font-weight: bold;
 	display: flex;
 	align-items: center;
+	flex-shrink: 2;
 }
 .buttons img{
 	width: 26px;
 	margin-right: 5px;
 }
 .views{
-	
+	margin-left: 10px;
+	flex-shrink: 1;
 	font-size: 11px;
 	font-weight: bold;
 	color: #667;
@@ -246,6 +257,11 @@ aside>ul>li>a:hover{
 		margin: 10px;
 		order: -1;
 	}
+	nav ul{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 	nav li{
 		display: inline-block;
 	}
@@ -268,7 +284,6 @@ aside>ul>li>a:hover{
 		order: 2;
 		flex-grow: 1;
 		padding: 0;
-		
 	}
 }
 
@@ -283,6 +298,11 @@ aside>ul>li>a:hover{
 		margin: 10px;
 		order: -1;
 	}
+	nav ul{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 	nav li{
 		display: inline-block;
 	}
@@ -295,7 +315,6 @@ aside>ul>li>a:hover{
 	aside ul{
 		display: flex;
 		flex-direction: column;
-	
 	}
 	aside li{
 		display: inline-block;
@@ -303,7 +322,6 @@ aside>ul>li>a:hover{
 	main{
 		order: 2;
 		flex-grow: 1;
-		padding: 0;
-		
+		padding: 0;	
 	}
 }
