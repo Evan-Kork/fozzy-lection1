@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнее задание</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Регистрация на форуме программистов</h1>
+    <div class="image"><img src="img/prog1.jpg"><img src="img/prog2.jpg"><img src="img/prog3.jpg"></div>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Обязательная информация</legend>
+            <div class="container">
+                <div class="to-lable"><label for="login">Логин: </label></div>
+                <div><input id="login" name="login" type="text" required></div>
+            </div>
+            <br>
+            <div class="container">
+                <div class="to-lable"><label for="password">Пароль: </label></div>
+                <div><input id="password" name="password" type="password" required></div>
+            </div>
+            <br>
+            <div class="container">
+                <div class="to-lable"><label for="repassword">Повторите пароль: </label></div>
+                <div><input id="repassword" name="repassword" type="password" required></div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Данные профиля</legend>
+            <div class="container">
+                <div class="to-lable"><label for="email">E-mail: </label></div>
+                <div><input id="email" name="email" type="email" placeholder="myname@gmail.com"></div>
+            </div>
+            <br>
+            <div class="container">
+                <div class="to-lable"><label for="age">Возраст: </label></div>
+                <div><input id="age" name="age" type="number" min="1" max="120"></div>
+            </div>
+            <br>
+            <div class="container">
+                <div class="to-lable"><label for="gender">Пол: </label></div>
+                <div><input id="gender" name="gender" type="radio" value="male">мужчина</div>
+                <div><input name="gender" type="radio" value="female">женщина</div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Личные данные</legend>
+            <div class="container">
+                <div class="to-lable"><label for="birthday">День рождения: </label></div>
+                <div><input id="birthday" type="date"></div>
+            </div>
+            <br>
+            <div class="container">
+                <div class="to-lable"><label for="married">Семейное положение: </label></div>
+                <div ><input id="married" name="married" type="checkbox">в браке</div>
+                <div><input id="married" name="married" type="checkbox">есть дети</div>
+            </div>
+            <br>
+            <div class="container">
+                <div class="to-lable"><label for="country">Страна: </label></div>
+                <div>
+                    <select name="country" id="country">
+                        <option value="" selected>Выберите страну</option>
+                        <option value="ua">Украина</option>
+                        <option value="ru">Россия</option>
+                        <option value="other">Другая страна</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Обо мне</legend>
+                <div class="container">
+                    <label for="interests">Интересы: </label>
+                    <br>
+                    <input id="interests" name="interests" type="checkbox">музыка<br>
+                    <input id="interests" name="interests" type="checkbox">фильмы<br>
+                    <input id="interests" name="interests" type="checkbox">программирование<br>
+                    <input id="interests" name="interests" type="checkbox">рисование<br>
+                    <input id="interests" name="interests" type="checkbox">чтение
+                </div>
+                <br>
+                <div class="container">
+                    <label for="info">Коротко обо мне:</label>
+                    <br>
+                    <textarea name="info" id="info" cols="43" rows="4" readonly="true">Введите данные</textarea>
+                </div>
+                <br>
+                <div class="container">
+                    <label for="photo" class="about-info">Фотография: </label>
+                    <input id="photo" name="photo" type="file">
+                </div>              
+        </fieldset>
+        <input class="reset" type="reset">
+        <!-- <button type="submit">Завершить регистрацию</button> -->
+        <button type="button">Завершить регистрацию</button>
+    </form>
+</body>
+</html>
