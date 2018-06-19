@@ -1,0 +1,47 @@
+html, body {
+	margin: 0;
+	height: 100%;
+}
+header, main, footer {
+	color: white;
+	font-size: 30px;
+}
+header {
+	height: 20%;
+	min-height: 100px;
+	background-image: url(../img/head_bg.png);
+	background-color: grey;
+	opacity: 0.2;
+}
+main {
+	background-color: green;
+	flex: 1 0 auto;
+	display: flex;
+}
+aside {
+	background-color: pink;
+	width: 30%;
+	min-width: 30%;
+}
+article {
+	background-color: grey;
+	padding: 15px 20px 10px 30px;
+}
+footer {
+	height: 200px;
+	min-height: 200px;
+	background-color: blue;
+}
+.container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+@media (max-width: 575px) {
+	main {
+		flex-direction: column;
+	}
+	aside {
+		width: 100%;
+	}
+}

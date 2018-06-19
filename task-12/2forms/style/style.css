@@ -1,6 +1,14 @@
 /*Пошук із настройками зробити на своїй сторінкі...*/
 
 /*відкрити окремі вкладки */
+
+/*div.global-wraper {
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}*/
+
 .name-field, .surname-field, .email-field, .password-field, .repassword, {
 	width: 700px;
 }
