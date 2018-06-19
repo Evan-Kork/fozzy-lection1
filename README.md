@@ -1,1 +1,2 @@
-# fozzy-lection1
+## Vladislav Lutsenko 7
+### http://gccompany.herokuapp.com/
