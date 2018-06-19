@@ -155,21 +155,48 @@ main{
 	border-radius: 40px;
 	margin-right: 30px;
 }
-.news .buttons{
+.buttons{
 	border-top: 1px solid #99f;
 	padding-top: 10px;
 	width: 90%;
+	height: 40px;
 	display: flex;
 	justify-content: space-between;
-	height: 40px;
+	align-items: center;
+	padding: 10px;
 }
 .buttons button{
+
 	border: none;
 	display: inline-block;
 	height: 30px;
 	min-width: 30px;
 	margin 10px;
+	background: none;
+	cursor: pointer;
+	color: #557;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
 }
+.buttons img{
+	width: 26px;
+	margin-right: 5px;
+}
+.views{
+	
+	font-size: 11px;
+	font-weight: bold;
+	color: #667;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.views img{
+	width: 20px;
+}
+
 aside{
 	min-width: 150px;
 	background-color: red;
