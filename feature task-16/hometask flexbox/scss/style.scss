@@ -420,6 +420,10 @@ $list-colors: #ff0033, #ff4200, #33cccc, #6666cc;
     position: relative;
     flex: 1 1 29%;
 
+
+    &:nth-child(3), &:last-child  {
+        margin-right: 0;
+    }
     .image {
         background-color: map-get($map: $colors, $key: gray_item );
         height: 70%;

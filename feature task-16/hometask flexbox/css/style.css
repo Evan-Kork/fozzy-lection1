@@ -372,6 +372,8 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:focus {
   margin-right: 30px;
   position: relative;
   flex: 1 1 29%; }
+  .gallery-box:nth-child(3), .gallery-box:last-child {
+    margin-right: 0; }
   .gallery-box .image {
     background-color: #e6eef0;
     height: 70%; }
@@ -572,36 +574,11 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:focus {
     text-transform: uppercase;
     color: #000000; }
 
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
   .grid-container {
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 540px;
-    max-width: 100%; }
-
-  .new-arrives .grid-container {
-    flex-direction: row; }
-
-  .new-arrives .grid-container > div {
-    width: 30%; } }
-@media (max-width: 768px) {
-  .grid-container {
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 800px;
-    max-width: 100%; }
-
-  .new-arrives .grid-container {
-    flex-direction: column; }
-
-  .red-friday .section-title {
-    width: 440px; }
-
-  .red-friday p {
-    widows: 335px; }
-
-  .submit input[type="submit"] {
-    width: 125px; } }
+    width: 1140px;
+    max-width: 100%;
+    padding: 0 15px; } }
 @media (max-width: 992px) {
   .grid-container {
     padding-right: 15px;
@@ -642,10 +619,35 @@ button.slick-prev, button.slick-prev:hover, button.slick-prev:focus {
 
   .slick-dots {
     right: 10px; } }
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   .grid-container {
-    width: 1140px;
-    max-width: 100%;
-    padding: 0 15px; } }
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 800px;
+    max-width: 100%; }
+
+  .new-arrives .grid-container {
+    flex-direction: column; }
+
+  .red-friday .section-title {
+    width: 440px; }
+
+  .red-friday p {
+    widows: 335px; }
+
+  .submit input[type="submit"] {
+    width: 125px; } }
+@media (max-width: 576px) {
+  .grid-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 540px;
+    max-width: 100%; }
+
+  .new-arrives .grid-container {
+    flex-direction: row; }
+
+  .new-arrives .grid-container > div {
+    width: 30%; } }
 
 /*# sourceMappingURL=style.css.map */
