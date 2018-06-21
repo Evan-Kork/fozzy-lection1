@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,IAAK;EACJ,KAAK,EAFE,IAAI;EAGX,QAAI;IACH,gBAAgB,EAAE,GAAG;EAEtB,SAAK;IACJ,gBAAgB,EAAE,KAAK",
+"sources": ["../sass/flexbox-page.scss"],
+"names": [],
+"file": "flexbox-page.css"
+}
