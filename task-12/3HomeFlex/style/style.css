@@ -2,7 +2,7 @@ body {
 	margin: 0;
 }
 .logo-header-up {
-	background: url(../img/logo.png) 100% 100% no-repeat;
+	background: url('../img/logo.png') 100% 100% no-repeat;
 	width: 355px;
 	height: 160px;
 	background-size: contain;
