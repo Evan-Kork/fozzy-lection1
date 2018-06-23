@@ -1,0 +1,105 @@
+body {
+    font: 11pt Arial, Helvetica, sans-serif; 
+    margin: 0; 
+    color: white;
+    background-repeat: no-repeat;
+    background-image: url(https://www.techaristocrat.com/wp-content/uploads/2017/10/Bad-Rabbit.jpg);
+   }
+   fieldset{
+      box-shadow: 0px 7px 16px -3px rgba(0, 0, 0, 0.5);
+      border-radius: 3px;
+      border: 1px solid #b12816;
+      background: linear-gradient(to right, #000 0%, #222 29%, #333 50%, #222 71%, #000 100%);
+      padding-bottom: 25px;
+   }
+
+   h1 {
+    text-align: center;
+    font-size: 36px; 
+    margin: 0; 
+    color: Silver; 
+    margin-top: 35px;
+    text-shadow: 0px 0px #000, 0 0 1em #000;
+   }
+   legend{
+    color: Gainsboro;
+    text-shadow: 1px 1px 2px black, 0 0 1em white;
+   }
+   div{
+    margin-top: 10px;
+   }
+   input[type="button"]:hover,
+   input[type="submit"]:hover,
+   button:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    cursor: pointer;
+   }
+   input[type="button"],
+   input[type="submit"],
+   button{
+    float: right;
+    padding: 5px 10px;
+    background: Silver;
+    border-width: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 150px;
+    margin: 0 10px;
+    box-shadow: 0px 7px 16px -3px rgba(0, 0, 0, 0.5);
+   }
+   input[type="text"],
+   input[type="password"],
+   input[type="email"],
+   input[type="date"],
+   input[type="number"],
+   textarea,
+   select,
+   input[type="file"]{
+    float: right;
+    display: inline-block;
+    width: 280px;
+    height: 25px;
+    border: 0;
+    outline: 0;
+    padding: 0 0 0 15px;
+    color: rgb(111, 119, 135);
+  text-decoration: none;
+   }
+
+   .left {  
+    border: 1px solid #333; 
+    width: 48%; 
+    margin: 0;
+   }
+   .right { 
+    width: 48%;
+    margin: 0;
+  }
+  .botton-form{
+    margin: 0;
+  }
+  .botton-form textarea{
+    width: 85%;
+    height: 75px;
+  }
+  .form-post{
+    padding: 2%;
+  }
+  #query{
+    width: 100%;
+    height:  30px;
+    font-size: 1.5em;
+  }
+  .google{
+    padding: 20px 20px 30px 30px;
+  }
+  .google select{
+    border: 1px solid black;
+  }
+  
+  .two-blocks{
+    display: flex;
+    flex-direction: row;
+  }

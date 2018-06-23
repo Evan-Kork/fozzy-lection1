@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>AbortController & AbortSignal</title>
+	<style type="text/css">
+		body{
+			background: #f2e8d5;
+		}
+		table{
+			width: 90%;
+			margin: 0 auto;
+			border-spacing: 4px 2px; 
+		}	 
+		tr{
+			margin-right: 4px;
+			max-width: 10em
+			top: 0px;
+			margin-bottom: 30px;
+			width: 30px;	
+		}
+		div{
+			list-style: none;
+    		transition: height 0.5s, line-height 0.5s, font-size 0.5s;
+		    position: relative;
+		    list-style: none;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+		    overflow: hidden;
+		    line-height: 32px;
+		    word-spacing: -2px;
+		    text-align: center;
+		    color: white;
+		    font-size: 1rem;
+		    vertical-align: middle;
+    		background-color: rgba(0,0,0,0.03);
+    		font-weight: 300;
+    		height: 100%;
+		}
+		td{
+			height: 30px;
+			padding: 0px 2px;
+			width: 10%;
+		}
+		.browsers{
+			background: #f2e8d5;
+			border-bottom-width: 4px;
+    		border-bottom-style: solid;
+ 			vertical-align: middle;
+		    text-align: center;
+		    color: black;
+		    max-width: 100%;
+		    height: 25px;
+		    width: 999px;
+		    padding: 0;
+
+		}
+		h4 {
+			font-family: sans-serif;
+		    font-weight: normal;
+		    color: black;
+		    line-height: 1.2;
+		    margin:0px;
+		}
+		.ie{
+			border-color: #385884;
+		}
+		.edge{
+			border-color: #385884;
+		}
+		.firefox{
+			border-color: #a36223;
+		}
+		.chrome{
+			border-color: #3f77bb;
+		}
+		.safari{
+			border-color: #666;
+		}
+		.opera{
+			border-color: #812323;
+		}
+		.ios_saf{
+			border-color: #333;
+		}
+		.op_mini{
+			border-color: #992626;
+		}
+		.ch_and{
+			border-color: #3f77bb;
+		}
+		.us{
+
+		}
+		.samsung{
+			border-color: #9753ff;
+		}
+		.red{
+			background-color: #c44230;
+		}
+		.y {
+		    background-color: #39b54a;
+		}
+		.u {
+		    background-color: #838383;
+		}
+		.brow_border{
+			outline: 4px solid #584E3B;
+		}
+		.future {
+		    opacity: .75;
+		}
+		.empty{
+			background: #f2e8d5;
+		}
+		.main_cl{
+			padding: 4px 1.7px;
+		}
+		.important{
+			color: #c44230;
+			position: relative;
+			font-size: 1.2rem;
+		    vertical-align: middle;
+		}
+		td{
+			
+		}
+		img{
+
+			width: 90%;
+		}
+	</style>
+</head>
+<body>
+	<h1>AbortController & AbortSignal</h1>
+	<table>
+		<thead>
+			<td class="browsers ie"><h4>IE</h4></td>
+			<td class="browsers edge"><h4>Edge <sup class="important">*</sup></h4></td>
+			<td class="browsers firefox"><h4>Firefox</h4></td>
+			<td class="browsers chrome"><h4>Chrome</h4></td>
+			<td class="browsers safari"><h4>Safari</h4></td>
+			<td class="browsers ios_saf"><h4>IOS Safari <sup class="important">*</sup></h4> </td>
+			<td class="browsers op_mini"><h4>Opera Mini <sup class="important">*</sup></h4></td>
+			<td class="browsers ch_and"><h4>Chrome for Android</h4></td>
+			<td class="browsers us"><h4>UC Browser for Android</h4></td>
+			<td class="browsers samsung"><h4>Samsung Internet</h4></td>
+		</thead>
+		<tr>
+			<td rowspan="2"><div></div></td>
+			<td ><div></div></td>
+			<td><div></div></td>
+			<td><div class="red">49</div></td>
+			<td rowspan="2"><div></div></td>
+			<td><div class="red">10.3</div></td>
+			<td rowspan="2"><div></div></td>
+			<td rowspan="2"><div></div></td>
+			<td rowspan="2"><div></div></td>
+			<td><div></div></td>
+		</tr>
+		<tr>
+			<td><div class="y">16</div></td>
+			<td><div class="y">59</div></td>
+			<td><div class="red">65</div></td>
+			<td><div class="red">11.2</div></td>
+			<td><div class="red">4</div></td>
+		</tr>
+		<tr>
+			<td class="main_cl"><div class="red brow_border">11</div></td>
+			<td class="main_cl"><div class="y brow_border">17</div></td>
+			<td class="main_cl"><div class="y brow_border">60</div></td>
+			<td class="main_cl"><div class="y brow_border">66</div></td>
+			<td class="main_cl"><div class="y brow_border">11.1</div></td>
+			<td class="main_cl"><div class="brow_border u">11.3</div></td>
+			<td class="main_cl"><div class="red brow_border">all</div></td>
+			<td class="main_cl"><div class="y brow_border">66</div></td>
+			<td class="main_cl"><div class="red brow_border">11.8</div></td>
+			<td class="main_cl"><div class="red brow_border">6.2</div></td>
+		</tr>
+		<tr>
+			<td  rowspan="3"><div class="empty"></div></td>
+			<td><div class="y future">18</div></td>
+			<td><div class="y future">61</div></td>
+			<td><div class="y future">67</div></td>
+			<td><div class="y future">12</div></td>
+			<td rowspan="3"><div class="empty"></div></td>
+			<td rowspan="3"><div class="empty"></div></td>
+			<td rowspan="3"><div class="empty"></div></td>
+			<td rowspan="3"><div class="empty"></div></td>
+			<td rowspan="3"><div class="empty"></div></td>
+		</tr>
+		<tr>
+			<td rowspan="2"><div class="empty"></div></td>
+			<td><div class="y future">62</div></td>
+			<td><div class="y future">68</div></td>
+			<td><div class="y future">IP</div></td>
+		</tr>
+		<tr>
+			<td><div class="empty"></div></td>
+			<td><div class="y future">69</div></td>
+			<td><div class="empty"></div></td>
+		</tr>
+	</table>
+	<h1>Original table</h1>
+	<center><img src="screenshot_table.png"></center>
+</body>
+</html>

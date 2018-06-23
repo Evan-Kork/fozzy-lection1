@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8"/>
 	<title>Lection 1</title>
-	<style>
-	html,body{
-		height: 100%;
-		width: 100%;
-		margin: 0;
-	}
-	.header{
-		color: blue;
-		text-decoration: underline;
-
-	}
-	.header-div .header{
-		text-decoration: none;
-	}
+	<style type="text/css">
+		.header{
+			color: blue;
+			text-decoration: underline;
+		}
+		div .header{
+			color: red;
+		}
+		html, body{
+			height: 100%;
+		}
 
 	</style>
-	<link rel="stylesheet" type="text/css" href="style/lesson1.css">
+	<link rel="stylesheet" type="text/css" href="styles/lesson1.css">
 </head>
 <body>
-	<h1 style="color: red; "><a href="#block-element">Header 1</a></h1>
+	<h1 style="color:orange;"><a href="#Block-element">=Down=</a></h1>
+	<p>
+		<a href="https://www.google.com/">go to google</a>
+	</p>
 	<div class="header-div">
-			<h2 class="header body"><a href="https://www.google.com" target="_blank">Header 2</a></h2>
+		<h2 class="header body">Header 2</h2>
 	</div>
 	<h2 class="header body">Header 2</h2>
 	<h3>Header 3</h3>
 	<h4>Header 4</h4>
 	<h5>Header 5</h5>
 	<h6>Header 6</h6>
-	<span>Span text </span>
-	<b>Bold Text</b>
+	<b>Bold text</b>
+	<strong>Strong text</strong>
 	<i>Italic text</i>
-	<u>Underline Text</u>
+	<u>Underline text</u>
+	<span>Span text</span>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -48,78 +49,65 @@
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<h1>Lists</h1>
-	<h3>Ordered list</h3>
-	<ol type="a">
-		<li>List Item 1</li>
-		<li>List Item 2</li>
-		<li>List Item 3
-			<ol type="I">
-				<li>item</li>
-				<li>item</li>
-				<li>item</li>
-				<li>item</li>
-				<li>item</li>
+	<h3>Ordered</h3>
+	<ol type="I">
+		<li>First</li>
+		<li>Second</li>
+		<li>Therd
+			<ol type="a">
+				<li>q</li>
+				<li>w</li>
+				<li>e</li>
+				<li>r</li>
+				<li>t</li>
+				<li>y</li>
 			</ol>
 		</li>
-		<li>List Item 4</li>
-		<li>List Item 5</li>
 	</ol>
-	<h3>Unordered</h3>
+	<h3>Unnumerated</h3>
 	<ul>
-		<li>Item</li>
-		<li>Item</li>
-		<li>Item</li>
-		<li>Item</li>
-		<li>Item</li>
+		<li>First</li>
+		<li>Second</li>
+		<li>Therd</li>
 	</ul>
 	<h3>Determine list</h3>
 	<dl>
-		<dt>Determine title</dt>
-		<dd>Description</dd>
-		<dt>Determine title</dt>
+		<dt>Title</dt>
 		<dd>Description</dd>
 	</dl>
-	<h1>table</h1>
-	<table width="100%" border="1">
+	<h1>Table</h1>
+	<table>
 		<thead>
 			<tr>
-				<th>Item 1</th>
-				<th>Item 2</th>
-				<th>Item 3</th>
-				<th>Item 4</th>
+				<th>Main left</th>
+				<th>Main Right</th>
 			</tr>
 		</thead>
-		<tbody>
-			<tr>
-				<td rowspan="2">Item 1</td>
-				<td colspan="3">Item 2</td>
-			</tr>
-			<tr>
-				<td>Item 2</td>
-				<td>Item 3</td>
-				<td>Item 4</td>
-			</tr>
-			<tr>
-				<td>Item 1</td>
-				<td>Item 2</td>
-				<td>Item 3</td>
-				<td>Item 4</td>
-			</tr>
-			<tr>
-				<td>Item 1</td>
-				<td>Item 2</td>
-				<td>Item 3</td>
-				<td>Item 4</td>
-			</tr>
-		</tbody>
+		<tr>
+			<td rowspan="2">Left</td>
+			<td>Right</td>
+		</tr>
+		<tr>
+			<td>Right</td>
+		</tr>
+		<tr>
+			<td colspan="2">Left</td>
+		</tr>
+		<tr>
+			<td>Left</td>
+			<td>Right</td>
+		</tr>
+		<tr>
+			<td>Left</td>
+			<td>Right</td>
+		</tr>
 	</table>
-	<h1 id="block-element">Block element</h1>
-	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	<h1 id="Block-element">Block element</h1>
+	<div class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-
 </body>
 </html>

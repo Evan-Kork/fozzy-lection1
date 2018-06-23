@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style></style>
+</head>
+<body>
+	<h1>Form method get</h1>
+	<form action="https://www.google.com/search" method="get" target="_blank" novalidate>
+		<fieldset>
+			<legend>My Google</legend>
+			<div>	
+				<label for="query">Goooogle</label>
+				<input type="text" name="q" id="query">
+				<button>Enter</button>
+			</div>
+		</fieldset>
+	</form>
+	<h1>Form method post</h1>
+	<form action="#" method="post">
+		<fieldset>
+			<legend>Main Information</legend>
+			<div>
+				<label for="name">Name</label>
+				<input type="text" value="name" id="name" name="name" >
+			</div>
+			<div>
+				<label for="sername">SerName</label>
+				<input type="text" id="sername" name="sername" disabled>
+			</div>
+			<div>
+				<label for="email">Email</label>
+				<input type="email" id="email" placeholder="test@mail.com" name="email">
+			</div>
+			<div>
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" required>
+			</div>
+			<div>
+				<label for="repassword">Repeat password</label>
+				<input type="password" id="repassword" name="repassword" required>
+			</div>
+		</fieldset>
+		<fieldset>	
+			<legend>Personal Information</legend>
+			<div>	
+				<label for="bithday">Bithday</label>
+				<input type="date" id="bithday" name="bithday">
+			</div>
+			<div>	
+				<label for="age">Age</label>
+				<input type="number" id="age" min="0" max="200" name="age" step="10">
+			</div>
+			<div>	
+				<label for="male">Male</label>
+				<input type="radio" name="male" id="male" value="male" checked>
+				<label for="female">Female</label>
+				<input type="radio" name="male" id="female" value="female">
+			</div>
+			<div>	
+				<label for="maried">Maried
+						<input type="checkbox" name="maried" id="maried">
+				</label>
+			</div>
+			<div>	
+				<label for="country">Country</label>
+				<select name="country" id="country">
+					<option value="" selected>Select Country</option>
+					<optgroup label="Europe">
+						<option value="ua">Ukraine</option>
+						<option value="gb">Great Britain</option>
+					</optgroup>
+					<optgroup label="America">	
+						<option value="us">USA</option>
+					</optgroup>
+				</select>
+			</div>
+			<div>	
+					<label for="photo">Photo</label>
+					<input id="photo" name="photo" type="file">
+			</div>
+		</fieldset>
+		<fieldset>	
+				<legend>Interests</legend>
+				<div>
+					<label for="aboutme">Information</label>
+						<textarea name="aboutme" id="aboutme" cols="30" rows="5" readonly>About me</textarea>
+				</div>
+		</fieldset>
+		<fieldset>	
+			<legend>Submit</legend>
+			<input type="button" value="Button input">
+			<input type="submit" value="Submit input">
+			<button>Button</button>
+		</fieldset>
+	</form>
+</body>
+</html>
