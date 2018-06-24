@@ -3,7 +3,7 @@
 $main_font: 'Georgia', sans-serif;
 $secondary_font: 'Cairo', sans-serif;
 $nav_font: 'Montserrat', sans-serif;
-$main_color: white; 
+$main_color: #ffffff; 
 $menu_display: inline-block;
 $icon-grey: #7a7a7a;
 $icon-white: #ffffff;
@@ -64,7 +64,7 @@ body {
                     width: 15px;
                     height: 15px;
                     position: absolute;
-                    color: white;
+                    color: #ffffff;
                     font-size: 9px;
                     text-align: center;
                     top: -3px;
@@ -109,7 +109,7 @@ body {
             .fa-angle-down {
                 color: $icon-grey;
                 &:hover {
-                    color: black;
+                    color: #000000;
                 }
             }
         }
@@ -126,7 +126,7 @@ body {
 }
 
 .top-nav .icon-white {
-    color: white;
+    color: #ffffff;
     
 }
 
@@ -173,7 +173,7 @@ input[type="search"] {
     .frame {
         width: 264px;
         height: 445px;
-        border: 1px solid black;
+        border: 1px solid #000000;
         z-index: 1;
         position: absolute;
         bottom: 0;
@@ -189,7 +189,6 @@ input[type="search"] {
             z-index: 2;
             overflow: visible;
         }
-   
     }
 }
 
@@ -199,7 +198,7 @@ input[type="search"] {
 
 button.slick-next {
     right: 23px;
-    background-image: url(../img/arrow-right.png); 
+    background-image: url('../img/arrow-right.png'); 
     background-size: 20px;
     &::before{
         display: none;
@@ -208,7 +207,7 @@ button.slick-next {
 
 button.slick-prev {
     left: 23px;
-    background-image: url(../img/arrow-left.png);
+    background-image: url('../img/arrow-left.png');
     background-size: 15px;
     &::before{
         display: none;
@@ -218,7 +217,7 @@ button.slick-prev {
 .slick-next, .slick-prev {
     width: 80px;
     height: 80px;
-    background-color: white;
+    background-color: #ffffff;
     opacity: 0.75;
     top: 61%;
     font-size: 0;
@@ -277,17 +276,13 @@ button.slick-prev {
         text-transform: lowercase;
         font-size: 14px;
     }
-
-  
-        
-    }
-
+}
 
 .button {
-    background: black;
+    background: #000000;
     width: 152px;
     height: 50px;
-    color: white;
+    color: #ffffff;
     text-transform: uppercase;
     font-family: $main_font;
     font-size: 14px;
@@ -345,7 +340,7 @@ button.slick-prev {
         background-color: map-get($map: $colors, $key: gray_item);
         height: 30%;
         margin: 0 15px 25px 0 ;
-        @include models(url(../img/model-1.png));
+        @include models(url('../img/model-1.png'));
         position: relative;
     }
 
@@ -353,7 +348,7 @@ button.slick-prev {
         background: #fbfafa;
         height: 60%;
         margin: 25px 15px 0 0 ;
-        @include models(url(../img/model-2.png));
+        @include models(url('../img/model-2.png'));
         position: relative;
        
     }
@@ -361,7 +356,7 @@ button.slick-prev {
         background: #f5f5f5;
         height:60%;
         margin: 0 0 25px 15px;
-        @include models(url(../img/model-3.png));
+        @include models(url('../img/model-3.png'));
         background-size: 40%;
         background-position: right bottom;
         h4 {
@@ -373,7 +368,7 @@ button.slick-prev {
         background: map-get($map: $colors, $key: gray_item);
         height: 30%;
         margin: 25px 0 0 15px;
-        @include models(url(../img/model-4.png));
+        @include models(url('../img/model-4.png'));
         h4 {
             padding-top: 45px;
         }
@@ -429,22 +424,22 @@ $list-colors: #ff0033, #ff4200, #33cccc, #6666cc;
         height: 70%;
 
         &.image-1 {
-            @include products(url(../img/product-1.png));
+            @include products(url('../img/product-1.png'));
         }
         &.image-2 {
-            @include products(url(../img/product-2.png));
+            @include products(url('../img/product-2.png'));
         }
         &.image-3 {
-            @include products(url(../img/product-3.png));
+            @include products(url('../img/product-3.png'));
         }
         &.image-4 {
-            @include products(url(../img/product-4.png));
+            @include products(url('../img/product-4.png'));
         }
         &.image-5 {
-            @include products(url(../img/product-5.png));
+            @include products(url('../img/product-5.png'));
         }
         &.image-6 {
-            @include products(url(../img/product-6.png));
+            @include products(url('../img/product-6.png'));
         }
     }
 
@@ -461,7 +456,7 @@ $list-colors: #ff0033, #ff4200, #33cccc, #6666cc;
         font-weight: bold;
         padding: 20px;
         height: 30%;
-        background-color: white;
+        background-color: #ffffff;
            
         .item-title {
             font-family: $secondary_font;
@@ -534,7 +529,7 @@ $list-colors: #ff0033, #ff4200, #33cccc, #6666cc;
 
 .design-yourself {
 
-    background-image: url(../img/design-yourself.png);
+    background-image: url('../img/design-yourself.png');
     background-size: contain;
     background-repeat: no-repeat;
     text-transform: uppercase;
@@ -585,7 +580,7 @@ $list-colors: #ff0033, #ff4200, #33cccc, #6666cc;
     .frame {
         width: 264px;
         height: 445px;
-        border: 1px solid black;
+        border: 1px solid #000000;
         z-index: 1;
         position: absolute;
         bottom: 0;
@@ -675,7 +670,7 @@ $list-colors: #ff0033, #ff4200, #33cccc, #6666cc;
             font-family: $main_font;
 
             &:hover {
-                color:black;
+                color:#000000;
             }
         }
         }
@@ -689,6 +684,10 @@ $list-colors: #ff0033, #ff4200, #33cccc, #6666cc;
     p {
         text-transform: uppercase;
         color: #000000;
+    }
+    
+    i:first-child {
+        padding-left: 20px;
     }
 }
 
@@ -704,16 +703,12 @@ $list-colors: #ff0033, #ff4200, #33cccc, #6666cc;
 
 @media (max-width: 992px) {
     .grid-container {
-      padding-right: 15px;
-      padding-left: 15px;
       width: 960px;
-      max-width: 100%;
     }
 
     .design-yourself .section-title {
         width:65%;
     }
-
 
     .red-friday p {
         width: 450px;
@@ -760,10 +755,8 @@ $list-colors: #ff0033, #ff4200, #33cccc, #6666cc;
 
   @media (max-width: 768px) {
     .grid-container {
-      padding-right: 15px;
-      padding-left: 15px;
+    padding: 0;
       width: 800px;
-      max-width: 100%;
     }
 
     .new-arrives .grid-container {
@@ -787,10 +780,7 @@ $list-colors: #ff0033, #ff4200, #33cccc, #6666cc;
 
   @media (max-width: 576px) {
     .grid-container {
-      padding-right: 15px;
-      padding-left: 15px;
       width: 540px;
-      max-width: 100%;
     }
     
     .new-arrives .grid-container {
