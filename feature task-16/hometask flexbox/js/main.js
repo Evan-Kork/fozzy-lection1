@@ -2,6 +2,9 @@
 $(document).ready(function(){
     $('.carousel').slick({
       dots: true,
+      autoplaySpeed: 3000,
+      slidesToScroll: 1,
+      autoplay: true,
       responsive: [
         {
           breakpoint: 1024,
