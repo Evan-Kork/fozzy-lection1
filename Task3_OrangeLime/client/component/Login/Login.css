@@ -1,0 +1,16 @@
+.StartPage {
+    height: 1000px;
+    margin-top: 150px ;
+    text-align: center;
+}
+
+.InputContainer {
+    margin-top: 100px;
+    color: #FFD600;
+}
+
+.ButtonContainer {
+    margin: 12px;
+    display: inline-block;
+    color: #FF1744
+}
