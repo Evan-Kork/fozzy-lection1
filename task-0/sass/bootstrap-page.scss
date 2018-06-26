@@ -21,6 +21,10 @@ html, body {
 		padding: 15px;
 	}
 }
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
 main {
 	flex: 1 0 auto;
 }
@@ -28,4 +32,9 @@ main {
 	background-color: grey;
 	border: 1px solid black;
 	color: white;
+}
+footer {
+	background-color: black;
+	color: white;
+	margin-top: 10px;
 }
