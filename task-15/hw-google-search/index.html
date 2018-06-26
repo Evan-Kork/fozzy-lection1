@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<script type="text/javascript" src="scripts/script.js"></script>
+	<title>Google search</title>
+</head>
+<body>
+	<div class="container">
+		<form action="https://www.google.com.ua/search" name="google-search" method="get" target="_blank" id="g-search">
+			<label for="q">Query: </label>
+			<input type="text" name="q" id="query"><br>
+			<p>Additional options</p>
+			<input type="radio" class="rad-add" id="r1" name="tbm" checked >
+			<label class="opt" for="r1">All</label>
+			<input type="radio" class="rad-add" id="r2" name="tbm" value="isch" >
+			<label class="opt" for="r2">Images</label>
+			<input type="radio" class="rad-add" id="r3" name="tbm">
+			<label class="opt" for="r3">Maps</label>
+			<input type="radio" class="rad-add" id="r4" name="tbm" value="vid" >
+			<label class="opt" for="r4">Videos</label>
+			<input type="radio" class="rad-add" id="r5" name="tbm" value="nws" >
+			<label class="opt" for="r5">News</label>
+			<input type="radio" class="rad-add" id="r6" name="tbm" value="bks" >
+			<label class="opt" for="r6">Books</label>
+			<input type="radio" class="rad-add" id="r7" name="tbm">
+			<label class="opt" for="r7">Flights</label>
+			<input type="radio" class="rad-add" id="r8" name="tbm" value="fin" >
+			<label class="opt" for="r8">Finance</label><br><br>
+			<button onclick="QueryType()">Search</button>
+		</form>
+	</div>
+</body>
+</html>
