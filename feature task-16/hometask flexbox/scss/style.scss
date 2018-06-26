@@ -512,7 +512,7 @@ $list-colors: #ff0033, #ff4200, #33cccc, #6666cc;
     text-transform: uppercase;
     position: relative;
     padding-top: 100px;
-
+    
     .button {
         width: 153px;
         margin-bottom: 60px;
@@ -524,14 +524,14 @@ $list-colors: #ff0033, #ff4200, #33cccc, #6666cc;
         z-index: 1;
         position: absolute;
         bottom: 0;
-        left: 50%;
+        left: 40%;
     }
 
     img{
         height: 600px;
         position: absolute;
         bottom: 0;
-        left: 40%;
+        left: 35%;
         z-index: 3;
     }
 
@@ -558,22 +558,24 @@ $list-colors: #ff0033, #ff4200, #33cccc, #6666cc;
         font-size: 14px;
     }
 
-     .submit-form {
+    .submit-form {
         height: 60px;
         text-align: center;
-     }
+    }
     input[type="text"] {
         display: inline-block;
-        width: 50%;
-        height: 90%;
+        width: 70%;
+        height: 100%;
+        vertical-align: middle;
     }
 
     input[type="submit"] {
         @extend .button;
-        width: 140px;
+        width: 30%;
         height: 100%;
         margin-left: -5px;
         border: none;
+        vertical-align: middle;
     }
 
     input::-webkit-input-placeholder {
@@ -617,6 +619,49 @@ $list-colors: #ff0033, #ff4200, #33cccc, #6666cc;
     
     i:first-child {
         padding-left: 20px;
+    }
+}
+
+@media (max-width: 968px) {
+    .top-nav ul li {
+        margin: 0;
+    }
+
+    .logo {
+        margin: 50px 0;
+    }
+
+    .menu-bar ul {
+        padding: 0;
+    }
+
+    .menu-bar ul li a {
+        font-size: 14px;
+    }
+
+    .input-group input[type="search"] {
+        font-size: 14px;
+    }
+
+    .carousel .slider-box .slider .info-collection {
+        padding: 100px 0;
+    }
+
+    .design-yourself .section-title {
+        width: 200px;
+    }
+
+    .red-friday p {
+        width: 450px;
+    }
+
+    .submit-text {
+        text-align: center;
+    }
+
+    .submit-form {
+        width: 60%;
+        margin: 0 auto;
     }
 }
 

@@ -451,12 +451,12 @@ body {
     z-index: 1;
     position: absolute;
     bottom: 0;
-    left: 50%; }
+    left: 40%; }
   .red-friday img {
     height: 600px;
     position: absolute;
     bottom: 0;
-    left: 40%;
+    left: 35%;
     z-index: 3; }
   .red-friday p {
     text-transform: none;
@@ -479,13 +479,15 @@ body {
     text-align: center; }
   .submit input[type="text"] {
     display: inline-block;
-    width: 50%;
-    height: 90%; }
+    width: 70%;
+    height: 100%;
+    vertical-align: middle; }
   .submit input[type="submit"] {
-    width: 140px;
+    width: 30%;
     height: 100%;
     margin-left: -5px;
-    border: none; }
+    border: none;
+    vertical-align: middle; }
   .submit input::-webkit-input-placeholder {
     color: #bbbbbb;
     font-family: 'Cairo', sans-serif;
@@ -514,5 +516,37 @@ body {
     color: #000000; }
   .footer i:first-child {
     padding-left: 20px; }
+
+@media (max-width: 968px) {
+  .top-nav ul li {
+    margin: 0; }
+
+  .logo {
+    margin: 50px 0; }
+
+  .menu-bar ul {
+    padding: 0; }
+
+  .menu-bar ul li a {
+    font-size: 14px; }
+
+  .input-group input[type="search"] {
+    font-size: 14px; }
+
+  .carousel .slider-box .slider .info-collection {
+    padding: 100px 0; }
+
+  .design-yourself .section-title {
+    width: 200px; }
+
+  .red-friday p {
+    width: 450px; }
+
+  .submit-text {
+    text-align: center; }
+
+  .submit-form {
+    width: 60%;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */
