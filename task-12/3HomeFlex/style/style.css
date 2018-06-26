@@ -14,7 +14,7 @@ body {
 
 }
 #header {
-	background-image: url(../img/head_bg.png);
+	background-image: url('../img/head_bg.png');
 	background-repeat: no-repeat;
 	height: 100%;
 	width: 100%;
