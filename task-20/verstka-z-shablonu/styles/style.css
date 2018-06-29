@@ -1,0 +1,279 @@
+/*COMMON STYLES*/
+
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+header a {
+    text-decoration:none;
+}
+header a:hover {
+    text-decoration:none;
+}
+.container {
+    margin:0 auto;
+}
+.top-navbar {
+    height:40px;
+}
+.top-navbar .navbar-nav {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    padding:0 10px;
+    margin:0 auto;
+}
+.top-navbar .nav-item {
+    font-size: 14px;
+    padding:4px;
+    float:left;
+}
+.top-navbar .nav-link .telephone {
+    color:white;
+}
+.top-navbar .nav-link .telephone:hover {
+    color:white;
+}
+
+/*HEADER STYLES*/
+
+header {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+header .logo .clothes {
+    color:darkslategray;
+    font-size:62px;
+}
+header .logo .clothes .big-letter {
+    color:darkorange;
+}
+header .logo .online-store {
+    color:gray;
+    font-size: 20px;
+    margin-left:5px;
+    margin-top:-15px;
+}
+header .links-and-basket, header .links-and-basket a {
+    font-size:13px;
+    color:gray;
+}
+header .links-and-basket .links ul {
+    margin:10px;
+    padding: 0;
+}
+header .links-and-basket .links li {
+    display:inline-block;
+    margin:3px;
+}
+header .links-and-basket .links a:hover {
+    color:darkorange;
+}
+header .links-and-basket .basket img {
+    width:45px;
+    height:35px;
+    margin:5px 10px;
+    float:left;
+}
+header .links-and-basket .basket .basket-description{
+    float: left;
+    margin:2px;
+}
+header .links-and-basket .basket .basket-description .basket-text {
+    font-size:15px;
+    color:black;
+}
+header .links-and-basket .basket .basket-description .product-count {
+    font-size:15px;
+    color:darkorange;
+}
+
+/*MAIN STYLES*/
+
+main nav {
+    box-shadow:0 1px silver;
+    margin:10px -10px;
+}
+main nav .navbar-toggler {
+    font-size:16px;
+    margin:0 auto;
+}
+main nav .btn-primary {
+    background-color:transparent;
+    border:none;
+    color:gray;
+    font-size: 14px;
+    padding:10px 20px;
+    margin:-5px 5px;
+}
+main nav .btn-primary:hover {
+    padding:10px 20px;
+    margin:-8px 5px;
+    border-radius:0px;
+}
+@media (max-width:991px) {
+    main nav .btn-primary:hover {
+        padding:10px 20px;
+        margin:-5px 5px;
+        background-color:transparent;
+        color:darkorange;
+        border:none;
+    }
+}
+main .btn:hover {
+    background-color:rgb(77, 66, 66);
+    color:white;
+    border-bottom:3px solid orange;
+    margin-bottom:-3px;
+    padding-bottom:-3px;
+}
+
+main .carousel-caption {
+    color:black;
+    text-align: left;
+    width:28%;
+    text-align:justify;
+    font-size:12px;
+}
+main .carousel-control-prev-icon, main .carousel-control-next-icon {
+    background-color:gray;
+}
+
+/*SALES STYLES*/
+
+main .sales {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin:20px 0;
+    text-align: center;
+}
+main .sales img {
+    width:100%;
+}
+
+/*ARTICLE STYLES*/
+
+main article hr {
+    background-color:darkslategray;
+    height:1px;
+}
+main article .card {
+    color:gray;
+    font-size:13px;
+    text-align: justify;
+    border:0;
+}
+main article .card .card-body {
+    margin:20px 0;
+    padding: 0;
+}
+main article .card .card-title a {
+    color:darkorange;
+}
+main article .card .card-links {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    text-align:center;
+}
+main article .card .card-links .to-basket {
+    background-color:darkslategray;
+    min-width:100px;
+}
+main article .card .card-links .product-info {
+    background-color:darkorange;
+    min-width:100px;
+}
+main article .card .card-links .to-basket:hover {
+    background-color:darkorange;
+    color:white;
+    text-decoration:none;
+}
+main article .card .card-links .product-info:hover {
+    background-color:darkslategray;
+    color:white;
+    text-decoration:none;
+}
+main article .card .card-links .to-basket, .product-info{
+    color:white;
+    padding:4px 10px;
+    margin-bottom:5px;
+}
+@media (max-width:1199px) {
+    main article .card .card-links .to-basket, .product-info{
+        width:100%;
+    }
+}
+@media (max-width:991px) {
+    main article .card .card-links .to-basket, .product-info{
+        width:45%;
+    }
+}
+main article .card .price {
+    font-size: 19px;
+    color:black;
+}
+main article .card .card-title a:hover {
+    color:rgb(77, 66, 66);
+    text-decoration: none;
+}
+
+/*FOOTER STYLES*/
+
+footer {
+    margin-top:50px;
+    font-size:13px;
+    color:gray;
+    display: flex;
+    justify-content: space-between;
+}
+footer a {
+    text-decoration:none;
+    color:gray;
+}
+footer a:hover {
+    text-decoration:none;
+    color:darkorange;
+}
+footer ul {
+    text-align: left;
+}
+footer ul li {
+    list-style-type: none;
+    padding:0;
+    margin:0; 
+}
+footer ul li:before {
+    content: "> "; 
+    color:darkorange;
+}
+footer .bottom-search {
+    margin:10px 0;
+}
+footer .bottom-search .form-control {
+    width:60%;
+    height:30px;
+    font-size: 12px;
+    border-radius: 0;
+}
+footer .bottom-search .btn {
+    width:30%;
+    height:30px;
+    padding:0;
+    font-size: 13px;
+    background-color:darkslategray;
+    border-radius: 0;
+    border:none;
+    color:white;
+}
+.copywrite {
+    color:gray;
+    font-size:13px;
+    padding-bottom:20px;
+}
