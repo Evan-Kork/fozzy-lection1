@@ -1,0 +1,29 @@
+.block {
+  background-color: grey;
+  border: 1px solid #000;
+  color: white; }
+
+html, body {
+  height: 100%; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
+main {
+  flex: 1 0 auto; }
+
+.logo, .logo img {
+  height: 100%; }
+
+.header-menu {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between; }
+  .header-menu li {
+    display: inline-block;
+    padding: 15px; }
+
+/*# sourceMappingURL=style.css.map */
