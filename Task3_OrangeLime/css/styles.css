@@ -1,0 +1,11 @@
+.page h1 {
+  padding: 6px; }
+
+.page a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none; }
+
+.page .inner {
+  padding: 6px;
+  background-color: red; }

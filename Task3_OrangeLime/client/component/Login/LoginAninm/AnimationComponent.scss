@@ -1,0 +1,97 @@
+$limeColor :#76FF03;
+
+.main {
+  position: relative;
+  margin: 0 auto;
+  bottom: 500px;
+
+  .anim, .anim2, .anim3, .anim4, .anim5, .anim6{
+    position: relative;
+    animation-name: stretch;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    background-color: $limeColor;
+    margin: 0 auto;
+  }
+
+  .anim, .anim3{
+    animation-duration: 2s;
+  }
+
+  .anim, .anim2{
+    animation-delay: 2s;
+  }
+
+  .anim{
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    top: 30px;
+    margin: 0 auto;
+  }
+
+  .anim2{
+
+    height: 300px;
+    width: 300px;
+    right: 150px;
+    border-radius: 300px;
+    animation-duration: 5s;
+  }
+
+  .anim3{
+    position: relative;
+    bottom: 400px;
+    right: 100px;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    animation-delay: 4s;
+  }
+
+  .anim4{
+    position: relative;
+    bottom: 250px;
+    height: 250px;
+    width: 250px;
+    border-radius: 250px;
+    animation-duration: 4s;
+    animation-delay: 1s;
+  }
+  .anim5{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    bottom: 550px;
+    left: 150px;
+    animation-duration: 9s;
+    animation-delay: 7s;
+  }
+  .anim6{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    bottom: 900px;
+    left: 110px;
+    animation-duration: 3s;
+    animation-delay: 0s;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(1);
+    border-radius: 100%;
+  }
+  50% {
+
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
