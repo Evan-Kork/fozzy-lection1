@@ -1,0 +1,62 @@
+body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	header{
+		display: flex;
+		background-color: #aaa;
+	.search-panel{
+		display: flex;
+		height: 30px;
+	}
+  	}
+  	nav{
+  		width: 100%;
+  		background-color: #aee;
+  		padding: 0;
+  		ul{
+  			display: block;
+  			list-style-type: none;
+  			
+  			padding: 0;
+  			margin: 0;
+  			
+  			height: 100%;
+  		}
+  	}
+  	main{
+  		background-color: #aea;
+  		
+  		.news{
+  			img{
+  				width: 100px;
+  			}
+  		}
+  	}
+  	aside{
+  		background-color: #aae;
+		ul{
+  			display: block;
+  			list-style-type: none;
+  			
+  			padding: 0;
+  			margin: 0;
+  			
+  			height: 100%;
+  			li{
+  				padding: 12px;
+  				&:hover{
+  					border-left: 2px solid black;
+  					margin-left: -2px;
+
+  				}
+  			}
+  		}
+  	}
+  	footer{
+  		background-color: #eea;
+  	}
+
+}
+
+

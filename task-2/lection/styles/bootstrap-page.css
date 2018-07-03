@@ -1,0 +1,33 @@
+html, body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.logo {
+  width: 100px;
+}
+.logo img {
+  width: 100%;
+}
+
+.header-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+}
+.header-menu li {
+  display: inline-block;
+  padding: 15px;
+}
+
+main {
+  flex-grow: 1 0 auto;
+}
+
+/*# sourceMappingURL=lection/styles/bootstrap-page.css.map */

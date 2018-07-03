@@ -1,0 +1,53 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+body header {
+  display: flex;
+  background-color: #aaa;
+}
+body header .search-panel {
+  display: flex;
+  height: 30px;
+}
+body nav {
+  width: 100%;
+  background-color: #aee;
+  padding: 0;
+}
+body nav ul {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+body main {
+  background-color: #aea;
+}
+body main .news img {
+  width: 100px;
+}
+body aside {
+  background-color: #aae;
+}
+body aside ul {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+body aside ul li {
+  padding: 12px;
+}
+body aside ul li:hover {
+  border-left: 2px solid black;
+  margin-left: -2px;
+}
+body footer {
+  background-color: #eea;
+}
+
+/*# sourceMappingURL=css/style.css.map */

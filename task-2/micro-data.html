@@ -3,13 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Micro-data!</title>
-	<link rel="stylesheet" href="animation.css">
+	<link rel="stylesheet" href="micro-data.css">
 </head>
 <body>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	
-	<div id="anim1">-------
-		
+	<h1>Micro-data</h1>
+	<div itemscope itemtype=http://schema.org/Person>
+		<span itemprop="additionalName">Fox</span>
+		<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+
+			<span itemprop="addressCountry">Veloland</span>
+			<span itemprop="postalCode">20202</span>
+			
+		</div>
 	</div>
+
+
 </body>
 </html>
