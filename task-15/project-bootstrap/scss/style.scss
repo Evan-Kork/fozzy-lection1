@@ -1,0 +1,281 @@
+@font-face {
+	font-family: 'HammersmithOne';
+	src: url('../fonts/HammersmithOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'PlayfairDisplay-Black';
+	src: url('../fonts/PlayfairDisplay-Black.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'PlayfairDisplay-Bold';
+	src: url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'RobotoBlack';
+	src: url('../fonts/Roboto-Black.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'RobotoLight';
+	src: url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'RobotoRegular';
+	src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'RobotoThin';
+	src: url('../fonts/Roboto-Thin.ttf') format('truetype');
+}
+
+.axis-3 {
+	z-index: 2;
+}
+
+.brand-font {
+	font-family: 'RobotoThin';
+}
+
+.text-turquoise {
+	color: #02DFD0;
+}
+
+.burger-icon {
+	width: 45px;
+	height: 50px;
+}
+
+#burger:checked + .burger-menu {
+	display: block;
+	background-color: rgba(77, 61, 115, 0.85);
+}
+
+.burger-menu {
+	.burger-inside {
+		.home-element {
+			.nav-action {
+				color: #02DFD0;
+			}
+		}
+	}
+}
+
+.nav-list-font {
+	font-family: 'RobotoBlack';
+	letter-spacing: 0.4px;
+}
+
+.input-font {
+	font-family: 'RobotoLight';
+}
+
+.border-input {
+	border-color: #E5E5E5;
+}
+
+.focus-customize:focus {
+	border-color: #00E0D0;
+	color: #00E0D0;
+}
+
+/*.display-navbar {
+	top: 0;
+	z-index: -1;
+}*/
+
+.message-area {
+	resize: none;
+	height: 12em;
+}
+
+.carousel-navigation {
+		margin-bottom: 70px;
+
+	.dot {
+		width: 10px;
+		height: 10px;
+		margin-left: 2.5px;
+		margin-right: 2.5px;
+		background-color: rgba(0,0,0,0);
+		border: 1px solid #BBBABC;
+		border-radius: 10px;
+	}
+
+	.dot.active {
+		border-color: #00E0D0;
+	    background-color: #00E0D0;
+	}
+}
+
+.img-bg:after {
+	content: " ";
+	background-color: rgba(77, 61, 115, 0.85);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.relative-alignment {
+	bottom: 25%;
+    left: 24.5%;
+    right: 24.5%;
+}
+
+.caption-header, .form-title {
+	font-family: 'PlayfairDisplay-Black'
+}
+
+.caption-separator {
+	border: 1px solid red;
+	width: 50px;
+	height: 1px;
+}
+
+.border-turquoise {
+	border: 0.5px solid #00E0D0;
+}
+
+.text-turquoise {
+	color: #00E0D0;
+}
+
+.caption-desc {
+	font-family: 'RobotoLight';
+	line-height: 24px;
+	letter-spacing: 0.16px;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+.button-customize {
+	font-family: 'HammersmithOne';
+	width: 120px;
+	height: 40px;
+	border-radius: 1px;
+}
+
+.story-sec {
+	padding-top: 72px;
+}
+
+.story-title {
+	font-family: 'PlayfairDisplay-Bold';
+	font-size: 22px;
+	letter-spacing: 0.8px;
+}
+
+.story {
+	font-family: 'RobotoLight';
+	font-size: 14px;
+	letter-spacing: 0.48px;
+}
+
+.story-button {
+	margin-bottom: 72px;
+}
+
+.footer {
+	background-image: url(../assets/footer-bg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-top: 75px;
+}
+
+.footer:before {
+	content: " ";
+	background-color: rgba(77, 61, 115, 0.85);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.footer-about {
+	letter-spacing: 0.4px;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: 'RobotoLight';
+}
+
+.footer-links {
+	list-style-type: none;
+	font-family: 'RobotoRegular';
+}
+
+.contact-column {
+	left: 5%;
+}
+
+.footer-title {
+	font-family: 'RobotoBlack';
+	letter-spacing: 0.8px;
+}
+
+.title-padding {
+	padding-top: 40px;
+}
+
+.contact-info {
+	font-size: 14px;
+	letter-spacing: 0.4px;
+	line-height: 26px;
+	font-family: 'RobotoLight';
+}
+
+.subscribe-column {
+	left: 9%;
+}
+
+.title-padding .subscribe-field {
+	font-size: 14px;
+	letter-spacing: 0.8px;
+	line-height: 26px;
+	font-family: 'RobotoLight';
+	color: rgba(158, 152, 176, 0.85);
+	border-color: rgba(158, 152, 176, 0.85);
+	width: 60%;
+}
+
+.subscribe-btn {
+	background-color: rgba(158, 152, 176, 0.85);
+}
+
+.icon.fb {
+	padding: 9.5px 13.5px;
+}
+
+.icon.tw {
+	padding: 11.5px 10px;
+}
+
+.icon.dr {
+	padding: 9px;
+}
+
+.icon.inst {
+	padding: 9.5px;
+}
+
+.icon.ggl {
+	padding: 10px 9.5px;
+}
+
+.icon.yt {
+	padding: 11.5px 8.5px;
+}
+
+.copyright {
+	font-family: 'RobotoRegular';
+	font-size: 14px;
+	letter-spacing: 0.4px;
+	line-height: 26px;
+}
