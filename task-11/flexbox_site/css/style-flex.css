@@ -26,7 +26,7 @@ body{
 }
 nav{
 	margin: auto;
-	width: 800px;
+	width: 801px;
 	height: 100px;
 }
 .topnav{
@@ -59,7 +59,7 @@ nav{
 	padding-bottom: 40px;
 	width: 70%;
 	display: flex;
-	justify-content: space-between;;
+	justify-content: space-between;
 	text-align: center;
 	flex-wrap: wrap;
 }
