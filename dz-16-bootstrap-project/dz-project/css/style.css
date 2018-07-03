@@ -55,13 +55,14 @@ button.btn, input[type="button"], a.btn {
   text-transform: uppercase;
   font-size: 14px;
   color: #ffffff;
-  display: block;
-  margin: 0 auto;
   margin-top: 10px;
   text-decoration: none; }
   button.btn:hover, button.btn:active, input[type="button"]:hover, input[type="button"]:active, a.btn:hover, a.btn:active {
     outline: none;
     background-color: #252525; }
+
+.col-form-label {
+  font-family: "Worksans", sans-serif; }
 
 .contact-form {
   padding-top: 100px; }
@@ -140,7 +141,8 @@ header {
   header .navbar-dark .navbar-nav .btn.sign-up {
     padding: 0;
     margin: 0;
-    display: inline; }
+    display: inline;
+    width: unset; }
     header .navbar-dark .navbar-nav .btn.sign-up .nav-link:hover {
       color: #ffffff; }
     header .navbar-dark .navbar-nav .btn.sign-up.white-btn {
@@ -584,9 +586,6 @@ footer {
         width: 235px;
         margin: 0 auto;
         justify-content: space-evenly; } }
-    @media (max-width: 768px) {
-      footer .post-box {
-        width: 330px; } }
     @media (max-width: 576px) {
       footer .post-box {
         width: 100%; } }
@@ -600,9 +599,6 @@ footer {
       @media (max-width: 1200px) {
         footer .post-box .post-item {
           flex-basis: 38%; } }
-      @media (max-width: 768px) {
-        footer .post-box .post-item {
-          flex-basis: 23%; } }
 
 .projects.grey-bg .button-group.filters-button-group {
   text-align: center;

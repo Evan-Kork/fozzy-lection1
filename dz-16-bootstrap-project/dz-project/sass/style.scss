@@ -72,8 +72,6 @@ button.btn, input[type="button"], a.btn {
     text-transform: uppercase;
     font-size: 14px;
     color: #ffffff;
-    display: block;
-    margin: 0 auto;
     margin-top: 10px;
     text-decoration: none;
 
@@ -81,6 +79,10 @@ button.btn, input[type="button"], a.btn {
         outline: none;
         background-color: #252525;
     }
+}
+
+.col-form-label {
+    font-family: $secondary_font;
 }
 
 .contact-form {
@@ -206,6 +208,7 @@ header {
             padding: 0;
             margin: 0;
             display: inline;
+            width: unset;
 
             & .nav-link:hover {
                 color: #ffffff;
@@ -831,10 +834,6 @@ footer {
             justify-content: space-evenly;
         }
 
-        @media (max-width: 768px) {
-            width: 330px;
-        }
-
         @media (max-width: 576px) {
             width: 100%;            
         }
@@ -848,10 +847,6 @@ footer {
 
             @media (max-width: 1200px) {
                 flex-basis: 38%;
-            }
-
-            @media (max-width: 768px) {
-                flex-basis: 23%;
             }
         }
     }
