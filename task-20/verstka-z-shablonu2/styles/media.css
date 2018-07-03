@@ -1,0 +1,45 @@
+
+@media (max-width:991px) {
+    main article .card .card-links .to-basket, .product-info{
+        width:45%;
+    }
+}
+@media (max-width:767px) {
+    header nav .nav-item {
+        background-color:transparent;
+        color:darkslategray!important;
+        font-size: 15px;
+        font-family:'Times New Roman', Times, serif;
+        border-right:2px solid white;
+    }
+    header nav .navbar-nav a {
+        padding:16px 42px!important;
+        margin:-8px 0!important;
+    } 
+    header nav .navbar-nav a:hover {
+        background-color:transparent!important;
+        color:darkorange!important;
+        border-bottom:4px solid transparent;
+        padding-bottom:12px!important;
+    }
+    main .btn:hover {
+        background-color:transparent!important;
+    }
+    main article .card img {
+        width:250px;
+        margin:0 auto;
+    }
+    main article .card-body {
+        width:90%;
+        margin:15px auto!important;
+    }
+}
+@media (max-width:575px)
+{
+    hr {
+        display:none;
+    }
+    .links-and-basket {
+        margin:20px auto 0 auto!important;
+    }
+}

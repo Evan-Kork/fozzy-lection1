@@ -1,4 +1,4 @@
-/*common styles*/
+/* common styles */
 body {
     padding:0;
     margin:0;
@@ -8,34 +8,19 @@ body a, body a:hover {
     text-decoration:none;
 }
 /* top navbar */
-.silver-link {
-    color:silver!important;
-}
-.silver-link:hover {
-    color:darkorange!important;
-}
-.telephone, .telephone:hover {
-    color:white!important;
-    margin-right:5px;
-}
-nav .d-flex {
-    padding:10px;
-    margin:0 auto;
-}
 nav .nav-item {
     font-size:14px;
 }
-nav .p-2 {
-    list-style:none;
+.nav-link:hover {
+    color:darkorange!important;
 }
-
-/*HEADER STYLES*/
-
-header {
-    margin:0 auto;
+.telephone, .telephone:hover {
+    font-size:16px!important;
+    color:white!important;
 }
-
+/* header styles*/
 header .logo .clothes {
+    font-family: 'Andada', serif;
     color:darkslategray;
     font-size:62px;
 }
@@ -44,33 +29,22 @@ header .logo .clothes .big-letter {
 }
 header .logo .online-store {
     color:silver;
-    font-size: 20px;
+    font-size: 18px;
     margin-left:5px;
-    margin-top:-15px;
-}
-header .links-and-basket, header .links-and-basket {
-    margin:0 auto;
+    margin-top:-10px;
 }
 header .links-and-basket, header .links-and-basket a {
     font-size:13px;
     color:gray;
-    margin:2px;
+    margin-left:5px;
 }
-header .links-and-basket .links ul {
-    margin-left:10px;
-    padding: 0;
-}
-header .links-and-basket .links li {
-    display:inline-block;
-    margin-left:3px;
-}
-header .links-and-basket .links a:hover {
+header .links-and-basket a:hover, 
+header .links-and-basket .basket i,
+header .links-and-basket .basket .basket-description .product-count {
     color:darkorange;
 }
 header .links-and-basket .basket i {
-    color:darkorange;
-    font-size:45px;
-    margin:0 15px;
+    font-size:48px;
     float:left;
 }
 header .links-and-basket .basket i:hover {
@@ -78,63 +52,48 @@ header .links-and-basket .basket i:hover {
 }
 header .links-and-basket .basket .basket-description{
     float: left;
-    margin:2px;
+    margin:5px 10px;
 }
 header .links-and-basket .basket .basket-description .basket-text {
     font-size:15px;
     color:black;
 }
-header .links-and-basket .basket .basket-description .product-count {
-    color:darkorange;
-}
-
-/*MAIN STYLES*/
-
-main nav {
-    width:100%;
+/*menu categories*/
+header nav {
     box-shadow:0 1px silver;
-    margin:10px 0!important;
+    margin:15px 0!important;
 }
-main nav .nav-item {
+header nav .navbar {
+    height:100%;
+    padding:0px!important;
+    margin:0px!important;
+}
+header nav .nav-item {
     background-color:transparent;
-    border:none;
     color:darkslategray!important;
     font-size: 15px;
-    text-align:center;
     font-family:'Times New Roman', Times, serif;
-    padding:10px 20px;
-    margin:-9px 10px;
+    border-right:2px solid white;
 }
-main nav .navbar-nav .nav-item:hover {
+header nav .navbar-nav a {
+    padding:16px 42px!important;
+    margin:-8px 0!important;
+    border-right:1px solid transparent;
+} 
+header nav .navbar-nav a:hover {
     background-color:darkslategray!important;
-}
-main nav .navbar-nav .nav-item a:hover {
     color:white!important;
+    border-bottom:4px solid darkorange;
+    padding-bottom:12px!important;
+    border-right:1px solid transparent;
 }
-main nav .navbar-toggler {
-    font-size:14px;
-    width:200px;
-    margin:10px auto;
+header nav .navbar-toggler {
+    font-size:16px;
+    width:90%;
+    margin:0 auto;
+    background-color:whitesmoke;
 }
-main .navbar {
-    margin:10px auto;
-}
-
-main .btn:hover {
-    background-color:rgb(77, 66, 66);
-    color:white;
-    border-bottom:3px solid orange;
-    margin-bottom:-3px;
-    padding-bottom:-3px;
-}
-main nav .btn:active {
-    background-color:rgb(77, 66, 66);
-    color:white;
-    border-bottom:3px solid orange;
-}
-
-/*SALES STYLES*/
-
+/*main styles*/
 main .sales {
     margin:20px 0;
 }
@@ -147,9 +106,7 @@ main .sales a {
     padding:2px;
     margin:0;
 }
-
-/*ARTICLE STYLES*/
-
+/* article styles */
 main article hr {
     background-color:darkslategray;
     height:1px;
@@ -159,17 +116,22 @@ main article .card {
     font-size:13px;
     text-align: justify;
     border:0;
-}
-main article .card {
-    margin:0;
+    padding:0 30px;
     margin:0 auto;
 }
 main article .card .card-body {
     margin:20px 0;
     padding: 0;
 }
+main article .card .card-title {
+    font-size:16px;
+}
 main article .card .card-title a {
     color:darkorange;
+}
+main article .card .card-title a:hover {
+    color:rgb(77, 66, 66);
+    text-decoration: none;
 }
 main article .card .card-links {
     display:flex;
@@ -195,54 +157,33 @@ main article .card .card-links .product-info:hover {
     color:white;
     text-decoration:none;
 }
-main article .card .card-links .to-basket, .product-info{
+main article .card .card-links .to-basket, .product-info {
     color:white;
     padding:5px 10px;
     margin-bottom:5px;
     width:48%;
 }
-main article .card .card-title {
-    font-size:16px;
-}
 main article .card .price {
     font-size: 19px;
     color:black;
 }
-main article .card .card-title a:hover {
-    color:rgb(77, 66, 66);
-    text-decoration: none;
-}
-.card {
-    padding:0 30px;
-}
-
-
-/*FOOTER STYLES*/
-
+/* footer styles*/
 footer {
     padding-top:40px;
     font-size:14px;
     color:gray;
-    display: flex;
-    justify-content: space-between;
-    margin:0 auto;
 }
 footer a {
-    text-decoration:none;
     color:gray;
 }
 footer a:hover {
-    text-decoration:none;
     color:darkorange;
 }
 footer ul {
-    text-align: left;
     padding:0 30px!important;
 }
 footer ul li {
     list-style-type: none;
-    padding:0;
-    margin:0; 
 }
 footer ul li:before {
     content: "> "; 
@@ -251,7 +192,6 @@ footer ul li:before {
 footer .bottom-search {
     margin:10px 0;
 }
-
 footer .bottom-search .form-control {
     width:60%;
     height:30px;
