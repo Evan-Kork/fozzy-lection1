@@ -166,6 +166,8 @@ header {
 header.white {
   background-color: white;
   padding: 20px 0; }
+  header.white .navbar-dark .navbar-nav .nav-link.active {
+    color: #000000; }
   header.white .navbar-dark .navbar-nav .nav-link:hover {
     color: #000000; }
   header.white .navbar-dark .navbar-toggler.custom-toggler .navbar-toggler-icon {
@@ -313,7 +315,8 @@ header.white {
       align-items: center;
       flex-direction: column;
       justify-content: center;
-      transition: opacity .5s,background-color .5s; }
+      transition: opacity .5s,background-color .5s;
+      text-align: center; }
       .projects-item .item-info h3, .projects-item .item-info p, .projects .grid-item .item-info h3, .projects .grid-item .item-info p {
         z-index: 2;
         color: #ffffff; }
@@ -502,6 +505,9 @@ header.white {
     padding-bottom: 30px; }
     .comments .comment-box .comment-item:nth-child(odd) {
       margin-left: 100px; }
+      @media (max-width: 576px) {
+        .comments .comment-box .comment-item:nth-child(odd) {
+          margin-left: 10px; } }
     .comments .comment-box .comment-item .avatar {
       width: 100px;
       height: 100px;
@@ -535,8 +541,16 @@ header.white {
           color: #000000; }
         .comments .comment-box .comment-item .comment .info .info-comment {
           text-transform: uppercase; }
+          @media (max-width: 576px) {
+            .comments .comment-box .comment-item .comment .info .info-comment {
+              flex-direction: column-reverse;
+              font-size: 13px;
+              text-align: right; } }
           .comments .comment-box .comment-item .comment .info .info-comment p.date {
             padding-right: 15px; }
+            @media (max-width: 576px) {
+              .comments .comment-box .comment-item .comment .info .info-comment p.date {
+                padding-right: 0; } }
       .comments .comment-box .comment-item .comment .text {
         font-size: 17px; }
 

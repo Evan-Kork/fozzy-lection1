@@ -247,8 +247,13 @@ header.white {
     background-color: rgb(255, 255, 255);
     padding: 20px 0;
 
-    & .navbar-dark .navbar-nav .nav-link:hover {
+    & .navbar-dark .navbar-nav .nav-link {
+        &.active {
+            color: #000000;
+        }
+        &:hover {
         color: #000000;
+        }
     }
     .navbar-dark .navbar-toggler.custom-toggler .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -442,6 +447,7 @@ header.white {
             flex-direction: column;
             justify-content: center;
             transition: opacity .5s,background-color .5s;
+            text-align: center;
 
             h3, p {
                 z-index: 2;
@@ -709,6 +715,10 @@ header.white {
 
             &:nth-child(odd) {
                 margin-left: 100px;
+
+                @media (max-width:576px) {
+                    margin-left: 10px;
+                }
             }
             .avatar {
             width: 100px;
@@ -755,8 +765,18 @@ header.white {
                     .info-comment {
                         text-transform: uppercase;
 
+                        @media (max-width: 576px) {
+                            flex-direction: column-reverse;
+                            font-size: 13px;
+                            text-align: right;
+                        }
+
                         p.date {
                             padding-right: 15px;
+
+                            @media(max-width: 576px) {
+                                padding-right: 0;
+                            }
                         }
                     }
                 }
