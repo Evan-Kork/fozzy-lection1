@@ -1,0 +1,64 @@
+/* за замовчуванням в body іде 15 пікселів шрифт */
+/* зазвичай стандартні стилі браузера обнуляються,  
+css reset - є спеціальний файл в інтернеті*/
+
+html, body {
+    margin:0;
+    height:100%;
+}
+header, 
+main, 
+footer {
+    color:white;
+    font-size: 30px;
+}
+header {
+    background-color:red;
+    min-height: 100px;
+    height: 100px;
+}
+main {
+    background-color: green;
+    /* flex-grow flex-shrink flex-bases... 
+    flex-bases - висота ініціалізації*/
+    flex:1 0 auto;
+    /* якщо не вийшло - інспектувати */
+    display:flex;
+}
+aside {
+    background-color: pink;
+    width:30%;
+    min-width: 30%;
+}
+article {
+    background-color:gray;
+    padding: 15px;
+}
+footer {
+    background-color:blue;
+    min-height: 200px;
+    height:200xp;
+}
+.container {
+    display:flex;
+    flex-direction: column;
+    height:100%;
+}
+/* media-кейси (кількість медіа-кейсів має бути мінімальна (пропрацьовуємо всі варіанти, щоб менше було змін)) більше проектувати блоки,
+а не проектувати розміри екранів (в айфонів є якесь одне розширення, в андроїдів - там багато, зменшувати трохи шрифт для блока медіа кейс*/
+@media (max-width: 575px) {
+    main {
+        flex-direction: column;
+    }
+    aside {
+        width:100%;
+    }
+}
+
+/* @media all */
+/* @media only screen and (max-width: 576px) {
+
+} */
+/* screen, print, speech... */
+/* для роздуку сторінки використовується медіа і стиль прінт */
+/* min-width max-width min-height */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Клиент для Googlet</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Клиент для Google</h1>
+    <form action="https://www.google.com.ua/search?" method="get" target="_blank">
+        <fieldset>
+            <legend>Поиск в Google</legend>
+            <div>
+                <div class="label-div"><label for="q">Введите поисковый запрос</label></div>
+                <div><input id="q" name="q" type="text" required></div>
+            </div>
+            <br>
+            <div>
+                <div class="label-div"><label for="tbm">Выберите категорию: </label></div>
+                <div><select name="tbm" id="tbm">
+                    <option selected>Все</option>
+                    <option value="isch">Картинки</option>
+                    <option value="vid">Видео</option>
+                    <option value="nws">Новости</option>
+                    <option value="bks">Книги</option>
+                    <option value="flm">Авиабилеты</option>
+                    <option value="fin">Финансы</option>
+                </select></div>
+            </div>
+            <br>
+            <div>
+                <div class="label-div"><label for="cr">Страна: </label></div>
+                <div><select name="cr" id="cr">
+                    <option selected>Все страны</option>
+                    <option value="countryUA">Украина</option>
+                </select></div>
+            </div>
+            <br>
+            <div>
+                <div class="label-div"><label for="lr">Язык: </label></div>
+                <div><select name="lr" id="lr">
+                    <option selected>На всех языках</option>
+                    <option value="lang_ru">Только на русском</option>
+                </select></div>
+            </div>
+            <br>
+            <div>
+                <div class="label-div"><label for="tbs">Период: </label></div>
+                <div><select name="tbs" id="tbs">
+                    <option selected>За все время</option>
+                    <option value="qdr:h">За час</option>
+                    <option value="qdr:d">За 24 часа</option>
+                    <option value="qdr:w">За неделю</option>
+                    <option value="qdr:m">За месяц</option>
+                    <option value="qdr:y">За год</option>
+                </select></div>
+            </div>
+            <br>
+            <div>
+                <input class="reset" type="reset">
+                <input type="submit" value="Search" class="submit-btn">
+            </div>
+        </fieldset>
+    </form>
+    <form action="https://www.google.com/maps/search/" method="get" target="_blank">
+        <fieldset>
+            <legend>Поиск в Google maps</legend>
+            <div>
+                <div class="label-div"><label for="q">Введите поисковый запрос</label></div>
+                <div><input id="q" name="q" type="text"></div>
+            </div>
+            <div>
+                <input class="reset" type="reset">
+                <input type="submit" value="Search" class="submit-btn">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

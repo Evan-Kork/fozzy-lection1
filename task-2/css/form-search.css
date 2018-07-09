@@ -1,0 +1,14 @@
+label, input, select{
+	display: inline-block;
+	width: 120px;
+}
+form{
+	width: 100%;
+}
+div.instrument{
+	display: inline-block;
+}
+.instrument{
+	background-color: red;
+}
+
