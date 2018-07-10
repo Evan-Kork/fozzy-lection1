@@ -1,0 +1,115 @@
+body a, body a:hover {
+    text-decoration:none;
+}
+body a {
+    color:gray;
+}
+body a:hover {
+    color:darkorange;
+}
+.telephone {
+    color:rgb(230, 230, 230);
+    font-size:17px;
+}
+/* HEADER STYLES */
+header .logo {
+    width:200px;
+}
+header .clothes, 
+header .clothes:hover {
+    font-family: 'Andada', serif;
+    font-size:62px;
+    font-weight:bold;
+    color:darkslategray;
+}
+header .clothes .big-letter, 
+header .clothes .big-letter:hover {
+    color:darkorange;
+}
+header .online-store, header .online-store:hover {
+    color:silver;
+    font-weight:bold;
+    font-size: 18px;
+    margin:-15px 0 5px 5px;
+}
+header .basket-link:hover {
+    color:darkslategray;
+}
+header .basket-image {
+    width:52px;
+}
+header nav {
+    box-shadow:0 1px rgb(177, 172, 172);
+    margin:10px 0!important;
+}
+header .gradient {
+    background: #fefcea; /* Для старых браузров */
+    background: linear-gradient(to top, rgb(182, 206, 195), rgb(216, 228, 222), rgb(237, 240, 238));
+}
+/* MAIN STYLES */
+.carousel-indicators {
+    width:100%;
+    background-color:darkslategray; /*для старих браузерів*/
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(50, 55, 56, 0.8), rgba(255,255,255,0));
+    margin:0 0 -10px 0!important;
+}
+.carousel-indicators li {
+    width:10px;
+    height:10px;
+    background-color:rgb(182, 206, 195);
+    border-radius:50px;
+    padding:6px!important;
+    margin:4px 8px;
+}
+.carousel-control-prev, 
+.carousel-control-next {
+    width:3%;
+    opacity:0.45!important;
+}
+.carousel-control-prev:hover, 
+.carousel-control-next:hover {
+    width:3%;
+    opacity:0.75!important;
+}
+.my-icons {
+    width:80%;
+}
+/*ARTICLE STYLES*/
+article .sale {
+    margin:15px 0 5px 0;
+}
+article h3 {
+    margin:5px 0;
+}
+article h3 a, h3 a:hover {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:darkslategray;
+    font-weight:bold;
+}
+article .catalog-description {
+    color:gray;
+    margin-bottom:10px;
+}
+.article-hr {
+    background-color:silver;
+}
+article .card {
+    margin:5px 0;
+}
+.card-img-top {
+    height:100%; /*для IE*/
+}
+/*FOOTER STYLES*/
+footer {
+    margin:20px 0;
+}
+footer ul {
+    padding:0;
+}
+footer ul li {
+    list-style-type: none;
+}
+footer ul li:before {
+    content: "> ";
+    color:darkorange;
+}
