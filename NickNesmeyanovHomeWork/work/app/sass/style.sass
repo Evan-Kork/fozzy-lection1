@@ -1,0 +1,499 @@
+@import "libs"
+
+@font-face 
+	font-family: "FiraSansRegular";
+	src: url(../fonts/FiraSansRegular/FiraSansRegular.ttf);
+	font-weight: normal;
+
+
+@font-face 
+	font-family: "fontawesome-webfont";
+	src: url(../fonts/fontawesome/fontawesome-webfont.ttf);
+	font-weight: normal;
+
+
+@font-face 
+	font-family: "RalewayBold";
+	src: url(../fonts/RalewayBold/RalewayBold.ttf);
+	font-weight: normal;
+
+
+@font-face 
+	font-family: "RalewayExtraBold";
+	src: url(../fonts/RalewayExtraBold/RalewayExtraBold.ttf);
+	font-weight: normal; 
+
+
+@font-face 
+	font-family: "RalewayLight";
+	src: url(../fonts/RalewayLight/);
+	font-weight: normal;
+
+
+@font-face 
+	font-family: "RalewayRegular";
+	src: url(../fonts/RalewayRegular/RalewayRegular.ttf);
+	src: url(../fonts/RalewayRegular/RalewayRegular.eot);
+	src: url(../fonts/RalewayRegular/RalewayRegular.woff);
+	font-weight: normal;
+
+
+@font-face 
+	font-family: "RalewaySemiBold";
+	src: url(../fonts/RalewaySemiBold/RalewaySemiBold.eot);
+	src: url(../fonts/RalewaySemiBold/RalewaySemiBold.ttf);
+	src: url(../fonts/RalewaySemiBold/RalewaySemiBold.woff);	
+	font-weight: normal;
+
+
+@font-face 
+	font-family: "RalewayThin";
+	src: url(../fonts/RalewayThin/);
+	font-weight: normal;
+
+
+button:hover 
+cursor:poiner
+
+
+.global-wraper	
+	margin: 0 auto
+	position: relative
+	/*padding-bottom: 306px;*/
+
+
+/*============header===========*/
+#header 
+	position: relative
+	padding-top: 59px
+	background-image: url(../img/head_bg.png)
+	background-color: rgba(0,0,0,0.5)
+	background-blend-mode: darken
+	background-repeat: no-repeat
+	margin: 0 auto
+	background-size: cover
+	position: relative
+
+.logo-header-up img
+	height: 90px
+.header-phone-icon
+	text-align: right
+
+.header-phone-icon 
+	img
+		padding-top: 5px
+		color: #fff
+		width: 20px
+		text-align: right
+
+.header-number-up 
+	color: #fff
+	font-size: 22px
+	font-family: FiraSansRegular
+
+.header-welcome 
+	padding-top: 55px
+
+.header-welcome span 
+	font-family: RalewayRegular
+	font-size: 15px
+	color: #fff
+	text-transform: uppercase
+.star-img
+	img
+		width: 25px
+
+.header-welcome-img img 
+	width: 260px
+
+.header-content 
+	text-align: center
+	color: #fff
+	margin: 0 auto
+
+.header-market 
+	padding-top: 40px
+	padding-bottom: 50px
+
+.header-market span 
+	font-family: RalewayRegular
+	font-size: 64px
+
+i.fa.fa-star 
+	color: #C4C40E
+	padding: 0 33px
+
+.header-text 
+	padding-top: 30px
+	padding-bottom: 120px
+
+.header-text span 
+	font-size: 24px
+	font-family: RalewayRegular
+
+.header-button 
+	padding-bottom: 60px
+
+.header-button button 
+	width: 265px
+	height: 118px
+	background-color: #F9C766
+	border: none
+	border-bottom: 10px solid #E3B253
+	border-radius: 3px
+
+.header-button button a 
+	color: black
+	font-size: 22px
+	letter-spacing: 0.25em
+	font-family: 'RalewaySemiBold'
+
+.header-button a:hover 
+	text-decoration: none
+
+.header-down-content 
+	display: inline-flex
+	padding-bottom: 15px
+	color: #fff
+
+.header-down-content > .header-down-content-img-location-container, .phone-icon-container, .header-time-container 
+	margin: auto 0
+	display: inline-flex
+
+.header-down-content > .header-down-content-img-location-container, .phone-icon-container, .header-time-container span 
+	font-size: 16px
+	font-family: 'RalewayRegular'
+
+.header-down-content > fa 
+	font-size: 16px
+
+.header-down-content-img-location 
+	padding-right: 10px
+
+.phone-icon 
+	padding-right: 10px
+	margin: auto 0
+
+.header-time 
+	margin: auto 0
+	padding-right: 10px
+
+/*==============navigation==============*/
+
+#navigation
+	background-color: #5C524D
+
+.menu
+	display: flex
+	justify-content: space-evenly
+	a
+		padding: 15px 0
+		font-size: 20px
+		color: #ffd
+		&:hover
+			color:#F9C869
+
+
+/*============carousel===============*/
+
+#carousel
+	background: url(../img/bg.jpg)
+
+.watch-card
+	width: 100%
+	margin: 0 auto
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: center
+	align-items: flex-end
+	align-content: center
+
+
+.card 
+	padding: 15px 0
+	text-align: center
+	a
+		span
+			color: #fff
+			font-size: 20px
+			text-align: center
+.content-img
+	width: 100%
+	padding-left: 15px
+
+.card img
+	width: 100%
+	height: 300px
+
+.carousel 
+  margin-bottom: 0
+  padding: 0 40px 30px 40px
+
+/* The controlsy */
+.carousel-control 
+	left: -12px
+  height: 40px
+	width: 40px
+  background: none repeat scroll 0 0 #222222
+  border: 4px solid #FFFFFF
+ 	border-radius: 23px 23px 23px 23px
+  margin-top: 90px
+
+.carousel-control.right 
+	right: -12px
+
+/* The indicators */
+.carousel-indicators 
+	right: 50%
+	top: auto
+	bottom: -10px
+	margin-right: -19px;
+
+/* The colour of the indicators */
+.carousel-indicators li 
+	background: #cecece
+
+.carousel-indicators .active 
+	background: #428bca
+a
+	.left
+		.carousel-control
+			display: none
+
+/*===============call-back============*/
+
+#call-back 
+	background: url(../img/oboi.jpg)
+	background-color: rgba(60,61,60,0.7)
+	background-blend-mode: darken
+	background-size: cover
+	background-repeat: no-repeat
+	height: 662px
+
+.form-group
+	width: 458px
+	margin: 0 auto
+	padding-bottom: 16px
+	color: #000
+	input
+		color: black
+		background: #fff
+		border: 2px solid #E0B660
+		height: 48px
+		&::placeholder
+			color: black
+	select
+		height: 48px
+		color: #5C524D
+		border: 2px solid #E0B660
+		// &:focus
+		// 	background: none
+		option
+			color: black
+
+			// &::focus
+			// 	background: none
+		// &:focus option
+		// 	background: none
+
+.call-back-head
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	justify-content: center
+	align-items: baseline
+	align-content: center
+	padding-top: 117px
+	span
+		font-size: 30px
+		color: #fff
+		font-family: RalewayExtraBold
+		text-transform: uppercase
+
+.call-back-content
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	justify-content: center
+	align-items: baseline
+	align-content: center
+	padding-top: 17px
+	padding-bottom: 50px
+	span
+		font-size: 19px
+		color: #fff
+		font-family: RalewayRegular
+
+.form-control
+	font-size: 16px
+	// padding-bottom: 50px
+
+.button-main
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	justify-content: center
+	align-items: baseline
+	align-content: center
+
+.send-info
+	margin-top: 50px
+	padding: 24px 50px
+	border: none
+	background-color: #F9C869
+	border-radius: 5px
+	border-bottom: 3px solid #9F8455
+	font-family: RalewaySemiBold
+	text-transform: uppercase
+	a
+		letter-spacing: 3px
+		color: black
+		&:hover
+			text-decoration: none
+			color: black
+	button
+		backgrond-color: #F9C869
+		& send-info
+			margin: 0 auto
+
+/*===============reviews===============*/
+
+#reviews
+	background-image: url(../img/reviews.jpg)
+	height: 700px
+
+.reviews-head
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	justify-content: center
+	align-items: baseline
+	align-content: center
+	color: #F9C869
+	text-transform: uppercase
+	font-size: 30px
+	font-family: Raleway ExtraBold
+	padding-top: 111px
+
+.first-word
+	color: #fff
+	padding-right: 8px
+
+#quote-carousel 
+  padding: 0 10px 30px 10px
+  margin-top: 30px
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+  background: none
+  color: #222
+  font-size: 2.3em
+  text-shadow: none
+  margin-top: 30px
+
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+  left: -12px
+
+/* Next button  */
+#quote-carousel .carousel-control.right 
+  right: -12px
+
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators 
+  right: 50%
+  top: auto
+  bottom: 0px
+  margin-right: -19px
+
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+  background: #c0c0c0
+
+#quote-carousel .carousel-indicators .active 
+  background: #333333
+
+#quote-carousel img
+  width: 30px
+  height: 50px
+
+/* End carousel */
+
+.item blockquote 
+  border-left: none 
+  margin: 0
+
+
+.item blockquote img 
+  margin-bottom: 10px
+
+
+.item blockquote p:before 
+  float: left
+  margin-right: 10px
+
+#quote-carousel
+	padding-top: 75px
+
+/*============our partners===========*/
+.s-partners
+	padding: 150px 0
+	background-repeat: no-repeat
+	background-size: cover
+
+/*===============footer==============*/
+#footer 
+	background-color: #242424
+.social-wrap
+	display: flex
+.footer-info
+	display: flex
+.footer-img
+	padding-top: 60px
+	img
+		height: 90px
+.social
+	padding-top: 67px
+	padding-left: 25px
+	span
+		font-size: 20px
+		color: #fff
+	img
+		height: 28px
+		padding-right: 5px
+.our-work
+	padding-top: 45px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	ul
+		li
+			padding-top: 15px
+			
+			a
+				text-decoration: none
+				color: #fff
+				font-size: 16px
+				font-family: RalewayRegular
+				&:hover
+					color:#F9C766
+#map
+	height: 300px
+	margin-top: 15px
+	margin-bottom: 15px
+
+
+
+.venecians
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	background-color: #F9C766
+	margin-top: 20px
