@@ -32,7 +32,7 @@ td{
 .n{
 	color: white;
 }
-tr td.k{
+tr.k td{
 	border: 1px solid black;
 }
 .date_red{

@@ -1,0 +1,21 @@
+body,html{
+	heith:100%;
+}
+//feature/task-1-dz-1/dz-1
+.container{
+	display: flex;
+	heith: 100%;
+	flex-direction: column;
+}
+main{
+	flex: 1 0 auto;
+}
+nav{
+	backgrount-color: black;
+	color: white;
+}
+footer{
+
+	backgrount-color: black;
+	color: white;
+}
