@@ -89,6 +89,10 @@ article .article-hr {
 }
 article .card {
   margin: 5px 0;
+  text-align: center;
+}
+article .card .btn {
+  font-size: 14px;
 }
 
 /* FOOTER STYLES */
