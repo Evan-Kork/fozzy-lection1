@@ -1,0 +1,72 @@
+.name-field, .surname-field, .email-field, .password-field, .repassword, {
+	width: 700px;
+}
+
+.name-field, .surname-field, .email-field, .password-field, .repassword, input {
+	margin-top: 10px;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+.name-field, .surname-field, .email-field, .password-field, .repassword, input:required {
+	background: #fff url('../img/attention.jpg') 98%;
+	background-repeat: no-repeat;
+}
+
+.name-field, .surname-field, .email-field, .password-field, .repassword, label:required {
+	background: #fff;
+}
+
+.name-field, .surname-field, .email-field, .password-field, .repassword, input:valid {
+	background: #fff url('../img/checked.jpg') 98%;
+	background-repeat: no-repeat;
+}
+
+.search {
+	margin-bottom: 20px;
+}
+
+.search > input {
+	background: none;
+}
+
+.name-field, .surname-field, .email-field, .password-field, .repassword, label:valid {
+	background: #fff;
+}
+
+.name-field, .surname-field, .email-field, .password-field, .repassword, label{
+	font-size: 18px;
+}
+
+
+.name-field input {
+	margin-left: 75px;
+}
+
+.surname-field input {
+	margin-left: 55px;
+}
+
+.email-field input {
+	margin-left: 75px;
+}
+
+.password-field input {
+	margin-left: 47px;
+}
+
+.repassword input {
+
+}
+
+.wrap {
+	width: 700px;
+}
+
+.submit button {
+	height: 50px;
+	width: 150px;
+	border-radius: 5px;
+	background: #579A23;
+	color: #fff;
+}
