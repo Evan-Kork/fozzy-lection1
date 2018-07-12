@@ -1,0 +1,140 @@
+body {
+    /* common styles */
+    a {
+        color:gray;
+        text-decoration:none;
+    }
+    a:hover {
+        color:darkorange;
+        text-decoration:none;
+    }
+    .telephone {
+        color:rgb(230, 230, 230);
+        font-size:17px;
+    }
+    /* special styles */
+    /* HEADER STYLES */
+    header {
+        .logo {
+            width:200px;
+        }
+        .clothes, 
+        .clothes:hover {
+            font-family: 'Andada', serif;
+            font-size:62px;
+            font-weight:bold;
+            color:darkslategray;
+                .big-letter, 
+                .big-letter:hover {
+                color:darkorange;
+            }
+        }
+        .online-store, 
+        .online-store:hover {
+            color:silver;
+            font-weight:bold;
+            font-size: 18px;
+            margin:-15px 0 5px 5px;
+        }
+        .basket-link:hover {
+            color:darkslategray;
+        }
+        .basket-image {
+            width:52px;
+        }
+        nav {
+            box-shadow:0 1px rgb(177, 172, 172);
+            margin:10px 0!important;
+        }
+        .gradient {
+            background: linear-gradient(to top, rgb(182, 206, 195), rgb(216, 228, 222), rgb(237, 240, 238));
+        }
+    }
+    /* MAIN STYLES */
+    main {
+        .carousel-indicators {
+            width:100%;
+            background-color:gray; 
+            // background: linear-gradient(to left, rgba(255,255,255,0), rgb(50, 55, 56, 0.8), rgba(255,255,255,0));
+            margin:0 0 -10px 0!important;
+            li {
+                width:10px;
+                height:10px;
+                background-color:darkslategray;
+                border-radius:50px;
+                padding:6px!important;
+                margin:4px 8px;
+            }
+        }
+    }
+    /* ARTICLE STYLES */
+    article {
+        .sale {
+            margin:15px 0 5px 0;
+        }
+        h3 {
+            margin:5px 0;
+        }
+        a, h3 a:hover {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color:darkslategray;
+            font-weight:bold;
+        }
+        .catalog-description {
+            color:gray;
+            margin-bottom:10px;
+        }
+        .article-hr {
+            background-color:silver;
+        }
+        .card {
+            margin:5px 0;
+        }
+    }
+    /* FOOTER STYLES */
+    footer {
+        margin:20px 0;
+        ul {
+            padding:0;
+            li {
+                list-style-type: none;
+            }
+            li:before {
+                content: "> ";
+                color:darkorange;
+            }
+        }
+    }
+}
+/* MEDIA CASES */
+/* Медіа-кейси використовуються для дизайну */
+@media(min-width:992px) { 
+    header nav .navbar-nav a {
+        padding:15px 25px 15px!important;
+        margin:-8px 0 -5px 0!important;
+        border-right:1px solid white!important;
+        color:darkslategray!important;    
+    }
+    header nav .navbar-nav .nav-link:hover {
+        background-color:darkslategray!important;
+        color:white!important;
+        border-bottom:4px solid orange;
+        padding-bottom:0!important;
+        margin-bottom:-8px!important;;
+    }
+} /* Медіа-кейси використовуються для дизайну */
+@media(min-width:768px) {
+    header nav {
+        padding-left:0!important;
+    }
+}
+@media(min-width:576px) {
+    .nav-item {
+        margin-left:-2px;
+    }
+}
+@media(max-width:575px) {
+    article .card {
+        margin:5px auto!important;
+    }
+}
