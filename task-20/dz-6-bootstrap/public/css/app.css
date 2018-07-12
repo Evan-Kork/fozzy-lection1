@@ -1,0 +1,116 @@
+/* common styles */
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkorange;
+  text-decoration: none;
+}
+
+.telephone {
+  color: #e6e6e6;
+  font-size: 17px;
+}
+
+/* special styles */
+/* HEADER STYLES */
+header .logo {
+  width: 200px;
+}
+header .clothes,
+header .clothes:hover {
+  font-family: "Andada", serif;
+  font-size: 62px;
+  font-weight: bold;
+  color: darkslategray;
+}
+header .clothes .big-letter,
+header .clothes .big-letter:hover,
+header .clothes:hover .big-letter,
+header .clothes:hover .big-letter:hover {
+  color: darkorange;
+}
+header .online-store,
+header .online-store:hover {
+  color: silver;
+  font-weight: bold;
+  font-size: 18px;
+  margin: -15px 0 5px 5px;
+}
+header .basket-link:hover {
+  color: darkslategray;
+}
+header .basket-image {
+  width: 52px;
+}
+header nav {
+  box-shadow: 0 1px #b1acac;
+  margin: 10px 0 !important;
+}
+header .gradient {
+  background: linear-gradient(to top, #b6cec3, #d8e4de, #edf0ee);
+}
+
+/* MAIN STYLES */
+main .carousel-indicators {
+  width: 100%;
+  background-color: gray;
+  margin: 0 0 -10px 0 !important;
+}
+main .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  background-color: darkslategray;
+  border-radius: 50px;
+  padding: 6px !important;
+  margin: 4px 8px;
+}
+
+/* ARTICLE STYLES */
+article .sale {
+  margin: 15px 0 5px 0;
+}
+article h3 {
+  margin: 5px 0;
+}
+article a, article h3 a:hover {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: darkslategray;
+  font-weight: bold;
+}
+article .catalog-description {
+  color: gray;
+  margin-bottom: 10px;
+}
+article .article-hr {
+  background-color: silver;
+}
+article .card {
+  margin: 5px 0;
+}
+
+/* FOOTER STYLES */
+footer {
+  margin: 20px 0;
+}
+footer ul {
+  padding: 0;
+}
+footer ul li {
+  list-style-type: none;
+}
+footer ul li:before {
+  content: "> ";
+  color: darkorange;
+}
+
+/* media cases */
+@media (min-width: 576px) {
+  .nav-item {
+    margin-left: -2px;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
