@@ -1,66 +1,65 @@
-@charset "UTF-8";
-body {
-  /* common styles */
-  /* special styles */
-  /* HEADER STYLES */
-  /* MAIN STYLES */
-  /* ARTICLE STYLES */
-  /* FOOTER STYLES */
-}
-body a {
+/* common styles */
+a {
   color: gray;
   text-decoration: none;
 }
-body a:hover {
+
+a:hover {
   color: darkorange;
   text-decoration: none;
 }
-body .telephone {
+
+.telephone {
   color: #e6e6e6;
   font-size: 17px;
 }
-body header .logo {
+
+/* special styles */
+/* HEADER STYLES */
+header .logo {
   width: 200px;
 }
-body header .clothes,
-body header .clothes:hover {
+header .clothes,
+header .clothes:hover {
   font-family: "Andada", serif;
   font-size: 62px;
   font-weight: bold;
   color: darkslategray;
 }
-body header .clothes .big-letter,
-body header .clothes .big-letter:hover,
-body header .clothes:hover .big-letter,
-body header .clothes:hover .big-letter:hover {
+header .clothes .big-letter,
+header .clothes .big-letter:hover,
+header .clothes:hover .big-letter,
+header .clothes:hover .big-letter:hover {
   color: darkorange;
 }
-body header .online-store,
-body header .online-store:hover {
+header .online-store,
+header .online-store:hover {
   color: silver;
   font-weight: bold;
   font-size: 18px;
   margin: -15px 0 5px 5px;
 }
-body header .basket-link:hover {
+header .basket-link:hover {
   color: darkslategray;
 }
-body header .basket-image {
+header .basket-image {
   width: 52px;
 }
-body header nav {
+header nav {
   box-shadow: 0 1px #b1acac;
   margin: 10px 0 !important;
 }
-body header .gradient {
+header .gradient {
   background: linear-gradient(to top, #b6cec3, #d8e4de, #edf0ee);
 }
-body main .carousel-indicators {
+
+/* MAIN STYLES */
+main .carousel-indicators {
   width: 100%;
   background-color: gray;
   margin: 0 0 -10px 0 !important;
 }
-body main .carousel-indicators li {
+main .carousel-indicators li {
   width: 10px;
   height: 10px;
   background-color: darkslategray;
@@ -68,73 +67,49 @@ body main .carousel-indicators li {
   padding: 6px !important;
   margin: 4px 8px;
 }
-body article .sale {
+
+/* ARTICLE STYLES */
+article .sale {
   margin: 15px 0 5px 0;
 }
-body article h3 {
+article h3 {
   margin: 5px 0;
 }
-body article a, body article h3 a:hover {
+article a, article h3 a:hover {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: darkslategray;
   font-weight: bold;
 }
-body article .catalog-description {
+article .catalog-description {
   color: gray;
   margin-bottom: 10px;
 }
-body article .article-hr {
+article .article-hr {
   background-color: silver;
 }
-body article .card {
+article .card {
   margin: 5px 0;
 }
-body footer {
+
+/* FOOTER STYLES */
+footer {
   margin: 20px 0;
 }
-body footer ul {
+footer ul {
   padding: 0;
 }
-body footer ul li {
+footer ul li {
   list-style-type: none;
 }
-body footer ul li:before {
+footer ul li:before {
   content: "> ";
   color: darkorange;
 }
 
-/* MEDIA CASES */
-/* Медіа-кейси використовуються для дизайну */
-@media (min-width: 992px) {
-  header nav .navbar-nav a {
-    padding: 15px 25px 15px !important;
-    margin: -8px 0 -5px 0 !important;
-    border-right: 1px solid white !important;
-    color: darkslategray !important;
-  }
-
-  header nav .navbar-nav .nav-link:hover {
-    background-color: darkslategray !important;
-    color: white !important;
-    border-bottom: 4px solid orange;
-    padding-bottom: 0 !important;
-    margin-bottom: -8px !important;
-  }
-}
-/* Медіа-кейси використовуються для дизайну */
-@media (min-width: 768px) {
-  header nav {
-    padding-left: 0 !important;
-  }
-}
+/* media cases */
 @media (min-width: 576px) {
   .nav-item {
     margin-left: -2px;
-  }
-}
-@media (max-width: 575px) {
-  article .card {
-    margin: 5px auto !important;
   }
 }
 
