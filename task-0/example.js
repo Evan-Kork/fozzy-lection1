@@ -4,17 +4,24 @@ function start() {
 	console.log('start');
 }
 // initVar();
-var initVar = function() {
-	console.log('this', this);
-	setTimeout(() => {
-		console.log(this);
-	}, 1000);
-	let testFunction = (argument1 = []) => {
-		console.log('init var', this);
-	};
-	testFunction('function');
+var initVar = {
+	name: 'test',
+	initFunction: function() {
+		console.log('this', this);
+		setTimeout(() => {
+			console.log(this);
+		}, 1000);
+		let testFunction1 = function(argument1 = []) {
+			console.log('testFunction1', this, arguments);
+		};
+		testFunction1('function');
+		let testFunction2 = (argument1 = []) => {
+			console.log('testFunction2', this, arguments);
+		};
+		testFunction2('function');
+	}
 }
-initVar('test1', undefined);
+initVar.initFunction('test1', undefined);
 // initLet();
 let initLet = function() {
 	let name = 'vasya';

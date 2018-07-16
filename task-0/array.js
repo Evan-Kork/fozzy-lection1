@@ -75,9 +75,79 @@ console.warn('Splice');
 let arraySplice = array.slice(0, array.length);
 let arraySpliceResult = arraySplice.splice(3, 3, 11, 12, 13, 14);
 console.log('arraySplice', array, arraySplice, arraySpliceResult);
-// Delete
-// console.warn('Delete');
-// let arrayDelete = array.slice(0, array.length);
-// delete arrayDelete[3];
-// console.log('arrayDelete', array, arrayDelete);
+// Методи проходу
+// Forech
+console.warn('Foreach');
+let arrayForeach = array.slice(0, array.length);
+console.log('arrayForeach', arrayForeach);
+arrayForeach.forEach(function(item, i, array){
+	array[i] = 6;
+	console.log('iteration =>', i, 'item =>', item);
+});
+console.log('array', arrayForeach, array);
+// Every
+console.warn('Every');
+let arrayEvery = array.slice(0, array.length);
+let everyResult = arrayEvery.every(function(item, i, array){
+	return item > 4;
+});
+console.log('everyResult', everyResult);
+// Some
+console.warn('Some');
+let arraySome = array.slice(0, array.length);
+let someResult = arraySome.some(function(item, i, array){
+	return item > 4;
+});
+console.log('someResult', someResult);
+// Filter
+console.warn('Filter');
+let arrayFilter = array.slice(0, array.length);
+let filterResult = arrayFilter.filter(function(item, i, array){
+	return !(item%2);
+});
+console.log('filterResult', filterResult);
+// Map
+console.warn('Map');
+let arrayMap = array.slice(0, array.length);
+let mapResult = arrayMap.map(function(item, i, array){
+	return item*2;
+});
+console.log('mapResult', mapResult);
+// Reduce
+console.warn('Reduce');
+let arrayReduce = array.slice(0, array.length);
+let reduceResult = arrayReduce.reduce(function(prevItem, item, i, array){
+	return prevItem + item;
+}, 100);
+console.log('reduceResult', reduceResult);
+// ReduceRight
+console.warn('ReduceRight');
+let arrayReduceRight = array.slice(0, array.length);
+let reduceRightResult = arrayReduceRight.reduceRight(function(prevItem, item, i, array){
+	return prevItem + item;
+}, 100);
+console.log('reduceRightResult', reduceRightResult);
+// var array = [];
+// var array = new Array([]);
 
+var str = 'String';
+var str1 = new String('String');
+console.log('str', str, str1);
+
+function Animal(name) {
+  this.eats = true;
+}
+var animal = new Animal();
+var rabbit = {
+  jumps: true
+};
+rabbit.__proto__ = animal;
+rabbit.eats = null;
+delete rabbit.eats;
+animal.eats = false;
+
+var rabbit2 = new Animal();
+rabbit2.jumps = true;
+
+console.log('Rabbit', rabbit, rabbit.jumps, rabbit.eats);
+console.log('Rabbit2', rabbit2, rabbit2.jumps, rabbit2.eats);
