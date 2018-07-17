@@ -1,0 +1,30 @@
+body{
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+#anim1{
+	background-color: #e00;
+	width: 100px;
+	height: 100px;
+	display: block;
+	transition: 33s;
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 20px solid #000;
+	outline: 10px solid #005;
+}
+#anim1:hover{
+	background-color: #900;
+	color: red;
+	border-radius: 2000px;
+	border: 100px solid #005;
+	outline: 100px solid #005;
+	transform:  rotate(520deg) ;
+}
