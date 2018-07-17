@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    background-color: #F0978B;
+}
+
+form {
+    padding: 20px 0;
+}
+
+fieldset {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.46);
+    width: 500px;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.fieldset-click {
+    background-color: rgba(60, 54, 87, 0.5);
+}
+
+.fieldset-click-head {
+    color: #ffffff;
+}
+
+h2 {
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+.field-box {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+legend {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #3C3657;
+}
+
+.field {
+    clear: both;
+    text-align: right;
+    line-height: 30px;
+}
+
+input {
+    background-color: #ffe6e2;
+    border-color: transparent;
+}
+
+input:required {
+    border: 1px solid red;
+}
+
+form input:focus, select:focus, input[type="date"]:focus, input[type="number"]:focus {
+    border: 3px solid #85D6BF;
+    outline: none;
+    background-color: white;
+}
+
+
+label {
+    float: left;
+    padding-right: 5px;
+    font-size: 18px;
+    color: #3C3657;
+}
+
+label[for=married] {
+    float: none;
+}
+
+.about-me {
+    text-align: center;
+}
+
+.about-me label {
+    float: none;
+    font-size: 21px;
+    font-style: italic;
+    color: #ffffff;
+}
+
+textarea {
+    background: #ffe6e2;
+    border-color: transparent;
+}
+
+textarea:focus {
+    border: 3px solid #85D6BF;
+    outline: none;
+    background-color: #ffffff;
+}
+
+input[type=file] {
+    width: 222px;
+}
+
+select, input[type="date"], input[type="number"] {
+    width: 173px;
+    padding: 0;
+    background-color: #ffe6e2;
+    border-color: transparent;
+}
+
+p {
+    color: #ffffff;
+    display: inline;
+    padding: 0;
+}
+
+.button-box {
+    text-align: center;
+}
+
+form .buttons button, input[type=button], input[type=submit]  {
+    max-width: 100%;
+    width: 145px;
+    padding: 13px 15px;
+    font-size: 14px;
+    background-color: #85D6BF;
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+    border: none;
+}
+
+.button-box input[type=button] {
+   background-color:  #3C3657;
+}
+
+.button-box input[type=submit] {
+    background-color: #30BDBE;
+}
