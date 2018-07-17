@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Google search</title>
+	<link rel="stylesheet" href="css/form-search.css">
+</head>
+<body>
+	<form action="https://www.google.com.ua/search" target="_blank">
+		<fieldset>
+			<legend>Query</legend>
+			<div>
+				<input type="text" name="q" id ="q"> <button>Search</button>
+			</div>
+			
+		</fieldset>
+		<fieldset>
+			<legend>Instruments</legend>
+				<select name="tbm" id="">
+					<option value="", selected>
+						Type
+					</option>
+					<option value="isch">
+						Image
+					</option>
+					<option value="vid">
+						Video
+					</option>
+					<option value="nws">
+						News
+					</option>
+				</select>
+			
+				<select name="tbs" id="">
+					<option value="" selected>Time</option>
+					<option value="qdr:h">Hour</option>
+					<option value="qdr:d">Day</option>
+					<option value="qdr:w">Week</option>
+					<option value="qdr:m">Mounth</option>
+					<option value="qdr:y">Year</option>
+				</select>
+			
+				<select name="cr" id="country">
+					<option value="" selected>Country</option>
+					<option value="countryUK">United Kindom</option>
+					<option value="countryUA">Ukraine</option>
+				</select>
+			
+				<select name="lr" id="lang">
+					<option value="" selected>Language</option>
+					<option value="lang_en" >English</option>
+					<option value="lang_fr">France</option>
+					<option value="lang_ua">Ukraine</option>
+					<option value="lang_ru">Russian</option>
+					
+				</select>
+		
+				<select name="as_filetype" id="filetype">
+					<option value="" selected>Filetype</option>
+					<option value="pdf">pdf</option>
+					<option value="doc">doc</option>
+				</select>
+			
+			
+		</fieldset>
+		
+	</form>
+</body>
+</html>
