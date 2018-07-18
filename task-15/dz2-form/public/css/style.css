@@ -199,6 +199,10 @@
 .filename {
 	width: 200px;
 	display: inline-block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	vertical-align: top;
 }
 
 .file-placeholder {
