@@ -216,7 +216,7 @@
 	padding: 10px 20px;
 }
 
-.button1 {
+.button-input {
 	padding: 19px 39px 18px 39px;
 	color: #FFFFFF;
 	background: #1abc9c;
@@ -228,7 +228,7 @@
 	cursor: pointer;
 }
 
-.button1:hover {
+.button-input:hover {
 	background-color: #109177;
 }
 
@@ -236,7 +236,7 @@
 	display: inline;
 }
 
-.button2 {
+.button-submit {
 	background: #2A88AD;
 	padding: 8px 20px 8px 20px;
 	border-radius: 5px;
@@ -246,11 +246,11 @@
 	cursor: pointer;
 }
 
-.button2:hover {
+.button-submit:hover {
 	background: #2A6881;
 }
 
-.button3 {
+.button-tag {
 	background-color: #2CBBBB;
 	border: 1px solid #27A0A0;
 	cursor: pointer;
