@@ -3,64 +3,68 @@ html, body {
   padding: 0;
   margin: 0;
 }
-html h1, body h1 {
+
+h1 {
   background-color: rgba(202, 214, 193, 0.5);
   color: #1d1f1b;
   text-align: center;
   padding: 5px;
   margin: 20px;
 }
-html div, body div {
+
+div {
   display: inline-block;
 }
-html .image, body .image {
+
+.image {
   width: 100%;
   display: inline-block;
   text-align: center;
 }
-html .image img, body .image img {
+.image img {
   width: 300px;
   height: 200px;
   margin-bottom: 15px;
   opacity: 0.8;
 }
-html form, body form {
+
+form {
   background-color: #cad6c1;
   padding: 20px;
   margin: 0 20px;
 }
-html form fieldset, body form fieldset {
+form fieldset {
   margin: 5px;
 }
-html form fieldset legend, body form fieldset legend {
+form fieldset legend {
   color: #917123;
   font-weight: bold;
   font-size: 18px;
 }
-html form fieldset .container, body form fieldset .container {
+form fieldset .container {
   margin-top: 5px;
 }
-html form fieldset .container .to-lable, body form fieldset .container .to-lable {
+form fieldset .container .to-lable {
   width: 120px;
 }
-html form fieldset .container .to-lable label, body form fieldset .container .to-lable label {
+form fieldset .container .to-lable label {
   font-weight: bold;
   color: #1d221e;
 }
-html form .reset, html form button, body form .reset, body form button {
+form .reset, form button {
   color: #d1c3c3;
   border: 0;
   padding: 4px 20px;
   font-size: 15px;
   margin: 6px;
 }
-html form .reset, body form .reset {
+form .reset {
   background-color: #54584f;
 }
-html form button, body form button {
+form button {
   background-color: #1d1f1b;
 }
-html form button:hover, html form .reset:hover, body form button:hover, body form .reset:hover {
+form button:hover, form .reset:hover {
   background-color: #917123;
   cursor: pointer;
 }
