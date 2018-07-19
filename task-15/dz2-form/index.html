@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forms</title>
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+</head>
+<body>
+	<h1 class="title">Form method post</h1>
+	<form action="#" method="post" class="form-style">
+		<fieldset class="input-group">
+			<legend class="group-name"><span class="number">1</span> Main information</legend>
+			<ul class="group-list">
+				<li class="list-item">
+					<label for="name" class="item-label">Name</label>
+					<input id="name" name="name" type="text" placeholder="text" class="input-basic">
+				</li>
+				<li class="list-item">
+					<label for="surname" class="item-label">Surname</label>
+					<input id="surname" name="surname" type="text" placeholder="Surname" class="input-basic" disabled />
+				</li>
+				<li class="list-item">
+					<label for="email" class="item-label">Email</label>
+					<input id="email" name="email" type="email" class="input-basic" placeholder="test@mail.com">
+				</li>
+				<li class="list-item">
+					<label for="password" class="item-label">Password</label>
+					<input id="password" name="password" type="password" class="input-basic" required>
+				</li>
+				<li class="list-item">
+					<label for="repassword" class="item-label">Password repeat</label>
+					<input id="repassword" name="repassword" type="password" class="input-basic" required>
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset class="input-group">
+			<legend class="group-name"><span class="number">2</span> Personal information</legend>
+			<ul class="group-list">
+				<li class="list-item">
+					<label for="birthday" class="item-label">Birthday</label>
+					<input id="birthday" type="date" class="input-basic">
+				</li>
+				<li class="list-item">
+					<label for="age" class="item-label">Age</label>
+					<input id="age" name="age" type="number" min="1" max="200" step="3" class="input-basic">
+				</li>
+				<li class="list-item">
+					<div class="input-selection">
+						<label for="male">
+							<input id="male" name="male" type="radio" value="male" class="gender" checked>
+							Male
+							<div class="check"></div>
+						</label>
+						<label for="female">
+							<input id="female" name="male" type="radio" value="female" class="gender"> Female 
+							<div class="check"></div>
+						</label>
+					</div>
+				</li>
+				<li class="list-item">
+					<div class="input-selection">
+						<label for="maried" class="status">
+							Married
+							<input class="status-check" id="maried" name="maried" type="checkbox">
+							<div class="checkmark"></div>
+						</label>
+					</div>
+				</li>
+				<li class="list-item">
+					<label for="country" class="item-label">Country</label>
+					<select name="country" id="country" class="input-basic country-selection">
+						<option class="selection-element" disabled>Select country</option>
+						<optgroup class="selection-element" label="Europe">
+							<option class="selection-element" value="ua" selected>Ukraine</option>
+							<option class="selection-element" value="gb">Great Britain</option>
+						</optgroup>
+						<optgroup class="selection-element" label="America">
+							<option class="selection-element" value="usa">USA</option>
+						</optgroup>
+					</select>
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset class="input-group">
+			<legend class="group-name"><span class="number">3</span> Intersts</legend>
+			<ul class="group-list">
+				<li class="list-item">
+					<label class="item-label" for="info">About me</label>
+					<textarea class="input-basic about" name="info" id="info" cols="30" rows="5" readonly>About me</textarea>
+				</li>
+				<li class="list-item">
+					<input type="file" name="photo[]" id="photo" class="inputfile">
+					<label class="item-label file" for="photo">
+						<span class="filename fixed"></span>
+						<span class="file-placeholder fixed"> Choose a file...</span>
+					</label>
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset class="input-group">
+			<legend class="group-name"><span class="number">4</span> Submit</legend>
+			<ul class="group-list">
+				<li class="list-item">
+					<input type="button" class="button-input" value="Button input">
+				</li>
+				<li class="list-item button-group">
+					<input type="submit" class="button-submit" value="Submit input">
+				</li>
+				<li class="list-item button-group">
+					<button class="button-tag">Button</button>
+				</li>
+			</ul>
+		</fieldset>
+	</form>
+	<script src="public/js/script.js" type="text/javascript"></script>
+</body>
+</html>
