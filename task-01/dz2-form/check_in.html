@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Create a review</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<h1>Create a review!</h1>
+	</header>
+	<p></p>
+	<div class="reg-page">
+	<form action="#" method="post">
+		<fieldset>
+			<legend>Main information</legend>
+			<div class="name-info">
+				<label for="first-name">First name:</label>
+				<input id="first-name" type="text" name="first-name" placeholder="First name" required>
+				<label for="last-name">Last name:</label>
+				<input id="last-name" type="text" name="last-name" placeholder="Last name"  required>
+			</div>
+			<div class="email-info">
+				<label for="email">Email:</label>
+				<input id="email" type="email" placeholder="Username@mail.com" name="email" required>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Personal information</legend>
+			<div>
+				<label for="age">Age :</label>
+				<input id="age" type="number" value="18" name="age" min="1" max="150" step="1">
+			</div>
+			<div>
+				<label class="a" for="male">Male :</label>
+				<input type="radio" name="male" value="male" id="male" checked> Male
+				<input type="radio" name="male" value="female"> Female
+			</div>
+			<div>
+				<label for="country">Country</label>
+				<select name="country" id="country">
+					<optgroup label="Europ">
+						<option value="ua" selected>Ukraine</option>
+						<option value="gb">Greate Britein</option>
+						<option value="ic">Iceland</option>
+						<option value="gr">Germany</option>
+						<option value="fr">France</option>
+						<option value="it">Italy </option>
+					</optgroup>
+					<optgroup label="America">
+						<option value="usa">USA</option>
+						<option value="me">Mexico</option>
+						<option value="br">Brazil</option>
+					</optgroup>
+				</select>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Review</legend>
+			<div>
+				<textarea name="review" id="review" cols="134" rows="10" placeholder="Review"></textarea>
+			</div>
+		</fieldset>
+		<div class="send-bottom">
+			<input id="send" type="Submit" value="Send">
+		</div>
+	</form>
+	</div>
+</body>
+</html>

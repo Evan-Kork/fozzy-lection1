@@ -1,0 +1,64 @@
+body{
+	background: #FFBA00;
+	font-style: italic;
+	font-size: 16pt;
+	color: black;
+}
+header{
+	width: 1020px;
+	height: 100px;
+	margin: 0 auto;
+	background: #FFCB40;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+input{
+	border: none;
+	font-style: italic;
+	font-size: 16pt;
+	background: #FFCB40;
+}
+input::-webkit-input-placeholder { 
+	font-size: 14pt;
+	color: #151619;
+	font-weight: 100	
+	font-style: italic; 
+}
+fieldset{
+	border-radius: 10px;
+	border: 2px solid #FFD973;
+}
+legend{
+	font-size: 12pt;
+	text-align: right;
+}
+.reg-page{
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+	background: #FFCB40;
+	padding: 20px;
+	border-radius: 10px;
+}
+.name-info{
+	padding: 20px;
+}
+.email-info{
+	padding: 20px;
+}
+#send{
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	background: #1af249;
+}
+.send-bottom{
+	width: 100px;
+	margin: 0 auto;
+	padding: 10px;
+}
+#send:hover{
+	transform: scale(1.2);
+	background: #2cf765;
+}
