@@ -1,0 +1,13 @@
+.opt {
+	margin: 5px;
+	padding: 28px 16px 12px;
+	color: #777;
+}
+
+.rad-add:checked + .opt {
+	margin-right: 4px;
+	margin-left: 4px;
+	border-bottom: 3px solid #1A73E8;
+	color: #1A73E8;
+	font-weight: bold;
+}
