@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Documentation on JavaScript</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container-fluid my-2">
+		<div class="row">
+			<div class="col-12">
+				<div class="accordion" id="accordionExample">
+<!--card 0-->
+					<div class="card bg-dark text-light text-left">
+						<div class="card-header">
+							<h5 class="mb-0">Access Methods:</h5>
+						</div>
+					</div>
+<!--Slice 1-->
+					<div class="card bg-dark text-light text-center">
+						<div class="card-header" id="heading-1">
+							<h5 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+									Slice
+								</button>
+							</h5>
+						</div>
+						<div id="collapse-1" class="collapse" aria-labelledby="heading-1" data-parent="#accordionExample">
+							<div class="card-body">
+								Метод slice() не изменяет исходный массив, а возвращает новую «одноуровневую» копию, содержащую копии элементов, вырезанных из исходного массива. Элементы исходного массива копируются в новый массив по следующим правилам:
+								<br>Ссылки на объекты (но не фактические объекты): метод slice() копирует ссылки на объекты в новый массив. И оригинал, и новый массив ссылаются на один и тот же объект. То есть, если объект по ссылке будет изменён, изменения будут видны и в новом, и в исходном массивах.
+								<br>Строки и числа (но не объекты String и Number): метод slice() копирует значения строк и чисел в новый массив. Изменения строки или числа в одном массиве никак не затрагивает другой.
+								Если к любому массиву будет добавлен новый элемент, это никак не повлияет на другой массив.
+							</div>
+						</div>
+					</div>
+<!--Concat 2-->
+					<div class="card bg-dark text-light text-center">
+						<div class="card-header" id="heading-2">
+							<h5 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
+									Concat
+								</button>
+							</h5>
+						</div>
+						<div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#accordionExample">
+							<div class="card-body">
+								Метод concat создаёт новый массив, состоящий из элементов в объекте, на котором он был вызван, за которыми по порядку следуют, для каждого аргумента, все его элементы (если аргумент является массивом), либо сам аргумент (если он массивом не является).
+								<br>Метод concat не изменяет данный массив или любой из массивов, переданных в аргументах, а вместо этого возвращает поверхностную копию, содержащую копии тех элементов, что были объединены с исходными массивами. Элементы оригинальных массивов копируются в новый массив по следующим правилам:
+								<br>Ссылки на объекты (но не фактические объекты): метод concat копирует ссылки на объекты в новый массив. И оригинал, и новый массив ссылаются на один и тот же объект. То есть, если объект по ссылке будет изменён, изменения будут видны и в новом, и в исходном массивах.
+								<br>Строки, числа и булевы значения (но не объекты String, Number или Boolean): метод concat копирует значения строк и чисел в новый массив.
+								<br><b>Примечание:</b> Соединение массивов и/или значений в новый массив оставит соединяемые массивы/значения неизменными. Кроме того, любая операция над новым массивом (если только элемент не является ссылкой) не будет затрагивать исходные массивы и наоборот.
+							</div>
+						</div>
+					</div>
+<!--Includs 3-->
+					<div class="card bg-dark text-light text-center">
+						<div class="card-header" id="heading-3">
+							<h5 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
+									Includs
+								</button>
+							</h5>
+						</div>
+						<div id="collapse-3" class="collapse" aria-labelledby="heading-3" data-parent="#accordionExample">
+							<div class="card-body">
+								Метод includes() определяет, содержит ли массив определённый элемент, возвращая в зависимости от этого true или false.
+								<br><b>Синтаксис:</b> arr.includes(searchElement[, fromIndex = 0])
+							</div>
+						</div>
+					</div>
+<!--Join 4-->
+					<div class="card bg-dark text-light text-center">
+						<div class="card-header" id="heading-4">
+							<h5 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
+									Join
+								</button>
+							</h5>
+						</div>
+						<div id="collapse-4" class="collapse" aria-labelledby="heading-4" data-parent="#accordionExample">
+							<div class="card-body">
+								Преобразует все элементы массива в строки и объединяет их в одну большую строку. Элемент массива с типом undefined или null преобразуется в пустую строку.
+							</div>
+						</div>
+					</div>
+<!--Split 5-->
+					<div class="card bg-dark text-light text-center">
+						<div class="card-header" id="heading-5">
+							<h5 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">
+									Split
+								</button>
+							</h5>
+						</div>
+						<div id="collapse-5" class="collapse" aria-labelledby="heading-5" data-parent="#accordionExample">
+							<div class="card-body">
+								Метод split() возвращает новый массив.
+								<br>Если разделитель separator найден, он удаляется из строки, а подстроки возвращаются в массиве. Если разделитель опущен, массив будет содержать только один элемент, состоящий из всей строки. Если разделитель является пустой строкой, строка str будет преобразована в массив символов.
+								<br>Если разделитель является регулярным выражением, содержащим подгруппы, то каждый раз при сопоставлении с разделителем, результаты (включая те, что не определены) захвата подгруппы будут помещаться внутрь выходного массива. Однако, не все браузеры поддерживают эту возможность.
+								<br><b>Примечание:</b> Если строка является пустой строкой, метод split() вернёт массив, состоящий из одной пустой строки, а не пустой массив.
+							</div>
+						</div>
+					</div>
+<!--ToString 6-->
+					<div class="card bg-dark text-light text-center">
+						<div class="card-header" id="heading-6">
+							<h5 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6">
+									ToString
+								</button>
+							</h5>
+						</div>
+						<div id="collapse-6" class="collapse" aria-labelledby="heading-6" data-parent="#accordionExample">
+							<div class="card-body">
+								Объект Array переопределяет метод toString объекта Object. Для объектов класса Array, метод toString соединяет массив и возвращает одну строку, содержащую каждый элемент массива, разделённый запятыми. Например, следующий код создаёт массив и использует метод toString для преобразования массива в строку.
+								<br>JavaScript вызывает метод toString автоматически, когда массив представляется текстовым значением или когда массив находится в контексте конкатенации строк.
+							</div>
+						</div>
+					</div>
+<!--indexOf 7-->
+					<div class="card bg-dark text-light text-center">
+						<div class="card-header" id="heading-7">
+							<h5 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-7" aria-expanded="true" aria-controls="collapse-7">
+									indexOf
+								</button>
+							</h5>
+						</div>
+						<div id="collapse-7" class="collapse" aria-labelledby="heading-7" data-parent="#accordionExample">
+							<div class="card-body">
+								Метод indexOf() сравнивает искомый элемент searchElement с элементами в массиве, используя строгое сравнение (тот же метод используется оператором ===, тройное равно).
+							</div>
+						</div>
+					</div>
+<!--LastIndexOf 8-->
+					<div class="card bg-dark text-light text-center">
+						<div class="card-header" id="heading-8">
+							<h5 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-8" aria-expanded="true" aria-controls="collapse-8">
+									LastIndexOf
+								</button>
+							</h5>
+						</div>
+						<div id="collapse-8" class="collapse" aria-labelledby="heading-8" data-parent="#accordionExample">
+							<div class="card-body">
+								Метод lastIndexOf() возвращает последний индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет. Массив просматривается от конца к началу, начиная с индекса fromIndex.
+							</div>
+						</div>
+					</div>
+<!--card 9-->
+					<div class="card bg-dark text-light text-left">
+						<div class="card-header">
+							<h5 class="mb-0">Methods that change the array:</h5>
+						</div>
+					</div>
+<!--Fill 10-->
+					<div class="card bg-dark text-light text-center">
+						<div class="card-header" id="heading-10">
+							<h5 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-10" aria-expanded="true" aria-controls="collapse-10">
+									Fill
+								</button>
+							</h5>
+						</div>
+						<div id="collapse-10" class="collapse" aria-labelledby="heading-10" data-parent="#accordionExample">
+							<div class="card-body">
+								Элементы заполняются в полузакрытом интервале [start, end).
+								<br>Метод fill принимает до трёх аргументов — value, start и end. Аргументы start и end являются необязательными со значениями по умолчанию, равными 0 и length объекта this соответственно.
+								<br>Если аргумент start является отрицательным, он трактуется как length+start, где length — это длина массива. Если аргумент end является отрицательным, он трактуется как length+end.
+								<br>Метод fill намеренно является обобщённым, он не требует, чтобы значение this внутри него было объектом Array.
+								<br>Метод fill является изменяющим методом, он изменит объект this и вернёт его, а не просто вернёт копию.
+							</div>
+						</div>
+					</div>
+<!--Pop 11-->
+					<div class="card bg-dark text-light text-center">
+						<div class="card-header" id="heading-11">
+							<h5 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-11" aria-expanded="true" aria-controls="collapse-11">
+									Pop
+								</button>
+							</h5>
+						</div>
+						<div id="collapse-11" class="collapse" aria-labelledby="heading-11" data-parent="#accordionExample">
+							<div class="card-body">
+								Метод pop удаляет последний элемент из массива и возвращает удалённое значение.
+								<br>Метод pop не является привязанным к типу; этот метод может быть вызван или применён к массивоподобным объектам. Объекты, не содержащие свойство length, отражающее последний элемент в серии последовательных числовых, начинающихся с нуля, свойств, могут повести себя неправильным образом.
+								<br>Если вы вызовете pop() на пустом массиве, он вернёт значение undefined.
+							</div>
+						</div>
+					</div>
+<!--Shift 12-->
+					<div class="card bg-dark text-light text-center">
+						<div class="card-header" id="heading-12">
+							<h5 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-12" aria-expanded="true" aria-controls="collapse-12">
+									Shift
+								</button>
+							</h5>
+						</div>
+						<div id="collapse-12" class="collapse" aria-labelledby="heading-12" data-parent="#accordionExample">
+							<div class="card-body">
+								Метод shift удаляет элемент по нулевому индексу, сдвигает значения по последовательным индексам вниз, а затем возвращает удалённое значение. Если свойство length массива равно 0, вернётся значение undefined.
+								<br>Метод shift не является привязанным к типу; этот метод может быть вызван или применён к объектам, напоминающим массив. Объекты, не содержащие свойство length, отражающее последний элемент в серии последовательных числовых, начинающихся с нуля, свойств, могут повести себя неправильным образом.
+							</div>
+						</div>
+					</div>
+<!--Push 13-->
+					<div class="card bg-dark text-light text-center">
+						<div class="card-header" id="heading-13">
+							<h5 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-13" aria-expanded="true" aria-controls="collapse-13">
+									Push
+								</button>
+							</h5>
+						</div>
+						<div id="collapse-13" class="collapse" aria-labelledby="heading-13" data-parent="#accordionExample">
+							<div class="card-body">
+								Метод push присоединяет значения к массиву.
+								<br>Метод push не является привязанным к типу; этот метод может быть вызван или применён к объектам, напоминающим массив. Метод опирается на свойство length для определения места вставки значений. Если свойство length не может быть преобразовано в число, будет использовать индекс 0. Сюда входит случай несуществования свойства length, в этом случае оно также будет создано.
+								<br>Единственными родными массивоподобными объектами являются строки, хотя к ним он не может быть применён, поскольку строки являются неизменяемыми.
+							</div>
+						</div>
+					</div>
+<!--UnShift 14-->
+					<div class="card bg-dark text-light text-center">
+						<div class="card-header" id="heading-14">
+							<h5 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-14" aria-expanded="true" aria-controls="collapse-14">
+									UnShift
+								</button>
+							</h5>
+						</div>
+						<div id="collapse-14" class="collapse" aria-labelledby="heading-14" data-parent="#accordionExample">
+							<div class="card-body">
+								Метод unshift вставляет переданные значения в начало массивоподобного объекта.
+								<br>Метод unshift не является привязанным к типу; этот метод может быть вызван или применён к объектам, напоминающим массив. Объекты, не содержащие свойство length, отражающее последний элемент в серии последовательных числовых, начинающихся с нуля, свойств, могут повести себя неправильным образом.
+							</div>
+						</div>
+					</div>
+<!--Reverse 15-->
+					<div class="card bg-dark text-light text-center">
+						<div class="card-header" id="heading-15">
+							<h5 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-15" aria-expanded="true" aria-controls="collapse-15">
+									Reverse
+								</button>
+							</h5>
+						</div>
+						<div id="collapse-15" class="collapse" aria-labelledby="heading-15" data-parent="#accordionExample">
+							<div class="card-body">
+								Метод reverse() на месте обращает порядок следования элементов массива. Первый элемент массива становится последним, а последний — первым.
+							</div>
+						</div>
+					</div>
+<!--Sort 16-->
+					<div class="card bg-dark text-light text-center">
+						<div class="card-header" id="heading-16">
+							<h5 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-16" aria-expanded="true" aria-controls="collapse-16">
+									Sort
+								</button>
+							</h5>
+						</div>
+						<div id="collapse-16" class="collapse" aria-labelledby="heading-16" data-parent="#accordionExample">
+							<div class="card-body">
+								Метод sort() на месте сортирует элементы массива и возвращает отсортированный массив. Сортировка не обязательно устойчива (англ.). Порядок cортировки по умолчанию соответствует порядку кодовых точек Unicode.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
