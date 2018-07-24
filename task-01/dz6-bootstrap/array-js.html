@@ -10,14 +10,32 @@
 <body>
 	<div class="container">
 		<div class="row my-2 p-2 bg-info rounded">
-			<div class="col-6">
+			<div class="col-md-6">
 				<form>
 					<input type="text"class="pt-0 pb-1 rounded" id="array">
 					<button type="button" class="btn btn-light btn-sm" onclick="ok();">Ok</button>
 					<button type="button" class="btn btn-light btn-sm" onclick="clean();">Clean</button>
 				</form>
 			</div>
-			<div class="col-1 border rounded" id="show">
+			<div class="col-md-2 my-1 my-md-0 border rounded">
+				<div class="row my-1 my-md-0">
+					<div class="col-md-6 col-6">
+						length:
+					</div>
+					<div class="col-md-6 col-6" id="showLen">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row my-2 p-2 bg-info rounded">
+			<div class="col">
+				<div class="row my-1">
+					<div class="col-md-2">
+					Array :
+					</div>
+					<div class="col-md-10 " id="showArray">
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

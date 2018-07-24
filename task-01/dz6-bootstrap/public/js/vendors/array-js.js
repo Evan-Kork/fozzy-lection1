@@ -14,8 +14,10 @@ function ok() {
 			buf.push(str);
 		}
 	}
-	console.log(buf);
-	let show = document.getElementById('show');
+	//console.log(buf);
+	let show = document.getElementById('showLen');
+	let showArray = document.getElementById('showArray');
+	showArray.innerText = buf;
 	show.innerText = buf.length;
 };
 function clean(){
@@ -23,4 +25,3 @@ function clean(){
 	arr.value = null;
 	ok();
 };
-ok();
