@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="styles/search.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <div class="search-box">
+        <h1>Shmoogle:)</h1>
+        <form action="https://www.google.com.ua/search" method="get" target="_blank">
+            <fieldset>
+                <input name="q" type="text"><br>
+                <button>Search</button>
+            </fieldset>
+            <fieldset>
+                <legend>Let's find your target faster</legend>
+                <select name="cr">
+                    <option value="" selected>Any country</option>
+                    <option value="countryUA">Ukraine</option>
+                    <option value="countryRU">Russia</option>
+                </select>
+                <select name="lr">
+                    <option value="" selected>Any language</option>
+                    <option value="lang_uk">Ukrainian</option>
+                    <option value="lang_ru">Russian</option>
+                    <option value="lang_en">English</option>
+                </select>
+                <select name="tbs">         
+                    <option value="qdr:all " selected>All time</option>            
+                    <option value="qdr:h" selected>Hour</option>
+                    <option value="qdr:d">Last 24 hours</option>
+                    <option value="qdr:w">Week</option>
+                    <option value="qdr:m">Last month</option>
+                    <option value="qdr:y">Last year</option>
+                </select>
+                <select name="tbm">         
+                    <option value=""selected>Type</option> 
+                    <option value="app">Apps</option>            
+                    <option value="bks">Books</option>
+                    <option value="isch">Images</option>
+                    <option value="nws">News</option>
+                    <option value="pts">Google patents</option>
+                    <option value="shop">Shops</option>
+                    <option value="vid">Videos</option>            
+                </select>
+                <select name="as_filetype"> 
+                    <option value=""selected>Filetype</option>          
+                    <option value="pdf">PDF</option>            
+                    <option value="ps">PS</option>
+                    <option value="dwf">DWF</option>
+                    <option value="kml">KML</option>
+                    <option value="kmz">KMZ</option>
+                    <option value="xls">XLS</option>
+                    <option value="ppt">PPT</option>    
+                    <option value="doc">DOC</option>            
+                    <option value="rtf">RTF</option>    
+                    <option value="swf">SWF</option>  
+                </select>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
