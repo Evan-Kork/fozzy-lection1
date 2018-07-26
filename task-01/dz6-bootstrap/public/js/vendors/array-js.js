@@ -1,7 +1,7 @@
+let arr = document.getElementById('array');
 function ok() {
-	let arr = document.getElementById('array');
-	var buf =[];
-	var str ='';
+	let buf =[];
+	let str ='';
 	for (var i = 0; i < arr.value.length; i++) {
 		if(arr.value[i]!=','){
 			str+=arr.value[i];
@@ -10,7 +10,7 @@ function ok() {
 			buf.push(str);
 			str = '';
 		}
-		if(i ==arr.value.length-1){
+		if(i == arr.value.length-1){
 			buf.push(str);
 		}
 	}
@@ -21,7 +21,7 @@ function ok() {
 	show.innerText = buf.length;
 };
 function clean(){
-	let arr = document.getElementById('array');
+	//let arr = document.getElementById('array');
 	arr.value = null;
 	ok();
 };
