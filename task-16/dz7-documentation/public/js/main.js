@@ -6,10 +6,10 @@
 function getArray (self, input) {
   let arrayString = ($(self).closest('.form').find(`.${input}`))[0].value;
   let isComma = arrayString.match(/,/);
-  let arrayWhiteSpace = arrayString.replace(/ /g, '');
-  if (arrayString.length > 1 && isComma === null && arrayString !== '') {
+  let arrayWhiteSpace = arrayString.replace(/,*$/, '').replace(/\s*/g, '').replace(/(,\s*$)|(\s*$)/, '');
+  if (!isNaN(arrayWhiteSpace) && arrayWhiteSpace.length > 1 && isComma === null && arrayWhiteSpace !== '') {
     showAnswer(self, "Use comma as a separator!", 'red');
-  } else if (arrayString.length === 0) {
+  } else if (arrayWhiteSpace.length === 0) {
     showAnswer(self, "the array is empty!", 'red');
   } else {
     let array = arrayWhiteSpace.split(',');
@@ -32,31 +32,40 @@ function showAnswer(self, answer, answerColor) {
   }
 };
 
+function clearInput() {
+  let self = event.target;
+  let inputArr = $(self).closest('.form').find('input');
+  for (let i = 0; i< inputArr.length; i++) {
+    inputArr[i].value = '';
+  }
+}
+
 $('.action-btn').click(function() {
-  let method = $(this).closest('.collapse').attr('id');
+  let method = $(this).attr('data-method');
   switch(method) {
-    case 'collapseProp': getArrayLength(); break;
-    case 'collapseSlice': getArraySlice(); break;
-    case 'collapseConcat': getArrayConcat(); break;
-    case 'collapseIncludes': checkIncludes(); break;
-    case 'collapseJoin': joinArray(); break;
-    case 'collapseSplit': splitArray(); break;
-    case 'collapseToString': arrayToString(); break;
-    case 'collapseIndexOf': getIndexOf(); break;
-    case 'collapseLastIndex': getLastIndexOf();  break;   
-    case 'collapseFill': fillArray(); break;
-    case 'collapsePop': popElement(); break;
-    case 'collapseShift': shiftElement(); break;
-    case 'collapsePush': pushElement(); break;
-    case 'collapseUnshift': unshiftElement(); break;
-    case 'collapseReverse': reverseArray(); break;
-    case 'collapseSort': sortArray(); break;
-    case 'collapseSplice': spliceArray(); break;
-    case 'collapseFilter': filterArray(); break;
-    case 'collapseEvery': every(); break;
-    case 'collapseSome': some(); break;
-    case 'collapseReduce': reduce();  break;
-    case 'collapseReduceRight': reduceRight(); break;
+    case 'getArrayLength': getArrayLength(); break;
+    case 'getArraySlice': getArraySlice(); break;
+    case 'getArrayConcat': getArrayConcat(); break;
+    case 'checkIncludes': checkIncludes(); break;
+    case 'joinArray': joinArray(); break;
+    case 'splitArray': splitArray(); break;
+    case 'arrayToString': arrayToString(); break;
+    case 'getIndexOf': getIndexOf(); break;
+    case 'getLastIndexOf': getLastIndexOf();  break;   
+    case 'fillArray': fillArray(); break;
+    case 'popElement': popElement(); break;
+    case 'shiftElement': shiftElement(); break;
+    case 'pushElement': pushElement(); break;
+    case 'unshiftElement': unshiftElement(); break;
+    case 'reverseArray': reverseArray(); break;
+    case 'sortArray': sortArray(); break;
+    case 'spliceArray': spliceArray(); break;
+    case 'filterArray': filterArray(); break;
+    case 'every': every(); break;
+    case 'some': some(); break;
+    case 'reduce': reduce();  break;
+    case 'reduceRight': reduceRight(); break;
+    case 'clearInput': clearInput(); break;
     default: console.log('Method is not found');
   }
 });

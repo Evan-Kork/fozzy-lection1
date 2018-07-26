@@ -35,7 +35,8 @@
                   <br>Let's check?
                   <div class="form text-center">
                     <input class="array-input" type="text" size="70" value="1, 2, 3, 4, 5, 6" required>
-                    <button class="action-btn btn btn-default">Get length!</button>
+                    <button class="action-btn btn btn-default" data-method="getArrayLength">Get length!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -63,7 +64,8 @@
                     <input class="input-initial"type="text">
                     <br><label for="input-closing">Write the index of the closing element</label>
                     <input class="input-closing"type="text">
-                    <br><button class="action-btn btn btn-default">Slice!</button>
+                    <br><button class="action-btn btn btn-default" data-method="getArraySlice">Slice!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -87,7 +89,8 @@
                     <input class="array-input" type="text" value="1, 2, 4, 5, 6">
                     <br><label for="input6">Write the second array</label>
                     <input class="second-input" type="text" value="1, 2, 3, 4, 5, 6">
-                    <br><button class="action-btn btn btn-default">Concat!</button>
+                    <br><button class="action-btn btn btn-default" data-method="getArrayConcat">Concat!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -110,7 +113,8 @@
                     <input class="array-input" type="text" value="1, 2, 4, 5, 6">
                     <br><label for="param-input">What do you want to find?</label>
                     <input class="param-input" type="text" value="1">
-                    <br><button class="action-btn btn btn-default">Check!</button>
+                    <br><button class="action-btn btn btn-default" data-method="checkIncludes">Check!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -130,7 +134,8 @@
                   <br>Let's check?
                   <div class="form">
                     <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
-                    <button class="action-btn btn btn-default">Convert the array into a string!</button>
+                    <button class="action-btn btn btn-default" data-method="joinArray">Convert the array into a string!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -150,7 +155,8 @@
                   <br>Let's check?
                   <div class="form">
                     <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
-                    <button class="action-btn btn btn-default">Get the array!</button>
+                    <button class="action-btn btn btn-default" data-method="arraySplit">Get the array!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -170,7 +176,8 @@
                   <br>Let's check?
                   <div class="form">
                     <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
-                    <button class="action-btn btn btn-default">Get the string!</button>
+                    <button class="action-btn btn btn-default" data-method="arrayToString">Get the string!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -192,7 +199,8 @@
                     <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
                     <label for="second-input">Index of which element do you want to know?</label>
                     <input type="text" class="second-input">
-                    <button class="action-btn btn btn-default">Get the index!</button>
+                    <button class="action-btn btn btn-default" data-method="getIndexOf">Get the index!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -214,7 +222,8 @@
                     <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
                     <label for="second-input">Index of which element do you want to know?</label>
                     <input type="text" class="second-input">
-                    <button class="action-btn btn btn-default">Get the index!</button>
+                    <button class="action-btn btn btn-default" data-method="getLastIndexOf">Get the index!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -244,7 +253,8 @@
                     <input type="text" class="input-initial">
                     <label for="input-closing">Write the closing index</label>
                     <input type="text" class="input-closing">
-                    <button class="action-btn btn btn-default">Get the array!</button>
+                    <button class="action-btn btn btn-default" data-method="fillArray">Get the array!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -264,7 +274,8 @@
                   <br>Let's check?
                   <div class="form">
                     <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
-                    <button class="action-btn btn btn-default">Pop!</button>
+                    <button class="action-btn btn btn-default" data-method="popElement">Pop!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -283,7 +294,8 @@
                   The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array.
                   <div class="form">
                     <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
-                    <button class="action-btn btn btn-default">Shift!</button>
+                    <button class="action-btn btn btn-default" data-method="shiftElement">Shift!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -304,7 +316,8 @@
                     <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
                     <label for="second-input">Which element would you like to add?</label>
                     <input type="text" class="second-input">
-                    <button class="action-btn btn btn-default">Push!</button>
+                    <button class="action-btn btn btn-default" data-method="pushElement">Push!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -325,7 +338,8 @@
                     <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
                     <label for="second-input">Which element would you like to add?</label>
                     <input type="text" class="second-input">
-                    <button class="action-btn btn btn-default">Unshift!</button>
+                    <button class="action-btn btn btn-default" data-method="unshiftElement">Unshift!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -344,7 +358,8 @@
                   The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first.
                   <div class="form">
                     <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
-                    <button class="action-btn btn btn-default">Get reversed!</button>
+                    <button class="action-btn btn btn-default" data-method="reverseArray">Get reversed!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -364,7 +379,8 @@
                   The time and space complexity of the sort cannot be guaranteed as it is implementation dependent.
                   <div class="form">
                     <input type="text" class="array-input" value=" 4, 3, 3, 2, 8">
-                    <button class="action-btn btn btn-default">Get sorted!</button>
+                    <button class="action-btn btn btn-default" data-method="sortArray">Get sorted!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -389,7 +405,8 @@
                     <input type="text" class="third-input">
                     <label for="forth-input">What do we add?</label>
                     <input type="text" class="forth-input">
-                    <button class="action-btn btn btn-default">Splice!</button>
+                    <button class="action-btn btn btn-default" data-method="spliceArray">Splice!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -409,7 +426,8 @@
                   Let's filter all the numbers which are greater than 5?
                   <div class="form">
                     <input type="text" class="array-input" value="1, 2, 22, 4, 9, 6">
-                    <button class="action-btn btn btn-default">Filter!</button>
+                    <button class="action-btn btn btn-default" data-method="filterArray">Filter!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -429,7 +447,8 @@
                   <br>Let's check whether all the elements of the array are greater than 5?
                   <div class="form">
                     <input type="text" class="array-input" value="1, 2, 22, 4, 9, 6">
-                    <button class="action-btn btn btn-default">Get answer!</button>
+                    <button class="action-btn btn btn-default" data-method="every">Get answer!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -449,7 +468,8 @@
                   <br>Let's check whether some of the elements of the array are greater than 5?
                   <div class="form">
                     <input type="text" class="array-input" value="1, 2, 22, 4, 9, 6">
-                    <button class="action-btn btn btn-default">Get answer!</button>
+                    <button class="action-btn btn btn-default" data-method="some">Get answer!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -469,7 +489,8 @@
                   Let's subtract subsequently all the elements!
                   <div class="form">
                     <input type="text" class="array-input" value="1, 2, 22, 4, 9, 6">
-                    <button class="action-btn btn btn-default">Reduce!</button>
+                    <button class="action-btn btn btn-default" data-method="reduce">Reduce!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
@@ -489,7 +510,8 @@
                   Let's subtract subsequently all the elements from right to left!                  
                   <div class="form">
                     <input type="text" class="array-input" value="1, 2, 22, 4, 9, 6">
-                    <button class="action-btn btn btn-default">Reduce!</button>
+                    <button class="action-btn btn btn-default" data-method="reduceRight">Reduce!</button>
+                    <button class="action-btn btn btn-default" data-method="clearInput">Clear</button>
                     <div class="answer"></div>
                   </div>
                 </div>
