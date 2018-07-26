@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="public/vendors/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="public/css/style.css">
+  <title>Array Methods Documentation</title>
+</head>
+<body>
+  <div class="doc-box">
+    <div class="container doc-container">
+      <div class="row">
+        <div class="col-12">
+          <div class="title-section text-center">
+            <h1>Array Methods</h1>
+            <h2>Want to learn JS arrays? May the cats be with you :)</h2>
+            <p><i>The JavaScript <strong>Array</strong> object is a global object that is used in the construction of arrays; which are high-level, list-like objects.</i></p>
+          </div>
+          <h2 class="text-center">Array properties</h2>
+          <div class="accordion accordion-prop" id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseProp" aria-expanded="true" aria-controls="collapseProp">
+                      Array.prototype.length
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseProp" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  The length property of an object which is an instance of type Array sets or returns the number of elements in that array. The value is an unsigned, 32-bit integer that 
+                  is always numerically greater than the highest index in the array.
+                  <br>Let's check?
+                  <div class="form text-center">
+                    <input class="array-input" type="text" size="70" value="1, 2, 3, 4, 5, 6" required>
+                    <button class="action-btn btn btn-default">Get length!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="text-center">Accessing methods</h2>
+          <div class="accordion" id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSlice" aria-expanded="true" aria-controls="collapseSlice">
+                      Array.prototype.slice()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseSlice" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  The slice() method returns a shallow copy of a portion of an array into a new array object selected from begin to end (end
+                  not included). The original array will not be modified.
+                  <br>Let's check?
+                  <div class="form">
+                    <input class="array-input" type="text" value="1, 2, 3, 4, 5, 6">
+                    <br><label for="input-initial">Write the index of the initial element</label>
+                    <input class="input-initial"type="text">
+                    <br><label for="input-closing">Write the index of the closing element</label>
+                    <input class="input-closing"type="text">
+                    <br><button class="action-btn btn btn-default">Slice!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseConcat" aria-expanded="false" aria-controls="collapseConcat">
+                    Array.prototype.concat()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseConcat" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns
+                  a new array.
+                  <br>Let's check?
+                  <div class="form">
+                    <label for="array-input">Write the first array</label>
+                    <input class="array-input" type="text" value="1, 2, 4, 5, 6">
+                    <br><label for="input6">Write the second array</label>
+                    <input class="second-input" type="text" value="1, 2, 3, 4, 5, 6">
+                    <br><button class="action-btn btn btn-default">Concat!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseIncludes" aria-expanded="false" aria-controls="collapseIncludes">
+                      Array.prototype.includes()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseIncludes" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The includes() method determines whether an array includes a certain element, returning true or false as appropriate.
+                  <br>Let's check?
+                  <div class="form">
+                    <label for="array-input">Write the array</label>
+                    <input class="array-input" type="text" value="1, 2, 4, 5, 6">
+                    <br><label for="param-input">What do you want to find?</label>
+                    <input class="param-input" type="text" value="1">
+                    <br><button class="action-btn btn btn-default">Check!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseJoin" aria-expanded="false" aria-controls="collapseJoin">
+                      Array.prototype.join()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseJoin" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The join() method joins all elements of an array (or an array-like object) into a string and returns this string.
+                  <br>Let's check?
+                  <div class="form">
+                    <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
+                    <button class="action-btn btn btn-default">Convert the array into a string!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSplit" aria-expanded="false" aria-controls="collapseSplit">
+                      Array.prototype.split()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseSplit" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The split() method splits a String object into an array of strings by separating the string into substrings, using a specified separator string to determine where to make each split
+                  <br>Let's check?
+                  <div class="form">
+                    <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
+                    <button class="action-btn btn btn-default">Get the array!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseToString" aria-expanded="false" aria-controls="collapseToString">
+                      Array.prototype.toString()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseToString" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The toString() method returns a string representing the specified array and its elements.
+                  <br>Let's check?
+                  <div class="form">
+                    <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
+                    <button class="action-btn btn btn-default">Get the string!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseIndexOf" aria-expanded="false" aria-controls="collapseIndexOf">
+                      Array.prototype.indexOf()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseIndexOf" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+                  <br>Let's check?
+                  <div class="form">
+                    <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
+                    <label for="second-input">Index of which element do you want to know?</label>
+                    <input type="text" class="second-input">
+                    <button class="action-btn btn btn-default">Get the index!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseLastIndex" aria-expanded="false" aria-controls="collapseLastIndex">
+                      Array.prototype.lastIndexOf()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseLastIndex" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
+                  <br>Let's check?
+                  <div class="form">
+                    <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
+                    <label for="second-input">Index of which element do you want to know?</label>
+                    <input type="text" class="second-input">
+                    <button class="action-btn btn btn-default">Get the index!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="text-center">Modifying methods</h2>
+          <div class="accordion" id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFill" aria-expanded="false" aria-controls="collapseFill">
+                      Array.prototype.fill()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFill" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The fill() method fills all the elements of an array from a start index to an end index with a static value. The end index is not included.
+                  <br>Let's check?
+                  <div class="form">
+                    <label for="array-input">Your array</label>
+                    <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">                      
+                    <label for="second-input">With what value do you want to fill the array?</label>
+                    <input type="text" class="second-input" value="7">
+                    <label for="input-initial">Write the initial index</label>
+                    <input type="text" class="input-initial">
+                    <label for="input-closing">Write the closing index</label>
+                    <input type="text" class="input-closing">
+                    <button class="action-btn btn btn-default">Get the array!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsePop" aria-expanded="false" aria-controls="collapsePop">
+                      Array.prototype.pop()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapsePop" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The pop() method removes the last element from an array and returns that element. This method changes the length of the array.
+                  <br>Let's check?
+                  <div class="form">
+                    <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
+                    <button class="action-btn btn btn-default">Pop!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseShift" aria-expanded="false" aria-controls="collapseShift">
+                    Array.prototype.shift()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseShift" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array.
+                  <div class="form">
+                    <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
+                    <button class="action-btn btn btn-default">Shift!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsePush" aria-expanded="false" aria-controls="collapsePush">
+                    Array.prototype.push()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapsePush" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The push() method adds one or more elements to the end of an array and returns the new length of the array.
+                  <div class="form">
+                    <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
+                    <label for="second-input">Which element would you like to add?</label>
+                    <input type="text" class="second-input">
+                    <button class="action-btn btn btn-default">Push!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseUnshift" aria-expanded="false" aria-controls="collapseUnshift">
+                    Array.prototype.unshift()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseUnshift" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
+                  <div class="form">
+                    <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
+                    <label for="second-input">Which element would you like to add?</label>
+                    <input type="text" class="second-input">
+                    <button class="action-btn btn btn-default">Unshift!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseReverse" aria-expanded="false" aria-controls="collapseReverse">
+                    Array.prototype.reverse()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseReverse" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first.
+                  <div class="form">
+                    <input type="text" class="array-input" value="1, 2, 3, 4, 5, 6">
+                    <button class="action-btn btn btn-default">Get reversed!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSort" aria-expanded="false" aria-controls="collapseSort">
+                    Array.prototype.sort()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseSort" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The sort() method sorts the elements of an array in place and returns the array. The sort is not necessarily stable. The default sort order is according to string Unicode code points.
+                  The time and space complexity of the sort cannot be guaranteed as it is implementation dependent.
+                  <div class="form">
+                    <input type="text" class="array-input" value=" 4, 3, 3, 2, 8">
+                    <button class="action-btn btn btn-default">Get sorted!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSplice" aria-expanded="false" aria-controls="collapseSplice">
+                    Array.prototype.splice()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseSplice" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The splice() method changes the contents of an array by removing existing elements and/or adding new elements.
+                  <div class="form">
+                    <input type="text" class="array-input" value="1, 2, 22, 4, 9, 6">
+                    <label for="second-input">From what index do we start editing?</label>
+                    <input type="text" class="second-input">
+                    <label for="third-input">How many elements do we remove?</label>
+                    <input type="text" class="third-input">
+                    <label for="forth-input">What do we add?</label>
+                    <input type="text" class="forth-input">
+                    <button class="action-btn btn btn-default">Splice!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
+                    Array.prototype.filter()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFilter" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+                  Let's filter all the numbers which are greater than 5?
+                  <div class="form">
+                    <input type="text" class="array-input" value="1, 2, 22, 4, 9, 6">
+                    <button class="action-btn btn btn-default">Filter!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEvery" aria-expanded="false" aria-controls="collapseEvery">
+                    Array.prototype.every()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseEvery" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The every() method tests whether all elements in the array pass the test implemented by the provided function.
+                  <br>Let's check whether all the elements of the array are greater than 5?
+                  <div class="form">
+                    <input type="text" class="array-input" value="1, 2, 22, 4, 9, 6">
+                    <button class="action-btn btn btn-default">Get answer!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSome" aria-expanded="false" aria-controls="collapseSome">
+                    Array.prototype.some()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseSome" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The some() method tests whether at least one element in the array passes the test implemented by the provided function
+                  <br>Let's check whether some of the elements of the array are greater than 5?
+                  <div class="form">
+                    <input type="text" class="array-input" value="1, 2, 22, 4, 9, 6">
+                    <button class="action-btn btn btn-default">Get answer!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseReduce" aria-expanded="false" aria-controls="collapseReduce">
+                    Array.prototype.reduce()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseReduce" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The reduce() method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.
+                  Let's subtract subsequently all the elements!
+                  <div class="form">
+                    <input type="text" class="array-input" value="1, 2, 22, 4, 9, 6">
+                    <button class="action-btn btn btn-default">Reduce!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseReduceRight" aria-expanded="false" aria-controls="collapseReduceRight">
+                    Array.prototype.reduceRight()
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseReduceRight" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  The reduceRight() method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value.
+                  Let's subtract subsequently all the elements from right to left!                  
+                  <div class="form">
+                    <input type="text" class="array-input" value="1, 2, 22, 4, 9, 6">
+                    <button class="action-btn btn btn-default">Reduce!</button>
+                    <div class="answer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scrollTop">
+    <div class="circle d-flex justify-content-center align-items-center"></div>
+  </div>
+  <script src="public/vendors/jquery/jquery-3.2.1.min.js"></script>
+  <script src="public/vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="public/js/main.js"></script> 
+</body>
+</html>
