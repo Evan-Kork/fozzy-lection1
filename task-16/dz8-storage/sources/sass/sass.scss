@@ -1,0 +1,144 @@
+html, body {
+    background-image: url('../../public/img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.welcome {
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    .greeting {
+        font-size: 36px;
+    }
+
+    .last-visit {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+}
+h1 {
+    padding: 20px 0;
+}
+
+.picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: lightblue;
+    background-image: url('../../public/img/avatar.jpg');
+    background-size: contain;
+}
+
+.log-in form, .card,   {
+background-color: rgba(255, 255, 255, 0.7);
+text-align: center;
+padding: 20px 0;
+width: 500px;
+margin: 200px auto;
+
+    & input:not([type=checkbox]) {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    input:-webkit-autofill {
+        background-color: lightgreen;
+    }
+
+    p {
+        margin: 5px 0;
+    }
+}
+
+.register-box .card {
+    width: 700px;
+}
+
+a.btn, button {
+    background-color: #2e5d04;
+    color: white;
+
+
+}
+
+.profile {
+    background-color: rgba(255, 255, 255, 0.7);
+    // width: 800px;
+    margin: 100px auto;
+    padding: 50px 0;
+
+
+    .info { 
+        font-size: 20px;
+    }
+
+    .buttons {
+        margin-top: 30px;
+    }
+}
+
+
+.post-section {
+    margin: 100px auto;
+
+    .write-post, .previous-posts {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        
+        textarea {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    
+        button {
+            margin: 0 auto;
+        }
+    }
+    .previous-posts {
+        margin-top: 44px;
+    
+        .post-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5px 20px;
+        
+            .like-box {
+                width: 50px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+        
+                .like {
+                    background-image: url('../../public/img/like.png');
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    cursor: pointer;
+                }
+            }
+        
+            .post {
+                font-size: 25px;
+            }
+        }
+
+        .button-box { 
+            text-align: right;
+            
+        }
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
