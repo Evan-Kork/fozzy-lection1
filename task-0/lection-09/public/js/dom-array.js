@@ -22,8 +22,17 @@ let checkLengthArray = () => {
 };
 let createLengthFunction = () => {
 	return `<div>
+				<div class="input-group mb-3">
+				  <div class="input-group-prepend" id="button-addon3">
+				    <button class="btn btn-outline-secondary" type="button">Button</button>
+				  </div>
+				  <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons" aria-describedby="button-addon3">
+				  <div class="input-group-append" id="button-addon3">
+				    <button class="btn btn-outline-secondary" type="button">Button</button>
+				  </div>
+				</div>
 				<input id="functionLengthInput" type="text" value="1,2,3,4,5">
-				<button id="buttonLengthArray">Chekc length</button>
+				<button id="buttonLengthArray" class="btn btn-default">Chekc length</button>
 				<div class="function-length-result"></div>
 			</div>`;
 }
@@ -96,6 +105,7 @@ let createBodyCard = (i) => {
 }
 let clickButtonFunction = () => {
 	document.getElementById('buttonLengthArray').addEventListener('click', checkLengthArray);
+	// document.getElementById('buttonLengthArray').removeEventListener('click', checkLengthArray);
 	
 }
 let createCard = (i) => {
@@ -109,5 +119,12 @@ let createCard = (i) => {
 for (let i = 0; i < documentationArray.length; i++) {
 	createCard(i);
 }
+
+let jIdDocumentation = $('#documentation').addClass('add').addClass('add1');
+let jClassAccordion = $('.accordion');
+jIdDocumentation.addClass('add2');
+$(jIdDocumentation[0]).removeClass('add');
+$(jIdDocumentation[0]).toggleClass('add1').toggleClass('add3');
+console.log('jDocumentation', jIdDocumentation[0], jClassAccordion);
 
 
