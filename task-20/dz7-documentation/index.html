@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" 
+        integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center text-secondary">Work with array: documentation</h1>
+                <!-- Довжина масиву -->
+                <div class="accordion" id="accordionExample">
+                    <h4>Довжина масиву:</h4>
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <span class="mb-0 text-muted">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    1. Length &#9660;
+                                </button>
+                                <br>повертає довжину масиву
+                            </span>
+                        </div>                         
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="length-array">Введіть значення для масиву (через кому з пробілом)</label>
+                                    <input type="text" id="length-array" class="form-control" value="1, 2, 3, 4, 5">
+                                </div>
+                                <button type="button" class="btn btn-primary button-result">Підрахувати</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Методи доступу -->
+                <div class="accordion" id="accordionExample">
+                    <h4>Методи доступу:</h4>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <span class="mb-0 text-muted">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    2. Slice &#9660;
+                                </button>
+                                <br>повертає новий масив, який містить копію частини вихідного масиву (в метод передаються індекси початкового і кінцевого елементів майбутнього підмасиву)
+                            </span>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label>Введіть значення для масиву (через кому з пробілом)</label>
+                                    <input type="text" id="slice-array" class="form-control" value="1, 2, 3, 4, 5">
+                                    <label>Введіть початковий індекс для нового підмасиву</label>
+                                    <input type="text" id="slice-index1" class="form-control" value="0">
+                                    <label>Введіть кінцевий індекс для нового підмасиву</label>
+                                    <input type="text" id="slice-index2" class="form-control" value="1">
+                                </div>
+                                <button type="button" class="btn btn-primary button-result">Підрахувати</button>
+                            </div>                            
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <span class="mb-0 text-muted">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    3. Concat &#9660;
+                                </button>
+                                <br>повертає новий масив, що складається з масиву, на якому він був викликаний, 
+                                з'єднаного з іншими масивами і/чи іншими значеннями, переданими в якості аргументів
+                            </span>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="concat-array1">Введіть значення для першого масиву (через кому з пробілом)</label>
+                                    <input type="text" id="concat-array1" class="form-control" value="1, 2, 3, 4, 5">
+                                    <label for="concat-array2">Введіть значення для другого масиву (через кому з пробілом)</label>
+                                    <input type="text" id="concat-array2" class="form-control" value="1, 2, 3, 4, 5">
+                                </div>
+                                <button type="button" id="concat-info" class="btn btn-primary get-result">Підрахувати</button>
+                                <div id="concat-result"></div>                 
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <span class="mb-0 text-muted">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    3. Includes &#9660;
+                                </button>
+                                <br>перевіряє чи містить масив даний елемент
+                            </span>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="includes-array">Введіть значення для масиву (через кому з пробілом)</label>
+                                    <input type="text" id="includes-array" class="form-control" value="1, 2, 3, 4, 5">
+                                    <label for="includes-element">Введіть один елемент, для перевірки на наявність в масиві</label>
+                                    <input type="text" id="includes-element" class="form-control" value="1">
+                                </div>
+                                <button type="button" id="includes-info" class="btn btn-primary get-result">Підрахувати</button>
+                                <div id="includes-result"></div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <span class="mb-0 text-muted">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    5. Join &#9660;
+                                </button>
+                                <br>об'єднує всі елементи масиву в строку (в метод можна передавати символ-розділювач)
+                            </span>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="join-array">Введіть значення для масиву (через кому з пробілом)</label>
+                                    <input type="text" id="join-array" class="form-control" value="1, 2, 3, 4, 5">
+                                    <label for="join-symbol">Введіть символ-розділювач елементів в строці</label>
+                                    <input type="text" id="join-symbol" class="form-control" value="-">
+                                </div>
+                                <button type="button" id="join-info" class="btn btn-primary get-result">Підрахувати</button>
+                                <div id="join-result"></div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <!---->
+                    <!-- <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <span class="mb-0 text-muted">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    6. Split &#9660;
+                                </button>
+                                <br>конвертує масив до строки
+                            </span>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="tostring-array">Введіть значення для масиву (через кому з пробілом)</label>
+                                    <input type="text" id="tostring-array" class="form-control" value="1, 2, 3, 4, 5">
+                                </div>
+                                <button type="button" id="tostring-info" class="btn btn-primary">Підрахувати</button>
+                                <div id="tostring-result"></div>                 
+                            </div>
+                        </div>
+                    </div> -->
+                    <!---->
+                    <!---->
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <span class="mb-0 text-muted">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    6. ToString &#9660;
+                                </button>
+                                <br>конвертує масив до строки
+                            </span>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="tostring-array">Введіть значення для масиву (через кому з пробілом)</label>
+                                    <input type="text" id="tostring-array" class="form-control" value="1, 2, 3, 4, 5">
+                                </div>
+                                <button type="button" id="tostring-info" class="btn btn-primary get-result">Підрахувати</button>
+                                <div id="tostring-result"></div>                 
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="card">
+                        <div class="card-header" id="headingSeven">
+                            <span class="mb-0 text-muted">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    7. IndexOf &#9660; 
+                                </button>
+                                <br>повертає перший індекс, по якому даний елемент може бути знайдений в масиві або -1, якщо елемент не знайдений
+                            </span>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="indexof-array">Введіть значення для масиву (через кому з пробілом)</label>
+                                    <input type="text" id="indexof-array" class="form-control" value="1, 2, 3, 4, 5">
+                                    <label for="indexof-index">Введіть елемент, який потрібно знайти</label>
+                                    <input type="text" id="indexof-element" class="form-control" value="1">
+                                    <label for="indexof-index">Введіть індекс, з якого починатиметься пошук</label>
+                                    <input type="text" id="indexof-index" class="form-control" value="0">
+                                </div>
+                                <button type="button" id="indexof-info" class="btn btn-primary get-result">Підрахувати</button>
+                                <div id="indexof-result"></div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="card">
+                        <div class="card-header" id="headingEight">
+                            <span class="mb-0 text-muted">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    8. LastIndexOf &#9660;
+                                </button>
+                                <br>повертає останній індекс, по якому даний елемент може бути знайдений в масиві (підрахунок ведеться з кінця)
+                            </span>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="lastindexof-array">Введіть значення для масиву (через кому з пробілом)</label>
+                                    <input type="text" id="lastindexof-array" class="form-control" value="1, 2, 3, 4, 5">
+                                    <label for="lastindexof-index">Введіть елемент, який потрібно знайти</label>
+                                    <input type="text" id="lastindexof-element" class="form-control" value="1">
+                                    <label for="lastindexof-index">Введіть індекс, з якого починатиметься пошук</label>
+                                    <input type="text" id="lastindexof-index" class="form-control" value="4">
+                                </div>
+                                <button type="button" id="lastindexof-info" class="btn btn-primary get-result">Підрахувати</button>
+                                <div id="lastindexof-result"></div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Методи змінюючі масив -->
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" 
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="public/js/methods.js"></script> <!-- мій скрипт -->
+</body>
+</html>
