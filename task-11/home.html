@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+		<link href='http://bootstraptema.ru/snippets/form/2017/recaptcha/custom.css' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="public/css/home.css">
+</head>
+<body>
+	<h1>Home Page</h1>
+		<div class="about">
+			<div id="userInfo"></div>
+			<div id="emailInfo"></div>
+			<div id="aboutInfo"></div>
+		</div>
+<div class="container">
+	<div class="row">
+		<div class="col-6">
+			<button onclick="editUser()" class="btn btn-success btn-send">Edit</button>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-6">
+			<button onclick="deleteUser()" class="btn btn-success btn-send">Delete</button>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-6">
+			<button onclick="exitUser()" class="btn btn-success btn-send">Exit</button>
+		</div>
+	</div>
+</div>
+
+<script src="public/js/home.js"></script>
+</body>
+</html>
