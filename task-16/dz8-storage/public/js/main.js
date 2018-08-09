@@ -80,6 +80,7 @@ $('.btn.log-in').click(function LoginUser() {
     } else {
         displayError(self, 'No user with such data');
     }
+    localStorage.setItem('counter', true);
 });
 /**
  * displays error
@@ -94,7 +95,9 @@ function displayError(self, string) {
 
 //registration
 $('.register').click( function() {
+    event.preventDefault();
     registerUser(event.target);
+    window.location.href = "./index.html";
 });
 var usersArray = [];
 
@@ -112,14 +115,7 @@ function registerUser(self) {
         event.preventDefault();
         return;
     }
-    let userInList = usersArray.find(obj => {
-        return obj.email === email;
-      });
-    if (userInList !== undefined) {
-        displayError(self, 'This email is already in use');
-        event.preventDefault();
-        return;
-    }
+ 
     let password = $(self).parents('.card-body').find('input[type=password]')[0].value;
     if (password === '') {
         displayError(self, 'password must be filled');
@@ -139,11 +135,13 @@ function registerUser(self) {
         password: password,
         about: about,
         posts: [],
-        lastVisit: null
+        lastVisit: null,
+        countVisit: 1
     };
     saveUserIntoCollection(userData);
     localStorage.setItem('user', JSON.stringify(userData));
 };
+
 
 //Shows the homepage with user info
 if ($('body.homepage').length > 0) {
@@ -152,6 +150,8 @@ if ($('body.homepage').length > 0) {
     sayHello(userData);
     showProfile(userData);
     showPost();
+    countVisits();
+    showInfograph();
 };
   
 /**
@@ -260,6 +260,47 @@ function showPost () {
             }
         }
 }
+
+function showInfograph() {
+    usersArray = JSON.parse(localStorage.getItem('users'));
+    let visitArray = [];
+    for (let i = 0; i < usersArray.length; i++) {
+        visitArray.push([usersArray[i].username, usersArray[i].countVisit]);
+    }
+    var chart = c3.generate({
+        data: {
+            columns:  [],
+            type : 'donut',
+            onclick: function (d, i) { console.log("onclick", d, i); },
+            onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+            onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+        },
+        donut: {
+            title: "Visiting activity"
+        }
+    });  
+    chart.load({
+        columns: visitArray
+    });
+};
+
+function getVisits() {
+    usersArray = JSON.parse(localStorage.getItem('users'));
+    for (let i = 0; i < usersArray.length; i++) {
+        let visitArray = [`data${i+1}`, usersArray[i].visits] ;
+       }
+}
+
+function countVisits () {
+    if (JSON.parse(localStorage.getItem('counter')) === true) {
+        debugger;
+        localStorage.removeItem('counter')
+        userData = defineStorage();
+        userData.visits++;
+        runItem(userData, 'setItem');
+        updateUserInCollection(userData);
+    }
+};
 /**
  * deletes  post from user obj
  * @param {string} id 
