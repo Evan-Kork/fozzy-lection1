@@ -1,0 +1,72 @@
+html, body {
+  background-color: #4b5c3f;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  background-color: rgba(202, 214, 193, 0.5);
+  color: #1d1f1b;
+  text-align: center;
+  padding: 5px;
+  margin: 20px;
+}
+
+div {
+  display: inline-block;
+}
+
+.image {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+.image img {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+form {
+  background-color: #cad6c1;
+  padding: 20px;
+  margin: 0 20px;
+}
+form fieldset {
+  margin: 5px;
+}
+form fieldset legend {
+  color: #917123;
+  font-weight: bold;
+  font-size: 18px;
+}
+form fieldset .container {
+  margin-top: 5px;
+}
+form fieldset .container .to-lable {
+  width: 120px;
+}
+form fieldset .container .to-lable label {
+  font-weight: bold;
+  color: #1d221e;
+}
+form .reset, form button {
+  color: #d1c3c3;
+  border: 0;
+  padding: 4px 20px;
+  font-size: 15px;
+  margin: 6px;
+}
+form .reset {
+  background-color: #54584f;
+}
+form button {
+  background-color: #1d1f1b;
+}
+form button:hover, form .reset:hover {
+  background-color: #917123;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

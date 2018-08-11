@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Can I use... Support tables for HTML5, CSS3 etc</title>
+	<link rel="icon" href="public/img/favicon.png" sizes="16x16 32x32 64x64 128x128" type="image/png">
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans:300,700" rel="stylesheet">
+</head>
+<body class="page">
+	<header class="page-header">
+		<nav class="top">
+			<div class="top-left">
+				<ul class="menu-links">
+					<li class="top-item"><a class="link" href="#">Home</a></li>
+					<li class="top-item"><a class="link" href="#">News</a></li>
+				</ul>
+				<div class="date-features">
+					<span class="date">
+						June 14, 2018 - 
+					</span>
+					<span class="features">
+						2 new features
+					</span>
+				</div>
+			</div>
+			<ul class="menu-links">
+				<li class="top-item"><a class="link" href="#">Compare browsers</a></li>
+				<li class="top-item"><a class="link" href="#">About</a></li>
+			</ul>
+		</nav>
+		<section class="search">
+			<a class="link text" href="#">Can I use</a>
+			<input class="search-field" type="text" name="search_component" />
+			<span class="text sign">?</span>
+			<button class="search-button">
+				<img class="settings-icon" src="public/img/settings.png">
+				<span class="button-text">Settings</span>
+			</button>
+		</section>
+	</header>
+	<main class="page-content">
+		<div class="content">
+			<div class="info">
+				<div class="heading">
+					<h3 class="title">calc() as CSS unit value</h3>
+					<a class="link" href="https://www.w3.org/TR/css3-values/#calc"><img class="link-icon" src="public/img/title-icon.png"> - CR</a>
+					<p class="description">
+						Method of allowing calculated values for length units, i.e. <span class="code">width: calc(100% - 3em)</span>
+					</p>
+				</div>
+				<div class="usage">
+					<div class="usage-header">
+						<span class="text-element">Usage</span>
+						<div class="percents">
+							<span class="text-element">% of</span> 
+							<select class="percents-select">
+								<option>all users</option>
+								<option>all tracked</option>
+								<option>tracked desktop</option>
+								<option>tracked mobile</option>
+							</select>
+						</div>
+					</div>
+					<ul class="usage-list">
+						<li class="usage-info">
+							<span>Global</span>
+							<span class="calculation">
+								<span class="usage-element support">93.25%</span>
+								<span class="usage-element"> + </span>
+								<span class="usage-element partial">1.04%</span>
+								<span class="usage-element"> = </span>
+								<span class="usage-element total">94.29%</span>
+							</span>
+						</li>
+						<li class="usage-info">
+							<span class="unprefixed">unprefixed:</span>
+							<span class="calculation">
+								<span class="usage-element support">93.09%</span>
+								<span class="usage-element"> + </span>
+								<span class="usage-element partial">1.04%</span>
+								<span class="usage-element"> = </span>
+								<span class="usage-element total">94.13%</span>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mode">
+				<button class="mode-type" title="View mode: Aligned to &#34;current&#34; browsers">Current aligned</button>
+				<button class="mode-type" title="View mode: Usage relative">Usage relative</button>
+				<button class="mode-type" title="View mode: Date relative">Date relative</button>
+				<button class="mode-type" title="Show all data for this feature">Show all</button>
+			</div>
+			<div class="table-block">
+				<table class="support-table">
+					<thead>
+						<tr>
+							<th class="ie">IE</th>
+							<th class="edge"><label class="browser-button" for="browser-edge">Edge<span class="star">*</span></label>
+								<input type="checkbox" name="browser-edge" id="browser-edge" />
+								<div class="browser-info">
+									<span class="star">*</span><span> Version number used for Edge is based on the number of EdgeHTML rather than Edge itself. This is because EdgeHTML is the engine for Edge that is related to feature support change.</span>
+								</div>
+							</th>
+							<th class="firefox">Firefox</th>
+							<th class="chrome">Chrome</th>
+							<th class="safari">Safari</th>
+							<th class="ios"><label class="browser-button" for="browser-ios">iOS Safari<span class="star">*</span></label>
+								<input type="checkbox" name="browser-ios" id="browser-ios" />
+								<div class="browser-info">
+									<span class="star">*</span><span> The Safari browser for iOS is tied to the operating system, so the numbers used are based on the OS version.</span>
+								</div>
+							</th>
+							<th class="opera"><label class="browser-button" for="browser-opera">Opera Mini<span class="star">*</span></label>
+								<input type="checkbox" name="browser-opera" id="browser-opera" />
+								<div class="browser-info">
+									<span class="star">*</span><span> In most cases Opera Mini processing is done via Opera servers, which often prevents JS from working correctly.<br /><br />As of version 8, the default mode of Opera Mini on iOS uses the iOS Safari engine, though <span class="italic">Mini mode</span> can be enabled.
+									</span>
+								</div>
+							</th>
+							<th class="android">Chrome for Android</th>
+							<th class="uc">UC Browser for Android</th>
+							<th class="samsung">Samsung Internet</th>
+						</tr>
+					</thead>
+					<tbody class="support-content">
+						<tr>
+							<td class="ie" rowspan="3"></td>
+							<td class="edge" rowspan="2"></td>
+							<td class="firefox" rowspan="2"></td>
+							<td class="available chrome">
+								<div class="available-top">49</div>
+							</td>
+							<td class="safari" rowspan="3"></td>
+							<td class="ios"></td>
+							<td class="opera" rowspan="3"></td>
+							<td class="android" rowspan="3"></td>
+							<td class="uc" rowspan="3"></td>
+							<td class="samsung"></td>
+						</tr>
+						<tr>
+							<td class="available chrome">65</td>
+							<td class="available ios">10.3</td>
+							<td class="available samsung">4</td>
+						</tr>
+						<tr>
+							<td class="available edge"><div>16</div></td>
+							<td class="available firefox"><div>59</div></td>
+							<td class="available chrome"><div>66</div></td>
+							<td class="available ios"><div>11.2</div></td>
+							<td class="available samsung"><div>6.2</div></td>
+						</tr>
+						<tr>
+							<td class="available ie">
+								11
+								<div class="available-info">
+									<h4 class="info-title">IE 11</h4>
+									<div class="info-columns">
+										<div class="support-info column">
+											<h6 class="info-heading">Support info</h6>
+											<p class="info-description">✓ Supported</p>
+										</div>
+										<div class="browser-version column">
+											<h6 class="info-heading">Browser version</h6>
+											<p class="info-description">Released Oct 17, 2013</p>
+											<h5 class="info-subheading">Usage</h5>
+											<p class="info-global">Global: <span class="value">2.71%</span></p>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td class="available edge">17</td>
+							<td class="available firefox">60</td>
+							<td class="available chrome">67</td>
+							<td class="available safari">11.1</td>
+							<td class="available ios">11.3</td>
+							<td class="available all opera">all
+								<div class="available-info">
+									<h4 class="info-title">IE 11</h4>
+									<div class="info-columns">
+										<div class="support-info column">
+											<h6 class="info-heading">Support info</h6>
+											<p class="info-description">✗ Not supported</p>
+										</div>
+										<div class="browser-version column">
+											<h6 class="info-heading">Browser version</h6>
+											<p class="info-description">Released Mar 16, 2015</p>
+											<h5 class="info-subheading">Usage</h5>
+											<p class="info-global">Global: <span class="value">2.65%</span></p>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td class="available android">67</td>
+							<td class="available uc">11.8</td>
+							<td class="available samsung">7.2</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="available edge"><div>18</div></td>
+							<td class="available firefox"><div>61</div></td>
+							<td class="available chrome"><div>68</div></td>
+							<td class="available safari"><div>12</div></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td class="available firefox">62</td>
+							<td class="available chrome">69</td>
+							<td class="available safari">TP</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="available chrome">70</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
