@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Angualar.js</title>
+	<link rel="stylesheet" href="public/css/index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+</head>
+<body ng-app="todoList">
+	<div ng-controller="CtrlTodoList">
+		{{ helloText }}
+		<h1 ng-show="productsList.length > 5">Go to shop</h1>
+		<ul>
+			<li ng-repeat="product in productsList track by $index">
+				<div ng-click="deleteProduct($index)">{{ product.name }} {{product.count}}</div>
+				<item-counter count-item="product.count" change-count="changeCount(itemCount, test)"></item-counter>
+			</li>
+		</ul>
+		<input
+			type="text"
+			ng-model="newProduct"
+			ng-disabled="productsList.length > 5"
+		/>
+		<button
+			ng-click="helloText = '111'; addProduct()"
+			ng-disabled="newProduct.length === 0"
+		>Add product</button>
+	</div>
+	<script src="public/js/index.js"></script>
+</body>
+</html>
