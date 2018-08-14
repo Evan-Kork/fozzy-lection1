@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<title>Document</title>
+
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Collapsible Group Item #1
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+      <div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputLength">Введіть масив</label>
+              <input type="text" class="form-control" id="InputLength" placeholder="1,2,3,4..">
+           <button onclick="resultLength()" class="btn btn-primary mt-2 mb-3">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result">Результат</label>
+             <input class="form-control" id="result" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Collapsible Group Item #2
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+
+    <div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputSlice">Введіть масив</label>
+              <input type="text" class="form-control" id="InputSlice" placeholder="1,2,3,4..">
+                <label for="InputIndex">Введіть індекс елемента масива</label>
+              <input type="text" class="form-control" id="InputIndex" placeholder="">
+           <button onclick="resultSlice()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-slice-method">Результат</label>
+             <input class="form-control" id="result-slice-method" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Collapsible Group Item #3
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+    <div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArray1">Введіть перший масив</label>
+              <input type="text" class="form-control" id="InputArray1" placeholder="1,2,3,4..">
+                <label for="InputArray2">Введіть другий масив</label>
+              <input type="text" class="form-control" id="InputArray2" placeholder="">
+           <button onclick="resultConcat()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-concat">Результат</label>
+             <input class="form-control" id="result-concat" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="card">
+      <div class="card-header" id="headingFour">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+            Collapsible Group Item #4
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+    <div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArray">Введіть масив</label>
+              <input type="text" class="form-control" id="InputArray" placeholder="1,2,3,4..">
+                <label for="InputElementInArray">Введіть елемент масиву</label>
+              <input type="text" class="form-control" id="InputElementInArray" placeholder="">
+           <button onclick="resultIncludes()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-includes">Результат</label>
+             <input class="form-control" id="result-includes" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+
+
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingFive">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Collapsible Group Item #5
+          </button>
+        </h5>
+      </div>
+      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+      <div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArrayJoin">Введіть масив</label>
+              <input type="text" class="form-control" id="InputArrayJoin" placeholder="1,2,3,4..">
+           <button onclick="resultJoin()" class="btn btn-primary mt-2 mb-3">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="resultJoin">Результат</label>
+             <input class="form-control" id="resultJoin" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-header" id="headingSix">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            Collapsible Group Item #6
+          </button>
+        </h5>
+      </div>
+      <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArraySplit">Введіть масив</label>
+              <input type="text" class="form-control" id="InputArraySplit" placeholder="1,2,3,4...">
+           <button onclick="resultSplit()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-split">Результат</label>
+             <input class="form-control" id="result-split" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+
+
+
+    <div class="card">
+      <div class="card-header" id="headingSeven">
+        <h5 class="mb-0">
+          <button class="btn btn-link " data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+            Collapsible Group Item #7
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseSeven" class="collapse " aria-labelledby="headingSeven" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArrayString">Введіть масив</label>
+              <input type="text" class="form-control" id="InputArrayString" placeholder="1,2,3,4...">
+           <button onclick="resultToString()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-string">Результат</label>
+             <input class="form-control" id="result-string" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" id="headingEight">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            Collapsible Group Item #8
+          </button>
+        </h5>
+      </div>
+      <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArrayInputOf">Введіть масив</label>
+              <input type="text" class="form-control" id="InputArrayInputOf" placeholder="1,2,3,4..">
+                <label for="InputIndexInArray">Введіть індекс масива</label>
+              <input type="text" class="form-control" id="InputIndexInArray" placeholder="">
+           <button onclick="resultIndexOf()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-indexOf">Результат</label>
+             <input class="form-control" id="result-indexOf" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-header" id="headingNine">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            Collapsible Group Item #9
+          </button>
+        </h5>
+      </div>
+      <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArrayLastIndexOf">Введіть масив</label>
+              <input type="text" class="form-control" id="InputArrayLastIndexOf" placeholder="1,2,3,4..">
+                <label for="IndexInArray">Введіть індекс масива</label>
+              <input type="text" class="form-control" id="IndexInArray" placeholder="">
+           <button onclick="resultLastIndexOf()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-LastIndexOf">Результат</label>
+             <input class="form-control" id="result-LastIndexOf" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="card">
+      <div class="card-header" id="headingTen">
+        <h5 class="mb-0">
+          <button class="btn btn-link " data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+            Collapsible Group Item #10
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTen" class="collapse " aria-labelledby="headingTen" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArrayFill">Введіть масив</label>
+              <input type="text" class="form-control" id="InputArrayFill" placeholder="1,2,3,4..">
+                <label for="IndexArray">Введіть знаяення яким ви хочете заповнити масив</label>
+              <input type="text" class="form-control" id="IndexArray" placeholder="">
+           <button onclick="resultFill()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-fill">Результат</label>
+             <input class="form-control" id="result-fill" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="card">
+      <div class="card-header" id="headingEleven">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+            Collapsible Group Item #11
+          </button>
+        </h5>
+      </div>
+      <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArrayPop">Введіть масив</label>
+              <input type="text" class="form-control" id="InputArrayPop" placeholder="1,2,3,4...">
+           <button onclick="resultPop()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-pop">Результат</label>
+             <input class="form-control" id="result-pop" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-header" id="headingTwelve">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+            Collapsible Group Item #12
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArrayShift">Введіть масив</label>
+              <input type="text" class="form-control" id="InputArrayShift" placeholder="1,2,3,4...">
+           <button onclick="resultShift()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-shift">Результат</label>
+             <input class="form-control" id="result-shift" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-header" id="heading13">
+        <h5 class="mb-0">
+          <button class="btn btn-link " data-toggle="collapse" data-target="#collapse13" aria-expanded="true" aria-controls="collapse13">
+            Collapsible Group Item #13
+          </button>
+        </h5>
+      </div>
+      <div id="collapse13" class="collapse " aria-labelledby="heading13" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArrayPush">Введіть масив</label>
+              <input type="text" class="form-control" id="InputArrayPush" placeholder="1,2,3,4...">
+              <label for="AddToArrayPush">Введіть елементи які хочете додати</label>
+              <input type="text" class="form-control" id="AddToArrayPush" placeholder="">
+           <button onclick="resultPush()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-new">Новий масив</label>
+             <input class="form-control" id="result-new" type="text" placeholder="Результат" readonly>
+           <label for="result-length">Довжина масива</label>
+             <input class="form-control" id="result-length" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-header" id="heading14">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+            Collapsible Group Item #14
+          </button>
+        </h5>
+      </div>
+      <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArrayUnshift">Введіть масив</label>
+              <input type="text" class="form-control" id="InputArrayUnshift" placeholder="1,2,3,4...">
+              <label for="AddToArrayUnshift">Введіть елементи які хочете додати</label>
+              <input type="text" class="form-control" id="AddToArrayUnshift" placeholder="">
+           <button onclick="resultUnshift()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-newArray">Новий масив</label>
+             <input class="form-control" id="result-newArray" type="text" placeholder="Результат" readonly>
+           <label for="result-newLength">Довжина масива</label>
+             <input class="form-control" id="result-newLength" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" id="heading15">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+            Collapsible Group Item #15
+          </button>
+        </h5>
+      </div>
+      <div id="collapse15" class="collapse" aria-labelledby="heading15" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArrayReverse">Введіть масив</label>
+              <input type="text" class="form-control" id="InputArrayReverse" placeholder="1,2,3,4...">
+           <button onclick="resultReverse()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-reverse">Результат</label>
+             <input class="form-control" id="result-reverse" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-header" id="heading16">
+        <h5 class="mb-0">
+          <button class="btn btn-link " data-toggle="collapse" data-target="#collapse16" aria-expanded="true" aria-controls="collapse16">
+            Collapsible Group Item #16
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapse16" class="collapse " aria-labelledby="heading16" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArraySort">Введіть масив</label>
+              <input type="text" class="form-control" id="InputArraySort" placeholder="1,2,3,4...">
+           <button onclick="resultSort()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-sort">Результат</label>
+             <input class="form-control" id="result-sort" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-header" id="heading17">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+            Collapsible Group Item #17
+          </button>
+        </h5>
+      </div>
+      <div id="collapse17" class="collapse" aria-labelledby="heading17" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArraySplice">Введіть масив</label>
+                <input type="text" class="form-control mb-3" id="InputArraySplice" placeholder="1,2,3,4...">
+              <label for="InputIndexDelete">Введіть індекс елемента з якого починаєм удаляєм</label>
+                <input type="text" class="form-control mb-3" id="InputIndexDelete" placeholder="">
+              <label for="InputManyDelete">Введіть скільки елементів удаляєм</label>
+                <input type="text" class="form-control mb-3" id="InputManyDelete" placeholder="">
+              <label for="InputAddElement">Введіть який елемент додаєм</label>
+                <input type="text" class="form-control mb-3" id="InputAddElement" placeholder="">
+           <button onclick="resultSplice()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-splice">Результат</label>
+             <input class="form-control" id="result-splice" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-header" id="heading18">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+            Collapsible Group Item #18
+          </button>
+        </h5>
+      </div>
+      <div id="collapse18" class="collapse" aria-labelledby="heading18" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArrayForeach">Введіть масив</label>
+              <input type="text" class="form-control" id="InputArrayForeach" placeholder="1,2,3,4...">
+           <button onclick="resultForeach()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-foreach">Результат дивитись в консолі</label>
+           
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-header" id="heading19">
+        <h5 class="mb-0">
+          <button class="btn btn-link " data-toggle="collapse" data-target="#collapse19" aria-expanded="true" aria-controls="collapse19">
+            Collapsible Group Item #19
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapse19" class="collapse " aria-labelledby="heading19" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArrayEvery">Введіть масив</label>
+              <input type="text" class="form-control mb-3" id="InputArrayEvery" placeholder="1,2,3,4..">
+                <label for="IndexArrayEvery">Введіть число яке буде перевіряти чи являються елементи масиву більше заданого числа </label>
+              <input type="text" class="form-control" id="IndexArrayEvery" placeholder="">
+           <button onclick="resultEvery()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-every">Результат</label>
+             <input class="form-control" id="result-every" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-header" id="heading20">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+            Collapsible Group Item #20
+          </button>
+        </h5>
+      </div>
+      <div id="collapse20" class="collapse" aria-labelledby="heading20" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArraySome">Введіть масив</label>
+              <input type="text" class="form-control mb-3" id="InputArraySome" placeholder="1,2,3,4..">
+                <label for="IndexArraySome">Введіть число яке буде перевіряти чи являються елементи масиву більше заданого числа </label>
+              <input type="text" class="form-control" id="IndexArraySome" placeholder="">
+           <button onclick="resultSome()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-some">Результат</label>
+             <input class="form-control" id="result-some" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-header" id="heading21">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+            Collapsible Group Item #21
+          </button>
+        </h5>
+      </div>
+      <div id="collapse21" class="collapse" aria-labelledby="heading21" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArrayFilter">Введіть масив</label>
+              <input type="text" class="form-control mb-3" id="InputArrayFilter" placeholder="1,2,3,4..">
+                <label for="IndexArrayFilter">Введіть довжину масиву яке буде перевіряти чи являються масив більше заданої довжини </label>
+              <input type="text" class="form-control" id="IndexArrayFilter" placeholder="">
+           <button onclick="resultFilter()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-filter">Результат</label>
+             <input class="form-control" id="result-filter" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-header" id="heading22">
+        <h5 class="mb-0">
+          <button class="btn btn-link " data-toggle="collapse" data-target="#collapse22" aria-expanded="true" aria-controls="collapse22">
+            Collapsible Group Item #22
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapse22" class="collapse " aria-labelledby="heading22" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArrayMap">Введіть масив</label>
+              <input type="text" class="form-control" id="InputArrayMap" placeholder="1,2,3,4...">
+           <button onclick="resultMap()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-map">Результат отображение массива чисел на массив квадратных корней</label>
+             <input class="form-control" id="result-map" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-header" id="heading23">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+            Collapsible Group Item #23
+          </button>
+        </h5>
+      </div>
+      <div id="collapse23" class="collapse" aria-labelledby="heading23" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArrayReduce">Введіть масив</label>
+              <input type="text" class="form-control" id="InputArrayReduce" placeholder="1,2,3,4...">
+           <button onclick="resultReduce()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-reduce">Результат cуммирования всех значений в массиве</label>
+             <input class="form-control" id="result-reduce" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+
+ <div class="card">
+      <div class="card-header" id="heading24">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+            Collapsible Group Item #24
+          </button>
+        </h5>
+      </div>
+      <div id="collapse24" class="collapse" aria-labelledby="heading24" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+
+
+<div class="form-group col-md-3">
+          <div class="col-auto">
+            <label for="InputArrayReduceReight">Введіть масив</label>
+              <input type="text" class="form-control" id="InputArrayReduceReight" placeholder="1,2,3,4...">
+           <button onclick="resultReduceReight()" class="btn btn-primary mt-2 mb-3 button-submit">Вирішити</button>
+          </div>
+        <div class="col-auto">
+           <label for="result-reducereight">Результат cуммирования всех значений в массиве</label>
+             <input class="form-control" id="result-reducereight" type="text" placeholder="Результат" readonly>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="public/script/script.js"></script>
+     
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</body>
+</html>
