@@ -209,11 +209,10 @@ let asArray = {getLength: getLengthFunction, getSlice: getSliceFunction, getConc
     getJoin: getJoinFunction, getSplit: getSplitFunction, getToString: getToStringFunction, getIndexOf: getIndexOfFunction,
     getLastIndexOf: getLastIndexOfFunction};
 
-function testFunction(event)
+function getFunctionOnClick(event)
 {
     let myFunction = event.target.getAttribute('button-attribute');
-    console.log(myFunction);
     asArray[myFunction]();
 }
 
-$('.button-result').on('click', testFunction);
+$('.button-result').on('click', getFunctionOnClick);
