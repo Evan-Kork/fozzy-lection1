@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="public/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="public/js/session.js"></script>
+</head>
+<body class="bg-primary">
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark border-bottom rounded-bottom">
+			<a class="navbar-brand" href="#">
+				<img src="source/img/story.svg" style="width: 36px;">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link home" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link editing" href="#">Editing</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="registration.html">Check In</a>
+					</li>
+				</ul>
+				<a href="login.html"><img style="width: 24px;" src="source/img/logout.svg"></a>
+			</div>
+		</nav>
+		<div class="row mt-2 py-2 justify-content-between mx-0">
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 p-0 pr-sm-3">
+				<img class="w-100 rounded" src="source/img/lion.jpg">
+			</div>
+			<div class="col-xl-10 col-lg-9 col-md-8 col-sm-7 bg-dark rounded text-white p-3 mt-3 m-sm-0"> 
+				<div class="row pb-3">
+					<div class="col-6"><h5 class="user-name"></h5></div>
+					<div class="col-6 text-right"><small>Online</small></div>
+				</div>
+				<div class="row ">
+					<div class="col-4">Country:</div>
+					<div class="col-8 user-country"></div>
+				</div>
+				<div class="row ">
+					<div class="col-4">Birthday:</div>
+					<div class="col-8 user-birthday"></div>
+				</div>
+				<div class="row ">
+					<div class="col-4">About myself:</div>
+					<div class="col-8 user-about-myself"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row py-2 mx-0">
+			<div class="col bg-dark rounded text-white">
+				<div class="row py-2">
+					<div class="col-2">
+						Today:
+					</div>
+					<div class="col-10 text-right">
+						<form>
+							<div class="form-group">
+								<textarea class="form-control user-textarea" rows="3" placeholder="Your Story"></textarea>
+							</div>
+							<button type="button" class="btn btn-light btn-sm user-send">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="history"></div>
+	</div>
+	<script type="text/javascript" src="public/js/main_info.js"></script>
+</body>
+</html>
