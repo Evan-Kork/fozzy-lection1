@@ -47,6 +47,8 @@ if ($('body.loginization').length > 0) {
 
 
 
+
+
 //loginization
 $('.btn.log-in').click(function LoginUser() {
     event.preventDefault();
@@ -176,10 +178,20 @@ function showProfile(userData) {
     $('.profile .info .about').html(`About you: ${userData.about}`)
 };
 
-$('.btn.btn-primary.save').click(function editProfile() {
+if ($('body.edit').length > 0) { 
+    debugger;
     let userData = defineStorage();
-    userData.username = $(event.target).parents('form').find('input[type=username]')[0].value;
-    console.log(userData.username);
+    let usernameInput = $('input[type=username]')[0];
+    usernameInput.value = userData.username;
+    let textarea = $('textarea')[0];
+    $(textarea).text(userData.about);  
+}
+
+$('.btn.btn-primary.save').click(function editProfile() {
+    debugger;
+    let userData = defineStorage();
+    let usernameInput = $(event.target).parents('form').find('input[type=username]')[0].value;
+    userData.username =  usernameInput;
     let textarea = $(event.target).parents('form').find('textarea')[0];
     $(textarea).text(userData.about);
     userData.about = $(event.target).parents('form').find('textarea')[0].value;
