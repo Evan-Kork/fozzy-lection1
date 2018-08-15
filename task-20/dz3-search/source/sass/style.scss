@@ -1,0 +1,40 @@
+h1 {
+    color:rgb(35, 114, 35);
+    padding: 5px;
+}
+
+fieldset {
+    margin:5px;
+    legend {
+        color:rgb(48, 35, 23);
+        font-size: 20px;
+        font-weight: bold;
+    }
+    div {
+        margin:2px 5px;
+        .label-div {
+            width:200px;
+            float:left;
+        }
+        .submit-btn, .reset {
+            width:150px;
+            font-size:15px;
+            font-weight: bold;
+            padding:2px 8px;
+            margin:10px 5px;
+            border:1px solid transparent;
+            padding:5px;
+        }
+        .submit-btn:hover, .reset:hover {
+            cursor: pointer;
+        }
+        .submit-btn {
+            background-color:rgb(71, 192, 71);
+        }
+        .reset {
+            background-color:silver;
+        }
+    }
+}
+
+
