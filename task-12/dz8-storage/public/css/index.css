@@ -1,0 +1,21 @@
+.errorMesage{
+	display: none;
+	background-color: red;
+	width: 40%;
+}
+.emailField {
+	width: 20%;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+.passwordField{
+	width: 20%;
+}
+.buttonLogin{
+	margin-top: 10px;
+	font-size: 18px;
+}
+.buttonRegistration{
+	margin-top: 10px;
+	font-size: 18px;
+}

@@ -1,0 +1,10 @@
+.edit_field{
+
+}
+.about, .user, .email {
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.edit_btn, .del_btn, .exit_btn {
+	margin-right: 10px;
+}

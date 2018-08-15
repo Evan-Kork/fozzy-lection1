@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12 registration_field">
+				<div><h2>Реєстрація</h2></div>
+				<div>
+					<label for="userField" class="userField">User:</label><input type="text" id="userField">
+					<br>
+					<label for="emailField" class="emailField">Email:</label><input type="email" id="emailField">
+					<br>
+					<label for="passwordField" class="passwordField">Password:</label><input type="password" id="passwordField">
+					<br>
+					<label for="aboutField" class="aboutField">About:</label><textarea id="aboutField"></textarea>
+					<br>
+					<button onclick="registration(), goHome()" class="btn btn_reg">Registration</button>
+					<span class="errorMesage">Пароль або мейл не співпадають</span>
+					<br>
+					<button onclick="goHome()" class="btn btn_log">Go to login page</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
