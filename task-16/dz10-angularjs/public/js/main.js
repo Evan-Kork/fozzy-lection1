@@ -108,6 +108,7 @@ app.factory('loginService', function(localStorageService) {
         },
 
         logIn: (username, password) => {
+            debugger;
             let userData = {
                 name: username,
                 password: password
@@ -118,6 +119,9 @@ app.factory('loginService', function(localStorageService) {
                 factory.getUsersArray().push(userData);
                 localStorageService.set('usersArray', factory.getUsersArray())
                 currentUser = userData;
+            } else if (userData.name === currentUser.name && userData.password !== currentUser.password) {
+                alert('Wrong password');
+                return;
             }
             currentUser = user;
             localStorageService.set('user', currentUser);
