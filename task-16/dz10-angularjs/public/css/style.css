@@ -1,0 +1,53 @@
+html {
+  height: 100%; }
+
+body {
+  background-image: url("../img/bg.jpg");
+  background-size: contain;
+  height: 100%; }
+
+h1 {
+  color: #66663f; }
+
+.btn.btn-primary, .btn.btn-primary:hover {
+  background-color: #DB661D;
+  border-color: #DB661D; }
+
+.header {
+  margin-top: 30px;
+  font-style: italic;
+  color: #DB661D;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9); }
+
+.chat {
+  width: 100%; }
+  .chat .chat-box {
+    height: 300px;
+    width: 600px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    overflow: auto;
+    min-height: 400px; }
+    .chat .chat-box .chat-item {
+      height: 100px;
+      min-height: 50px;
+      text-align: left; }
+      .chat .chat-box .chat-item.mymessage {
+        text-align: right; }
+  .chat .box {
+    background-color: rgba(255, 255, 255, 0.9); }
+
+.chat textarea, .chat .chat-box {
+  width: 100%; }
+
+.users {
+  padding: 10px 0; }
+  .users .users > div {
+    padding: 10px 0; }
+
+/*# sourceMappingURL=style.css.map */
