@@ -26,7 +26,7 @@ const login = () => {
 	}
 };
 const goToRegistration = () => {
-	window.location.href = '../task-11/index.html';
+	window.location.href = 'E:/repo/fozzy-lection1/task-11/dz8-storage/index.html';
 }
 const checkRemember = () => {
 	let remember = sessionStorage.getItem('remember');

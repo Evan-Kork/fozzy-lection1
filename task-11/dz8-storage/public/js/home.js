@@ -9,10 +9,10 @@ const homeInfo = () => {
 homeInfo();
 
 const editUser = () => {
-	window.location.href = '../task-11/edit.html'
+	window.location.href = 'E:/repo/fozzy-lection1/task-11/dz8-storage/edit.html';
 }
 const exitUser = () => {
-	window.location.href = '../task-11/index.html';
+	window.location.href='E:/repo/fozzy-lection1/task-11/dz8-storage/index.html';
 }
 
 const deleteUser = () => {
