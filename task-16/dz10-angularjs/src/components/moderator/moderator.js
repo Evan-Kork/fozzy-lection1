@@ -5,11 +5,11 @@ app.component('moderator', {
     $scope.unapprovedStorage = chatService.getInitialStorage();
     $scope.approveMessage = (index) => {
       $scope.unapprovedStorage = moderatorService.approveMessage(index);
-      // $window.localStorage.setItem('unapprovedStorage', angular.toJson($scope.unapprovedStorage));
+      $window.localStorage.setItem('unapprovedStorage', angular.toJson($scope.unapprovedStorage));
     };
     $scope.deleteMessage =  (index) => {
       $scope.unapprovedStorage = moderatorService.deleteMessage(index);  
-      // $window.localStorage.setItem('unapprovedStorage', angular.toJson($scope.unapprovedStorage));
+      $window.localStorage.setItem('unapprovedStorage', angular.toJson($scope.unapprovedStorage));
     }; 
 
     $scope.emptyMessageList = () => {

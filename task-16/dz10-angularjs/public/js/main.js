@@ -6,7 +6,7 @@ let adminUser = usersArray.find(obj => {
 });
 
 if (adminUser === undefined) {
-    usersArray.push({name: 'vova', password: 123, role: 'admin'})
+    usersArray.push({name: 'vova', password: "123", role: 'admin'})
 }
 localStorage.setItem('usersArray', JSON.stringify(usersArray));
 
@@ -60,7 +60,7 @@ app.directive('moderatorButton', function() {
 });
 
 app.factory('chatService', function(localStorageService) {
-    var factory = {
+    let factory = {
         getCurrentStorage: () => {
             return localStorageService.get('messages') || [];
         },
@@ -91,7 +91,7 @@ app.factory('chatService', function(localStorageService) {
 app.factory('loginService', function(localStorageService) {
     let user = localStorageService.get('user');
     let usersArray = localStorageService.get('usersArray') || [];  
-    factory = {
+    let factory = {
         getUserData:  () => {
             return user;
         },
@@ -118,12 +118,12 @@ app.factory('loginService', function(localStorageService) {
                 userData.role = 'user';
                 factory.getUsersArray().push(userData);
                 localStorageService.set('usersArray', factory.getUsersArray())
-                currentUser = userData;
+            
             } else if (userData.name === currentUser.name && userData.password !== currentUser.password) {
                 alert('Wrong password');
                 return;
             }
-            currentUser = user;
+            user = currentUser;
             localStorageService.set('user', currentUser);
             return currentUser;
         }
@@ -132,12 +132,7 @@ app.factory('loginService', function(localStorageService) {
 });
 
 app.factory('adminService', function($window, $filter, chatService, loginService) {
-    let admin = {};
-    factory = {
-        getAdmin: () => {
-            return admin;
-        },
-
+    let factory = {
         deleteMessage: (index) => {
                 var approved = $filter('filter')(chatService.getCurrentStorage(), 
                     (message, indexMessage) => {
@@ -172,7 +167,7 @@ app.factory('adminService', function($window, $filter, chatService, loginService
 } )
 
 app.factory('moderatorService', function($window, chatService, $filter) {
-    factory = {
+    let factory = {
         approveMessage: (index) => {
             let unapproved = chatService.getInitialStorage();
             let approved = chatService.getCurrentStorage();

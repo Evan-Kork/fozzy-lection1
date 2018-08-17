@@ -7,7 +7,7 @@ app.component('admin', {
     $scope.isAssigned = [];
     $scope.startEdit = [];
     $scope.approvedStorage.map((e) => {
-    $scope.startEdit.push(!e);
+      $scope.startEdit.push(!e);
     })
     $scope.usersArray.map((e) => {
       $scope.isAssigned.push(!e);

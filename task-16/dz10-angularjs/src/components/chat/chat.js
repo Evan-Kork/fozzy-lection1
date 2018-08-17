@@ -19,7 +19,6 @@ app.component('chat', {
         return false;
       }
     };
-
     $scope.emptyChat = () => {
       if (chatService.getCurrentStorage().length === 0) {
         return true;

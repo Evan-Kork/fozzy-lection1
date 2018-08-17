@@ -39,8 +39,9 @@ h1 {
       text-align: left; }
       .chat .chat-box .chat-item.mymessage {
         text-align: right; }
-  .chat .box {
-    background-color: rgba(255, 255, 255, 0.9); }
+
+.box {
+  background-color: rgba(255, 255, 255, 0.9); }
 
 .chat textarea, .chat .chat-box {
   width: 100%; }
