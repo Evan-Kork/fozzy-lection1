@@ -39,4 +39,26 @@
 .card .btn {
   display: block;
   margin:  10px auto;
+  background-color: #112016;
+}
+
+.header h1 {
+   color: #2b323f;
+   background-color: rgba(255, 255, 255, 0.7);
+   text-align: center;
+   height: 50px;
+}
+
+.option {
+  width: 70px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+label input {
+  margin-right: 10px;
+}
+
+.green {
+  
 }

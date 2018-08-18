@@ -14,7 +14,6 @@ class RadioQuestion extends Component {
     }
 
     handleChange(event) {
-      debugger;
       if (event.target.checked) {
         let answer = event.target.value;
 
@@ -25,17 +24,20 @@ class RadioQuestion extends Component {
     }
 
     validateAnswer() {
+      debugger;
       let data = this.props.item;
       data.userAnswer = this.state.answers;
       data.userAnswer.push(this.state.answer)
       this.props.validateAnswer(data);
     }
     render() {
-      console.log(this.props.item);
         return (
           <div>
+            <div>The answer must be only 1</div>
             {this.props.item.answers.map((item, index) => {
-              return <label key={index} ><input name="radAnswer" type="radio" value={item} onChange={this.handleChange}/>{item}</label>
+              return <div key={index} className="option">
+                <label><input name="radAnswer" type="radio" value={item} onChange={this.handleChange}/>{item}</label>
+                </div>
             })}
             <Button  color="primary" onClick={this.validateAnswer}>Next</Button> 
             </div>

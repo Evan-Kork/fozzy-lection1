@@ -12,20 +12,29 @@ class App extends Component {
     this.state = {
       isStart: false
     }
+    this.handleReboot = this.handleReboot.bind(this)
+  }
+
+  handleReboot () {
+    this.setState({
+      isStart: false
+    })
   }
 
   render() {
     return (
+      <div>
+      <Header/>
       <Container>
         <Row>
           <Col lg={{size: 6, offset:3}}>
             <div className="App">
-              <Header/>
-              {this.state.isStart ? <Test/> : <Button color="primary" onClick={() => {this.setState({isStart: true})}}>Start A Test</Button>}
+              {this.state.isStart ? <Test handleReboot={this.handleReboot}/> : <Button  onClick={() => {this.setState({isStart: true})}}>Start A Test</Button>}
             </div>
             </Col>
         </Row>
       </Container>
+      </div>
     );
   }
 }

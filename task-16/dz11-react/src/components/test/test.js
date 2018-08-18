@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import data from '../../data.json';
+import initialData from '../../data.json';
 import Question from '../question/question';
 import RadioQuestion from '../radio-questions/radio-question';
 import CheckboxQuestion from '../checkbox-question/checkbox-question';
 import InputQuestion from '../input-question/input-question';
-import { Container, Row, Col, Card, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
+import Results from '../results/results.js';
+import { Card, CardBody, Button, CardHeader } from 'reactstrap';
 
 class Test extends Component {
 
@@ -18,15 +19,14 @@ class Test extends Component {
             timer: new Date().getSeconds()
         }
         this.validateAnswer = this.validateAnswer.bind(this);
-        this.showResults = this.showResults.bind(this);
-        this.data = data;
+        this.data = JSON.parse(JSON.stringify(initialData));
+        this.handleReboot = this.handleReboot.bind(this);
     }
 
     validateAnswer(data) {
-        debugger;
         let userAnswer = data.userAnswer.sort();
         let rightAnswer = data.rightAnswer.sort()
-        if (data.userAnswer.length === data.rightAnswer.length && userAnswer.every((value, index) => value === rightAnswer[index])) {
+        if (userAnswer.length === rightAnswer.length && userAnswer.every((value, index) => value === rightAnswer[index])) {
             data.isRight = true;            
         }
         this.setState({
@@ -34,54 +34,40 @@ class Test extends Component {
         });
     }
 
-    showResults() {
-        debugger;
-        let j = 0;
-        for (let i = 0; i < this.data.length; i++) {
-            if (this.data[i].isRight) {
-                j++;
-            }
-        }
-        return j;
+ 
+
+    handleReboot() {
+        this.data = initialData;     
+        this.props.handleReboot();
     }
 
-    // checkType () {
-    //     if (data.type === 'input') {
-    //         this.setState.inputType = true;
-    //     } 
-    //      else if (data.type === 'checkbox')  {
-    //         this.setState.checkboxType = true;            
-    //     } else if (data.type === 'radio')  {
-    //         this.setState.radioType = true;            
-    //     }
-    // }
     render() {
-        console.log(data);
         return (
             <div>
                 <Card>
-                    <CardBody>
                     {
-                        this.data[this.state.questionIndex] ? 
-                        <CardTitle>
+                    this.data[this.state.questionIndex] ? 
+                    <div>
+                        <CardHeader>
                             {this.state.questionIndex+1}/{this.data.length}
                             <Question question={this.data[this.state.questionIndex].question} />
+                        </CardHeader>
+                        <CardBody>
                             {this.data[this.state.questionIndex].type === 'input' ? <InputQuestion item={this.data[this.state.questionIndex]} validateAnswer={this.validateAnswer}/> : null }
                             {this.data[this.state.questionIndex].type === 'checkbox' ? <CheckboxQuestion item={this.data[this.state.questionIndex]} validateAnswer={this.validateAnswer}/> : null }
                             {this.data[this.state.questionIndex].type === 'radio' ? <RadioQuestion item={this.data[this.state.questionIndex]} validateAnswer={this.validateAnswer}/> : null }
-                        </CardTitle> : 
-                        <CardText>Results are: {this.showResults()} out of {this.data.length}. 
-                            {this.showResults() < 5 ? <h3>Try again :(</h3>: <h3>Congratulations!</h3>}
-                            <h5>Analyze your results</h5>
-                            {this.data.map((question, index)  => {
-                                return  this.data[index].isRight ? 
-                                <div key={index} className="green">{question.question}</div> : <div key={index} className="red">{question.question}</div>
-                            })}
-                        </CardText>
+                        </CardBody>
+                    </div> : 
+                    <div>
+                        <CardHeader><h2>Results</h2></CardHeader>
+                        <CardBody>
+                            <Results generalData={this.data}/>
+                            <Button color="primary" onClick={this.handleReboot}>Try again</Button>
+                        </CardBody>
+                    </div>
                     }
-                    </CardBody>
                 </Card>
-          </div>
+            </div>
         );
     }
 }

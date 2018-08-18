@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 
-
 class InputQuestion extends Component {
 
     constructor(props) {
@@ -24,17 +23,15 @@ class InputQuestion extends Component {
     }
 
     validateAnswer() {
-      debugger;
       let data = this.props.item;
-      console.log(data)
       data.userAnswer = this.state.answers;   
       data.userAnswer.push(this.state.answer)   
       this.props.validateAnswer(data);
     }
     render() {
-      console.log(this.state.answers)
         return (
           <div>
+            <div>Write your answer</div>
             <input onChange={this.handleChange}/>
             <div>
             <Button color="primary"  onClick={this.validateAnswer}>Next</Button> 

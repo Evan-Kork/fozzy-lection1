@@ -29,9 +29,14 @@ class CheckboxQuestion extends Component {
     render() {
         return (
           <div>
+            <div>The answers may be more than 1</div>
             {this.props.item.answers.map((item, index) => {
-              return <label key={index} ><input type="checkbox" onChange={this.handleChange} value={item} /><div>{item}</div></label>
-            })}
+              return <div key={index} className="option">
+                        <label >
+                          <input type="checkbox" onChange={this.handleChange} value={item} />
+                          <span>{item}</span>
+                        </label>
+                      </div>})}
             <Button color="primary" onClick={this.validateAnswer}>Next</Button> 
             </div>
         );
