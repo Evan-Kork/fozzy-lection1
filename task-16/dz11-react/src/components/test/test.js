@@ -34,8 +34,6 @@ class Test extends Component {
         });
     }
 
- 
-
     handleReboot() {
         this.data = initialData;     
         this.props.handleReboot();
@@ -44,7 +42,7 @@ class Test extends Component {
     render() {
         return (
             <div>
-                <Card>
+                <Card className="text-center">
                     {
                     this.data[this.state.questionIndex] ? 
                     <div>

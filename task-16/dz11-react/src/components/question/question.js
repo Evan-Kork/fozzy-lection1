@@ -6,16 +6,14 @@ class Question extends Component {
         super(props);
     }
 
-
-    
     render() {
-      console.log(this.props.question)
+        console.log(this.props.question)
         return (
-          <div>
-            {this.props.question}
-          </div>
+            <div>
+                {this.props.question}
+            </div>
         );
-      }
+    }
 }
 
 export default Question;
