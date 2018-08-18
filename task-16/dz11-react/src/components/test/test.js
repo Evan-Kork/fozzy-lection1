@@ -17,14 +17,16 @@ class Test extends Component {
             inputType: false,
             timer: new Date().getSeconds()
         }
-        this.nextQuestion = this.nextQuestion.bind(this);
+        this.validateAnswer = this.validateAnswer.bind(this);
         this.showResults = this.showResults.bind(this);
         this.data = data;
     }
 
-    nextQuestion(data) {
+    validateAnswer(data) {
         debugger;
-        if (data.userAnswer === data.rightAnswer) {
+        let userAnswer = data.userAnswer.sort();
+        let rightAnswer = data.rightAnswer.sort()
+        if (data.userAnswer.length === data.rightAnswer.length && userAnswer.every((value, index) => value === rightAnswer[index])) {
             data.isRight = true;            
         }
         this.setState({
@@ -43,16 +45,16 @@ class Test extends Component {
         return j;
     }
 
-    checkType () {
-        if (data.type === 'input') {
-            this.setState.inputType = true;
-        } 
-         else if (data.type === 'checkbox')  {
-            this.setState.checkboxType = true;            
-        } else if (data.type === 'radio')  {
-            this.setState.radioType = true;            
-        }
-    }
+    // checkType () {
+    //     if (data.type === 'input') {
+    //         this.setState.inputType = true;
+    //     } 
+    //      else if (data.type === 'checkbox')  {
+    //         this.setState.checkboxType = true;            
+    //     } else if (data.type === 'radio')  {
+    //         this.setState.radioType = true;            
+    //     }
+    // }
     render() {
         console.log(data);
         return (
@@ -64,9 +66,9 @@ class Test extends Component {
                         <CardTitle>
                             {this.state.questionIndex+1}/{this.data.length}
                             <Question question={this.data[this.state.questionIndex].question} />
-                            {this.data[this.state.questionIndex].type === 'input' ? <InputQuestion item={this.data[this.state.questionIndex]} nextQuestion={this.nextQuestion}/> : null }
-                            {this.data[this.state.questionIndex].type === 'checkbox' ? <CheckboxQuestion item={this.data[this.state.questionIndex]} nextQuestion={this.nextQuestion}/> : null }
-                            {this.data[this.state.questionIndex].type === 'radio' ? <RadioQuestion item={this.data[this.state.questionIndex]} nextQuestion={this.nextQuestion}/> : null }
+                            {this.data[this.state.questionIndex].type === 'input' ? <InputQuestion item={this.data[this.state.questionIndex]} validateAnswer={this.validateAnswer}/> : null }
+                            {this.data[this.state.questionIndex].type === 'checkbox' ? <CheckboxQuestion item={this.data[this.state.questionIndex]} validateAnswer={this.validateAnswer}/> : null }
+                            {this.data[this.state.questionIndex].type === 'radio' ? <RadioQuestion item={this.data[this.state.questionIndex]} validateAnswer={this.validateAnswer}/> : null }
                         </CardTitle> : 
                         <CardText>Results are: {this.showResults()} out of {this.data.length}. 
                             {this.showResults() < 5 ? <h3>Try again :(</h3>: <h3>Congratulations!</h3>}

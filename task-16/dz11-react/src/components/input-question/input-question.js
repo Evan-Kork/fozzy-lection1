@@ -7,11 +7,11 @@ class InputQuestion extends Component {
     constructor(props) {
         super(props); 
         this.state = {
-          answers: props.item.answers,
+          answers: [],
           answer: ''
         }
         this.handleChange = this.handleChange.bind(this);
-        this.nextQuestion = this.nextQuestion.bind(this);
+        this.validateAnswer = this.validateAnswer.bind(this);
         
         
     }
@@ -23,12 +23,13 @@ class InputQuestion extends Component {
       })
     }
 
-    nextQuestion() {
+    validateAnswer() {
       debugger;
       let data = this.props.item;
       console.log(data)
-      data.userAnswer = this.state.answer;      
-      this.props.nextQuestion(data);
+      data.userAnswer = this.state.answers;   
+      data.userAnswer.push(this.state.answer)   
+      this.props.validateAnswer(data);
     }
     render() {
       console.log(this.state.answers)
@@ -36,7 +37,7 @@ class InputQuestion extends Component {
           <div>
             <input onChange={this.handleChange}/>
             <div>
-            <Button color="primary"  onClick={this.nextQuestion}>Next</Button> 
+            <Button color="primary"  onClick={this.validateAnswer}>Next</Button> 
             </div>           
           </div>
         );

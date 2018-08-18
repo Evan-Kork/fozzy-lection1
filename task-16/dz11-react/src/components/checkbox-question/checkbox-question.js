@@ -6,33 +6,33 @@ class CheckboxQuestion extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          answer: ''
+          answers: []
         }
-        this.nextQuestion = this.nextQuestion.bind(this);
+        this.validateAnswer = this.validateAnswer.bind(this);
         this.handleChange = this.handleChange.bind(this);
     }
 
     handleChange(event) {
-      if (event.target.checked) {
-        let answer = event._dispatchInstances.child.sibling.memoizedProps.children;
+        let answer = event.target.value;
+        let answers = this.state.answers;
+        answers.push(answer)
         this.setState( {
-          answer: answer
+          answers: answers
         })
-      }
     }
 
-    nextQuestion() {
+    validateAnswer() {
       let data = this.props.item;
-      data.userAnswer = this.state.answer;
-      this.props.nextQuestion(data);
+      data.userAnswer = this.state.answers;
+      this.props.validateAnswer(data);
     }
     render() {
         return (
           <div>
             {this.props.item.answers.map((item, index) => {
-              return <label key={index} onChange={this.handleChange}><input type="checkbox" /><div>{item}</div></label>
+              return <label key={index} ><input type="checkbox" onChange={this.handleChange} value={item} /><div>{item}</div></label>
             })}
-            <Button color="primary" onClick={this.nextQuestion}>Next</Button> 
+            <Button color="primary" onClick={this.validateAnswer}>Next</Button> 
             </div>
         );
       }
