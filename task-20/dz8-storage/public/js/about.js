@@ -1,20 +1,38 @@
 
 $(document).ready(function(){
-    let retObj = JSON.parse(localStorage.getItem("object"));
+    if (localStorage.length === 0)
+        setTimeout("location.href = 'index.html';", 0);
+
+    let retObj;
 
     let name = $('#userName')[0];
     let about = $('#aboutMe')[0];
 
-    name.value = retObj.name;
-    about.value = retObj.about;
+    let arrKey = [];
+    for (let i = 0; i < localStorage.length; i++) {
+        arrKey.push(localStorage.key(i));
+    }
 
-    retObj.about = 'As';
-    about.value = retObj.about;
+    let flag = false;
 
-    $(".button-result").click(function() {
+    for (let i = 0; i < localStorage.length; i++) {
+        let retObj2 = JSON.parse(localStorage.getItem(arrKey[i]));
+        if (retObj2.active === 'true') {
+            retObj = retObj2;        
+            name.value = retObj.name;
+            about.value = retObj.about;
+            flag = true;
+            break;
+        }
+        else
+            flag = false;
+    }
 
-        let retObj = JSON.parse(localStorage.getItem("object"));
+    if (flag === false) {
+        setTimeout("location.href = 'index.html';", 0);
+    }
 
+    $(".button-result").click(function() {    
         let newname = $('#userName')[0].value;
         let newabout = $('#aboutMe')[0].value;
 
@@ -22,7 +40,7 @@ $(document).ready(function(){
         retObj.about = newabout;
 
         let sObj = JSON.stringify(retObj);
-        localStorage.setItem("object", sObj);    
+        localStorage.setItem(retObj.key, sObj);    
         setTimeout("location.href = 'index.html';", 0);
     });
 });

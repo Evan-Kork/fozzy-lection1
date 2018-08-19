@@ -13,6 +13,7 @@ let getUserFunction = () => {
         {
             let user = {
                 key: tmpkey,
+                active: false.toString(),
                 name:tmpname,
                 email: tmpemail,
                 about: tmpabout,
@@ -24,11 +25,35 @@ let getUserFunction = () => {
 }
 
 $(document).ready(function() {
+
+    let arrKey = [];
+    for (let i = 0; i < localStorage.length; i++) {
+        arrKey.push(localStorage.key(i));
+    }
+
+    for (let i = 0; i < localStorage.length; i++) {
+        let retObj3 = JSON.parse(localStorage.getItem(arrKey[i]));
+        if (retObj3.active === 'true') {
+            setTimeout("location.href = 'index.html';", 0);
+        }
+    }
+
     $(".button-result").click(function() {
         let tmp = getUserFunction();
-        
+        tmp.active = true.toString();
         let sObj = JSON.stringify(tmp);
-        localStorage.setItem("object", sObj);     
+        localStorage.setItem(tmp.key.toString(), sObj);     
+        
+        setFalse(arrKey);
         setTimeout("location.href = 'index.html';", 0); 
     });
 });
+
+function setFalse(arrKey) {
+    for (let j = 0; j < localStorage.length - 1; j++) {
+        let retObj2 = JSON.parse(localStorage.getItem(arrKey[j]));
+        retObj2.active = 'false';
+        let sObj2 = JSON.stringify(retObj2);
+        localStorage.setItem(retObj2.key.toString(), sObj2); 
+    }       
+}

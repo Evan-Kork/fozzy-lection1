@@ -1,34 +1,29 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-
-html{
+html {
 	font: normal 16px sans-serif;
 	color: #555;
 }
 
-body{
+body {
     background-image:url('../img/regflower.jpg');
     background-size:cover;
 }
-
-a{
+a {
 	text-decoration: none;
 	color: inherit;
 	cursor: pointer;
-
 	opacity: 0.9;
 }
-
 form {
     background-color:rgb(204, 235, 176);
     border:1px solid gray;
     padding:20px;
     margin:10px;
 }
-
 h1 {
     text-align:center;
     color:rgb(105, 78, 2);
@@ -49,7 +44,6 @@ h1 {
 .to-main:hover {
     color:darkslategray;
 }
-
 label {
     font-weight:bold;
     color:rgb(126, 104, 64);
