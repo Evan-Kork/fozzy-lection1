@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+	<script type="text/javascript" src="public/js/script.js"></script>
+	<title>Google search</title>
+</head>
+<body>
+	<div class="container">
+		<form action="https://www.google.com.ua/search" name="google-search" method="get" target="_blank" id="g-search">
+			<label for="q">Query: </label>
+			<input type="text" name="q" id="query"><br>
+			<p>Additional options</p>
+			<input type="radio" class="rad-add" id="r1" name="tbm" checked hidden>
+			<label class="opt" for="r1">All</label>
+			<input type="radio" class="rad-add" id="r2" name="tbm" value="isch" hidden>
+			<label class="opt" for="r2">Images</label>
+			<input type="radio" class="rad-add" id="r3" name="tbm"hidden>
+			<label class="opt" for="r3">Maps</label>
+			<input type="radio" class="rad-add" id="r4" name="tbm" value="vid" hidden>
+			<label class="opt" for="r4">Videos</label>
+			<input type="radio" class="rad-add" id="r5" name="tbm" value="nws" hidden>
+			<label class="opt" for="r5">News</label>
+			<input type="radio" class="rad-add" id="r6" name="tbm" value="bks" hidden>
+			<label class="opt" for="r6">Books</label>
+			<input type="radio" class="rad-add" id="r7" name="tbm" hidden>
+			<label class="opt" for="r7">Flights</label>
+			<input type="radio" class="rad-add" id="r8" name="tbm" value="fin" hidden>
+			<label class="opt" for="r8">Finance</label><br><br>
+			<div>
+				<h3>Tools</h3>
+				<select name="cr">
+					<option value="">All Countries</option>
+					<option value="countryUA">Country: Ukraine</option>
+				</select>
+				<select name="lr">
+					<option value="">All Languages</option>
+					<option value="lang_ru">Only on russian</option>
+				</select>
+				<select name="tbs">
+					<option value="">Any Time</option>
+					<option value="qdr:h">Past hour</option>
+					<option value="qdr:d">Past 24 hours</option>
+					<option value="qdr:w">Past week</option>
+					<option value="qdr:m">Past month</option>
+					<option value="qdr:y">Past year</option>
+				</select>
+				<select name="tbs">
+					<option value="">All results</option>
+					<option value="li:1">Verbatim</option>
+				</select>
+			</div><br><br>
+			<button onclick="QueryType()">Search</button>
+		</form>
+	</div>
+</body>
+</html>

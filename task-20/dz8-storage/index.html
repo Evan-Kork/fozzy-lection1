@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Storage: home</title>
+    <!--from site-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Norican" rel="stylesheet">
+    <!--local js-->
+    <script src="public/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="public/js/index.js"></script>
+    <!--local css-->
+    <link rel="stylesheet" href="public/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/index.css">
+</head>
+<body>
+    <!-- col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 -->
+    <header class="top-menu ">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand text-logo" href="#">Flowers</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <span class="mr-auto dream-text"> </span>
+                <ul class="navbar-nav menu-text">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">&#8226; Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="entrance.html">&#8226; Log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">&#8226; Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">&#8226; About</a>
+                    </li>
+                    <li class="nav-item openlist">
+                        <a class="nav-link" href="#">
+                            <img src="public/img/user-icon.png" class="user-icon">
+                            <input class="user" readonly></input>
+                            &#8744;
+                        </a>
+                        <div class="linkslist">
+                            &#8212; <a href="about.html">Edit</a><br>
+                            &#8212; <a href="#" id="delete-user">Delete</a><br>
+                            &#8212; <a href="#" id="exit-user">Exit</a><br>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="flowers-section">
+        <div class="background-image" style="background-image: url(public/img/romantic.jpg);"></div>
+    </section>    
+</body>
+</html>
