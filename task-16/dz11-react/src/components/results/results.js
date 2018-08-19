@@ -28,8 +28,12 @@ class Results extends Component {
                 <div className="text-left">
                     { this.state.generalData.map((question, index)  => {
                         return   this.state.generalData[index].isRight ?
-                            <div key={index} className="green">Question: {question.question}. <b>You have answered right!</b></div> :
-                            <div key={index} className="red">{question.question} <span className="green">Right answer: {question.rightAnswer}</span></div>
+                            <div key={index} className="green">Question: {question.question} <b>You have answered right!</b></div> :
+                            <div key={index} className="red">{question.question}
+                                <span className="green"> Right answer: {question.rightAnswer.map((answer) =>{
+                                    return  <span>{answer}; </span>
+                                })}</span>
+                            </div>
                     })}
                 </div>
             </div>

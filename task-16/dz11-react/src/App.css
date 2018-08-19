@@ -42,7 +42,6 @@
   background-color: #112016;
 }
 
-
 .header h1 {
    color: #2b323f;
    background-color: rgba(255, 255, 255, 0.7);
@@ -51,7 +50,7 @@
 }
 
 .option {
-  width: 90px;
+  width: 120px;
   text-align: left;
   margin: 0 auto;
 }

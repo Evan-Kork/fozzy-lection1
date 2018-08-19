@@ -6,7 +6,8 @@ class CheckboxQuestion extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            answers: []
+            answers: [],
+            answer: null
         }
         this.validateAnswer = this.validateAnswer.bind(this);
         this.handleChange = this.handleChange.bind(this);
@@ -14,6 +15,9 @@ class CheckboxQuestion extends Component {
 
     handleChange(event) {
         let answer = event.target.value;
+        this.setState({
+            answer: answer
+        })
         let answers = this.state.answers;
         answers.push(answer)
         this.setState( {
@@ -22,6 +26,12 @@ class CheckboxQuestion extends Component {
     }
 
     validateAnswer() {
+        if (this.state.answer === null || this.state.answer === '') {
+            this.setState({
+                answer: ''
+            })
+            return;
+        }
         let data = this.props.item;
         data.userAnswer = this.state.answers;
         this.props.validateAnswer(data);
@@ -38,6 +48,7 @@ class CheckboxQuestion extends Component {
                         </label>
                     </div>})}
                 <Button color="primary" onClick={this.validateAnswer}>Next</Button>
+                {this.state.answer === ''  ? <div>You have to opt the answer</div> : null}
             </div>
         );
     }

@@ -6,7 +6,7 @@ class RadioQuestion extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            answer: '',
+            answer: null,
             answers: []
         }
         this.validateAnswer = this.validateAnswer.bind(this);
@@ -21,12 +21,20 @@ class RadioQuestion extends Component {
     }
 
     validateAnswer() {
+        debugger;
+        if (this.state.answer === null || this.state.answer === '') {
+            this.setState({
+                answer: ''
+            })
+            return;
+        }
         let data = this.props.item;
         data.userAnswer = this.state.answers;
         data.userAnswer.push(this.state.answer)
         this.props.validateAnswer(data);
     }
     render() {
+        console.log(this.state.answer)
         return (
             <div>
                 <div>The answer must be only 1</div>
@@ -36,6 +44,7 @@ class RadioQuestion extends Component {
                     </div>
                 })}
                 <Button  color="primary" onClick={this.validateAnswer}>Next</Button>
+                {this.state.answer === ''  ? <div>You have to opt the answer</div> : null}
             </div>
         );
     }

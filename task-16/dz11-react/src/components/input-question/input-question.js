@@ -7,21 +7,29 @@ class InputQuestion extends Component {
         super(props);
         this.state = {
             answers: [],
-            answer: ''
-        }
+            answer: null
+        };
         this.handleChange = this.handleChange.bind(this);
         this.validateAnswer = this.validateAnswer.bind(this);
     }
 
     handleChange(event) {
+        debugger;
         let answer = event.target.value;
-        answer.toLowerCase();
-        this.setState( {
+        answer = answer.toLowerCase();
+        this.setState({
             answer: answer
         })
     }
 
     validateAnswer() {
+        debugger;
+        if (this.state.answer === null || this.state.answer === '') {
+            this.setState({
+                answer: ''
+            })
+            return;
+        }
         let data = this.props.item;
         data.userAnswer = this.state.answers;
         data.userAnswer.push(this.state.answer)
@@ -34,6 +42,7 @@ class InputQuestion extends Component {
                 <input onChange={this.handleChange}/>
                 <div>
                     <Button color="primary"  onClick={this.validateAnswer}>Next</Button>
+                    {this.state.answer === ''  ? <div>You have to opt the answer</div> : null}
                 </div>
             </div>
         );

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import initialData from '../../data.json';
 import Question from '../question/question';
-import RadioQuestion from '../radio-questions/radio-question';
+import RadioQuestion from '../radio-question/radio-question';
 import CheckboxQuestion from '../checkbox-question/checkbox-question';
 import InputQuestion from '../input-question/input-question';
 import Results from '../results/results.js';
