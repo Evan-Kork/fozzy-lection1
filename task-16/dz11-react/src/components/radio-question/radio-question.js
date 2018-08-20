@@ -34,7 +34,6 @@ class RadioQuestion extends Component {
         this.props.validateAnswer(data);
     }
     render() {
-        console.log(this.state.answer)
         return (
             <div>
                 <div>The answer must be only 1</div>
@@ -48,6 +47,6 @@ class RadioQuestion extends Component {
             </div>
         );
     }
-}
+};
 
 export default RadioQuestion;

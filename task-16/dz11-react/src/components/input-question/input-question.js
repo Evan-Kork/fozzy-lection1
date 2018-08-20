@@ -14,7 +14,6 @@ class InputQuestion extends Component {
     }
 
     handleChange(event) {
-        debugger;
         let answer = event.target.value;
         answer = answer.toLowerCase();
         this.setState({
@@ -23,7 +22,6 @@ class InputQuestion extends Component {
     }
 
     validateAnswer() {
-        debugger;
         if (this.state.answer === null || this.state.answer === '') {
             this.setState({
                 answer: ''

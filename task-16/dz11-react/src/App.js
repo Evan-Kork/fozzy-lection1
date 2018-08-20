@@ -19,7 +19,7 @@ class App extends Component {
         this.setState({
             isStart: false
         })
-    }
+    };
 
     render() {
         return (
@@ -36,7 +36,7 @@ class App extends Component {
                 </Container>
             </div>
         );
-    }
+    };
 }
 
 export default App;

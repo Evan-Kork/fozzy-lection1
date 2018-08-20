@@ -23,14 +23,14 @@ class Results extends Component {
         return (
             <div>
                 Results are: {this.showResults()} out of {this.state.generalData.length}.
-                {this.showResults() < 5 ? <h3>Try again :(</h3>: <h3>Congratulations!</h3>}
+                {this.showResults() < 5 ? <h3>Try again :(</h3> : <h3>Congratulations!</h3>}
                 <h5>Analyze your results</h5>
                 <div className="text-left">
-                    { this.state.generalData.map((question, index)  => {
+                    { this.state.generalData.map((testItem, index)  => {
                         return   this.state.generalData[index].isRight ?
-                            <div key={index} className="green">Question: {question.question} <b>You have answered right!</b></div> :
-                            <div key={index} className="red">{question.question}
-                                <span className="green"> Right answer: {question.rightAnswer.map((answer) =>{
+                            <div key={index} className="green">Question: {testItem.question} <b>You have answered right!</b></div> :
+                            <div key={index} className="red">{testItem.question}
+                                <span className="green"> Right answer: {testItem.rightAnswer.map((answer) =>{
                                     return  <span>{answer}; </span>
                                 })}</span>
                             </div>

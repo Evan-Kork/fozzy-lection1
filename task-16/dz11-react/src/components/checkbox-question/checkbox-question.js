@@ -11,7 +11,7 @@ class CheckboxQuestion extends Component {
         }
         this.validateAnswer = this.validateAnswer.bind(this);
         this.handleChange = this.handleChange.bind(this);
-    }
+    };
 
     handleChange(event) {
         let answer = event.target.value;
@@ -23,7 +23,7 @@ class CheckboxQuestion extends Component {
         this.setState( {
             answers: answers
         })
-    }
+    };
 
     validateAnswer() {
         if (this.state.answer === null || this.state.answer === '') {
@@ -35,7 +35,8 @@ class CheckboxQuestion extends Component {
         let data = this.props.item;
         data.userAnswer = this.state.answers;
         this.props.validateAnswer(data);
-    }
+    };
+
     render() {
         return (
             <div>
@@ -52,6 +53,6 @@ class CheckboxQuestion extends Component {
             </div>
         );
     }
-}
+};
 
 export default CheckboxQuestion;
