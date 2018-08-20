@@ -11,6 +11,7 @@ class InputQuestion extends Component {
         };
         this.handleChange = this.handleChange.bind(this);
         this.validateAnswer = this.validateAnswer.bind(this);
+        this.handlePress = this.handlePress.bind(this);
     }
 
     handleChange(event) {
@@ -32,6 +33,20 @@ class InputQuestion extends Component {
         data.userAnswer = this.state.answers;
         data.userAnswer.push(this.state.answer)
         this.props.validateAnswer(data);
+    }
+
+    handlePress(event) {
+        if (event.keyCode === 13) {
+            this.validateAnswer();
+        }
+    };
+
+    componentDidMount () {
+        document.addEventListener('keydown', this.handlePress);
+    }
+
+    componentWillUnmount () {
+        document.removeEventListener('keydown', this.handlePress);
     }
     render() {
         return (

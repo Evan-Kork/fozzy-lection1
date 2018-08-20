@@ -17,7 +17,7 @@ class Test extends Component {
         this.validateAnswer = this.validateAnswer.bind(this);
         this.data = JSON.parse(JSON.stringify(initialData));
         this.handleReboot = this.handleReboot.bind(this);
-    }
+    };
 
     validateAnswer(data) {
         let userAnswer = data.userAnswer.sort();

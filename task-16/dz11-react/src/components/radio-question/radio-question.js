@@ -11,6 +11,7 @@ class RadioQuestion extends Component {
         }
         this.validateAnswer = this.validateAnswer.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        this.handlePress = this.handlePress.bind(this);
     }
 
     handleChange(event) {
@@ -18,6 +19,20 @@ class RadioQuestion extends Component {
         this.setState( {
             answer: answer
         })
+    }
+
+    handlePress(event) {
+        if (event.keyCode === 13) {
+            this.validateAnswer();
+        }
+    }
+
+    componentDidMount () {
+        document.addEventListener('keydown', this.handlePress);
+    }
+
+    componentWillUnmount () {
+        document.removeEventListener('keydown', this.handlePress);
     }
 
     validateAnswer() {

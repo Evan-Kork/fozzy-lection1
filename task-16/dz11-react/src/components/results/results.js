@@ -30,9 +30,9 @@ class Results extends Component {
                         return   this.state.generalData[index].isRight ?
                             <div key={index} className="green">Question: {testItem.question} <b>You have answered right!</b></div> :
                             <div key={index} className="red">{testItem.question}
-                                <span className="green"> Right answer: {testItem.rightAnswer.map((answer) =>{
+                                <div className="green"> Right answer: {testItem.rightAnswer.map((answer) =>{
                                     return  <span>{answer}; </span>
-                                })}</span>
+                                })}</div>
                             </div>
                     })}
                 </div>
