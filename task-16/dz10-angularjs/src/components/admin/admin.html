@@ -1,15 +1,15 @@
-<div>  
+<div>
   <div class="container">
     <div class="row">
       <div class="col-6">
-        <exit-button></exit-button>  
+        <exit-button></exit-button>
       </div>
     </div>
     <div class="row">
       <div class="col-6 text-center">
         <div class="users box">
           <h3>Search users</h3>
-            Search: <input ng-model="$ctrl.query" />
+          Search: <input ng-model="$ctrl.query" />
           <div ng-repeat="user in usersArray |filter:$ctrl.query track by $index">
             <div>{{user.name}}</div>
             <button class="btn btn-primary" ng-click="assignModerator($index)" ng-if="!getUserRole($index)">assign as a moderator</button>
@@ -21,18 +21,18 @@
         <div class="edit-messages box">
           <h3>Edit messages</h3>
           <div class="row">
-            <div class="mx-auto" ng-if="emptyMessageList()">No messages to check...</div>              
+            <div class="mx-auto" ng-if="emptyMessageList()">No messages to check...</div>
             <div  class="col-6" ng-repeat="message in approvedStorage track by $index">
-              <div>{{message.name}} {{message.message}} </div> 
+              <div>{{message.name}} {{message.message}} </div>
               <button class="btn btn-primary" ng-if="startEdit[$index] === false" ng-click="editMessage($index)">Edit</button>
-              <div ng-if="startEdit[$index]">    
+              <div ng-if="startEdit[$index]">
                 <textarea  ng-model="approvedStorage[$index].message" cols="30" rows="3"></textarea>
                 <button class="d-block mx-auto btn btn-primary" ng-click="saveMessage($index)">Save</button>
               </div>
-            </div>     
+            </div>
           </div>
-        </div>  
-      </div>    
+        </div>
+      </div>
     </div>
   </div>
 </div>

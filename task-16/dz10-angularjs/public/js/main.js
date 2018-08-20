@@ -108,7 +108,6 @@ app.factory('loginService', function(localStorageService) {
         },
 
         logIn: (username, password) => {
-            debugger;
             let userData = {
                 name: username,
                 password: password

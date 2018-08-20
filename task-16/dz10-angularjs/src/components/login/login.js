@@ -9,7 +9,6 @@ app.component('login', {
         $scope.isModerator = false;
         $scope.data = {};
         $scope.logIn = function () {
-            debugger;
             $scope.data =  loginService.logIn($scope.name, $scope.passUser);
             if ($scope.data === undefined) {
                 $scope.isLogged = false; 

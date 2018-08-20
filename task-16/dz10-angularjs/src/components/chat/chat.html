@@ -1,14 +1,14 @@
 <exit-button></exit-button>
 <div class="chat">
     <div class="chat-box box">
-      <div ng-show="emptyChat()">Start chatting!</div>
-      <div class="chat-item d-flex flex-column" ng-repeat="messageData in reversedArray track by $index" ng-class="{'mymessage': myMessage($index)}">
-        <div>
-          <b>{{messageData.username}} </b>
+        <div ng-show="emptyChat()">Start chatting!</div>
+        <div class="chat-item d-flex flex-column" ng-repeat="messageData in reversedArray track by $index" ng-class="{'mymessage': myMessage($index)}">
+            <div>
+                <b>{{messageData.username}} </b>
+            </div>
+            <div>{{messageData.date}}</div>
+            <div>{{messageData.message}}</div>
         </div>
-        <div>{{messageData.date}}</div>
-        <div>{{messageData.message}}</div>
-      </div>
     </div>
     <textarea  ng-model="newMessage" name="message"  placeholder="Write your message"></textarea>
     <button ng-click="sendMessage()" class="submit btn btn-primary">Send</button>

@@ -1,8 +1,8 @@
-<div>              
+<div>
   <div class="container">
     <div class="row">
       <div class="col-6">
-        <exit-button></exit-button>  
+        <exit-button></exit-button>
       </div>
     </div>
     <div class="row">
@@ -10,8 +10,8 @@
         <h1>Messages to check</h1>
         <div class="box p-3">
           <div ng-if="emptyMessageList()">No messages to check...</div>
-          <div ng-repeat="message in unapprovedStorage track by $index"> 
-            from: {{message.username}} 
+          <div ng-repeat="message in unapprovedStorage track by $index">
+            from: {{message.username}}
             <div class="message">
               {{message.message}}
             </div>
