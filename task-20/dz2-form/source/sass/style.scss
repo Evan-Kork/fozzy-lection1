@@ -1,0 +1,67 @@
+html, body {
+    background-color:rgb(75, 92, 63);
+    padding:0;
+    margin:0;
+}
+h1 {
+    background-color:rgba(202, 214, 193, 0.5);
+    color:rgb(29, 31, 27);
+    text-align: center;
+    padding:5px;
+    margin:20px;
+}
+div {
+    display: inline-block;
+}
+.image {
+    width:100%;
+    display: inline-block;
+    text-align: center;
+    img
+    {
+        width:300px;
+        height:200px;
+        margin-bottom:15px;
+        opacity:0.8;
+    }
+}
+form {
+    background-color:rgb(202, 214, 193);
+    padding: 20px;
+    margin:0 20px;
+    fieldset {
+        margin:5px;
+        legend {
+            color:rgb(145, 113, 35);
+            font-weight: bold;
+            font-size:18px;
+        }
+        .container {
+            margin-top:5px;
+            .to-lable {
+                width:120px;
+                label {
+                    font-weight: bold;
+                    color: rgb(29, 34, 30);
+                }
+            }
+        }
+    }
+    .reset, button {
+        color:rgb(209, 195, 195);
+        border:0;
+        padding:4px 20px;
+        font-size:15px;
+        margin:6px;
+    }
+    .reset {
+        background-color:rgb(84, 88, 79);
+    }
+    button {
+        background-color:rgb(29, 31, 27);
+    }
+    button:hover, .reset:hover {
+        background-color:  rgb(145, 113, 35);
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,32 @@
+body {
+  background-color: #f3f3f3;
+}
+
+#general {
+  padding: 10px;
+}
+#general .top {
+  text-align: center;
+  color: darkgreen;
+  font-size: 18px;
+}
+#general .news .subfield {
+  font-size: 16px;
+  color: gray;
+}
+#general .news .description {
+  font-style: italic;
+}
+#general .news .news-link {
+  color: brown;
+}
+#general .news .news-link:hover {
+  color: orange;
+}
+#general .news img {
+  width: 400px;
+  margin: 20px 0;
+  border: 1px dotted gray;
+}
+
+/*# sourceMappingURL=style.css.map */
