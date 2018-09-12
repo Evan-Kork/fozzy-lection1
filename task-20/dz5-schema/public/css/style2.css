@@ -1,0 +1,107 @@
+html, body {
+    height:100%;
+    padding:0;
+    margin:0;
+}
+body a {
+    color:darkslateblue;
+    text-decoration:none;
+}
+.container {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+}
+.container header {
+    height:120px;
+    background-color:midnightblue;
+}
+.container header .block-left {
+    font-size:14px;
+    color:white;
+    margin:20px;
+}
+.container header .block-left .logo {
+    background-color:white;
+    width:200px;
+    margin:10px 0;
+    padding:0 2px 0 10px;
+    border-radius:20px;
+}
+main {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+}
+main button {
+    width:122px;
+    height:32px;
+    margin:5px 0;
+    background-color:rgb(56, 160, 78);
+    color:white;
+    font-size:16px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:3px solid darkslategray;
+    cursor: pointer;
+    border-radius:5px;
+}
+main button:hover {
+    background-color:rgb(56, 160, 78);
+}
+
+main aside, main article {
+    margin:10px;
+    padding:5px;
+}
+main aside .menu-button {
+    width:160px;
+    height:40px;
+}
+main aside {
+    min-width:200px;
+}
+main aside ul {
+    list-style:none;
+    padding:0;
+}
+main aside a:hover {
+    color:red;
+}
+
+main article a:hover {
+    color:red;
+    text-decoration:underline;
+}
+main article h1 {
+    color:darkslategray;
+}
+main article .product-list {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+main article .product-list .block {
+    max-width:240px;
+    padding:10px;
+}
+main article .product-list .block .action {
+    font-size:14px;
+    color:red;
+}
+main article .product-list .block .price-block {
+    margin:10px 0;
+}
+main article .product-list .block .price-block .is-price {
+    background-color:rgb(252, 252, 157);
+    padding:5px;
+    font-size:18px;
+    color:rgb(197, 35, 35);
+}
+
+@media (max-width: 500px) {
+    main {
+        display: block;
+    }
+}
