@@ -1,50 +1,9 @@
 'use strict';
 
-let documentationArray = [
-	{
-        name: 'length',
-        method: getLength
-	},
-	{
-        name: 'slice',
-        method: getSlice
-	},
-];
+// Methods
 
-let createButtonResult = (i) => {
-	let buttonResult = document.createElement('button');
-	buttonResult.className = 'button-result';
-	buttonResult.setAttribute('id', documentationArray[i].name + 'get-result' + i);
-    buttonResult.innerHTML = `<button 
-                                    type="button" 
-                                    class="btn btn-info">
-                                    Підрахувати                               
-								</button>`;
-	return buttonResult;
-}
-
-let createDivResult = (i) => {
-    let divResult = document.createElement('div');
-    divResult.className = 'div-result';
-    divResult.setAttribute('id', documentationArray[i].name + 'is-result' + i);
-
-    divResult.innerHTML = `<div>
-                                Отримайте результат
-                                </div>`;
-    return divResult;
-}
-
-let createElements = document.getElementsByClassName('card-body');
-let buttonіResult = document.getElementsByClassName('button-result');
-
-for (let i = 0; i < documentationArray.length; i++)
-{
-    createElements[i].append(createButtonResult(i));
-    createElements[i].append(createDivResult(i));
-    buttonіResult[i].addEventListener('click', documentationArray[i].method);
-}
-
-function getLength() {
+// 1.
+function getLengthFunction() {
     let numbers = $('#length-array')[0].value;
     let arr = numbers.split(', ');
 
@@ -54,226 +13,206 @@ function getLength() {
 
     let myResult = filterResult.length;
 
-    let res = document.getElementById(documentationArray[0].name + 'is-result' + 0);
+    let res = document.getElementsByClassName('length-result')[0];
 
     res.innerHTML = `<div>
         Довжина масиву: ${myResult}
-        </div>`;   
+        </div>`;
 
     return myResult;
 };
 
-function getSlice() {
-        let numbers = $('#slice-array')[0].value;
-        let arr = numbers.split(', ');
+// 2.
+function getSliceFunction() {
+    let numbers = $('#slice-array')[0].value;
+    let arr = numbers.split(', ');
 
-        let filterResult = arr.filter(function(item, i, array) {
-            return (item.length  > 0);
-        });
+    let filterResult = arr.filter(function(item, i, array) {
+        return (item.length  > 0);
+    });
 
-        let start = $('#slice-index1')[0].value;
-        let end = $('#slice-index2')[0].value;
+    let start = $('#slice-index1')[0].value;
+    let end = $('#slice-index2')[0].value;
 
-        let myResult = filterResult.slice(start, end);
+    let myResult = filterResult.slice(start, end);
 
-        let res = document.getElementById(documentationArray[1].name + 'is-result' + 1);
+    let res = document.getElementsByClassName('slice-result')[0];
 
-        if (filterResult.length > 1 && start < end)
-        {
-            res.innerHTML = `<div>
-            Новий підмасив: ${myResult}
-            </div>`;
-        }
-        else
-        {       
-            res.innerHTML = `<div>
-            Новий підмасив: none
-            </div>`;
-        }
+    if (filterResult.length > 1 && start < end)
+    {
+        res.innerHTML = `<div>
+        Новий підмасив: ${myResult}
+        </div>`;
+    }
+    else
+    {
+        res.innerHTML = `<div>
+        Новий підмасив: none
+        </div>`;
+    }
 };
 
-// Стара версія
-
-$(document).ready(function(){
-    $("#concat-info").click(function(){
-        let numbers1 = $('#concat-array1')[0].value;
-        let arr1 = numbers1.split(', ');
-        let filterResult1 = arr1.filter(function(item, i, array) {
-            return (item.length  > 0);
-        });
-
-        let numbers2 = $('#concat-array2')[0].value;
-        let arr2 = numbers2.split(', ');
-        let filterResult2 = arr2.filter(function(item, i, array) {
-            return (item.length  > 0);
-        });
-
-        let myResult = filterResult1.concat(filterResult2);
-        let idResult = $('#concat-result')[0];
-
-        if ((filterResult1.length > 0 && filterResult2.length > 0) || (filterResult1.length > 0 || filterResult2.length > 0))
-        {
-            idResult.innerHTML = `<div>
-            Новий масив: ${myResult}
-            </div>`;
-        }
-        else
-        {       
-            idResult.innerHTML = `<div>
-            Новий масив: ${"none"}
-            </div>`;
-        }
+// 3.
+function getConcatFunction() {
+    let numbers1 = $('#concat-array1')[0].value;
+    let arr1 = numbers1.split(', ');
+    let filterResult1 = arr1.filter(function(item, i, array) {
+        return (item.length  > 0);
     });
-});
 
-$(document).ready(function(){
-    $("#includes-info").click(function(){
-
-        let numbers = $('#includes-array')[0].value;
-        let arr = numbers.split(', ');
-
-        let filterResult = arr.filter(function(item, i, array) {
-            return (item.length  > 0);
-        });
-
-        let element = $('#includes-element')[0].value;
-
-        let myResult = filterResult.includes(element)
-        let idResult = $('#includes-result')[0];
-    
-        idResult.innerHTML = `<div>
-            Результат: ${myResult}
-            </div>`;
+    let numbers2 = $('#concat-array2')[0].value;
+    let arr2 = numbers2.split(', ');
+    let filterResult2 = arr2.filter(function(item, i, array) {
+        return (item.length  > 0);
     });
-});
 
-$(document).ready(function(){
-    $("#join-info").click(function(){
+    let myResult = filterResult1.concat(filterResult2);
+    let res = document.getElementsByClassName('concat-result')[0];
 
-        let numbers = $('#join-array')[0].value;
-        let arr = numbers.split(', ');
+    if ((filterResult1.length > 0 && filterResult2.length > 0) || (filterResult1.length > 0 || filterResult2.length > 0))
+    {
+        res.innerHTML = `<div>
+        Новий масив: ${myResult}
+        </div>`;
+    }
+    else
+    {
+        res.innerHTML = `<div>
+        Новий масив: ${"none"}
+        </div>`;
+    }
+};
 
-        let filterResult = arr.filter(function(item, i, array) {
-            return (item.length  > 0);
-        });
+// 4.
+function getIncludesFunction() {
+    let numbers = $('#includes-array')[0].value;
+    let arr = numbers.split(', ');
 
-        let symbol = ($('#join-symbol')[0].value).toString();
-
-        let myResult = filterResult.join(symbol);
-        let idResult = $('#join-result')[0];
-    
-        if (filterResult.length > 0)
-        {
-            idResult.innerHTML = `<div>
-            Результат: ${myResult}
-            </div>`;
-        }
-        else
-        {       
-            idResult.innerHTML = `<div>
-            Результат: ${"none"}
-            </div>`;
-        }
+    let filterResult = arr.filter(function(item, i, array) {
+        return (item.length  > 0);
     });
-});
 
-$(document).ready(function(){
-    $("#split-info").click(function(){
+    let element = $('#includes-element')[0].value;
 
-        let numbers = $('#split-array')[0].value;
-        let arr = numbers.split(', ');
+    let myResult = filterResult.includes(element)
+    let res = document.getElementsByClassName('includes-result')[0];
 
-        let filterResult = arr.filter(function(item, i, array) {
-            return (item.length  > 0);
-        });
+    res.innerHTML = `<div>
+        Результат: ${myResult}
+        </div>`;
+};
 
-        let myResult = filterResult.toString();
-        let idResult = $('#split-result')[0];
-    
-        idResult.innerHTML = `<div>
-            Результат: ${myResult} <br> Тип: ${typeof(myResult)}
-            </div>`;
+// 5.
+function getJoinFunction() {
+    let numbers = $('#join-array')[0].value;
+    let arr = numbers.split(', ');
+
+    let filterResult = arr.filter(function(item, i, array) {
+        return (item.length  > 0);
     });
-});
 
-$(document).ready(function(){
-    $("#tostring-info").click(function(){
+    let symbol = ($('#join-symbol')[0].value).toString();
 
-        let numbers = $('#tostring-array')[0].value;
-        let arr = numbers.split(', ');
+    let myResult = filterResult.join(symbol);
+    let res = document.getElementsByClassName('join-result')[0];
 
-        let filterResult = arr.filter(function(item, i, array) {
-            return (item.length  > 0);
-        });
+    if (filterResult.length > 0)
+    {
+        res.innerHTML = `<div>
+        Результат: ${myResult}
+        </div>`;
+    }
+    else
+    {
+        res.innerHTML = `<div>
+        Результат: ${"none"}
+        </div>`;
+    }
+};
 
-        let myResult = filterResult.toString();
-        let idResult = $('#tostring-result')[0];
-    
-        idResult.innerHTML = `<div>
-            Результат: ${myResult} <br> Тип: ${typeof(myResult)}
-            </div>`;
+// 6.
+function getSplitFunction() {
+    let numbers = $('#split-array')[0].value;
+    let count = $('#split-count')[0].value;
+    let arr;
+    if (count.length > 0)
+        arr = numbers.split(', ', count);
+    else
+        arr = numbers.split(', ');
+
+    let res = document.getElementsByClassName('split-result')[0];
+    res.innerHTML = `<div>
+        Результат: ${arr} <br> Тип: ${typeof(arr)}
+        </div>`;
+};
+
+// 7.
+function getToStringFunction() {
+    let numbers = $('#tostring-array')[0].value;
+    let arr = numbers.split(', ');
+
+    let filterResult = arr.filter(function(item, i, array) {
+        return (item.length  > 0);
     });
-});
 
-$(document).ready(function(){
-    $("#indexof-info").click(function(){
+    let myResult = filterResult.toString();
+    let res = document.getElementsByClassName('tostring-result')[0];
 
-        let numbers = $('#indexof-array')[0].value;
-        let arr = numbers.split(', ');
+    res.innerHTML = `<div>
+        Результат: ${myResult} <br> Тип: ${typeof(myResult)}
+        </div>`;
+};
 
-        let filterResult = arr.filter(function(item, i, array) {
-            return (item.length  > 0);
-        });
+// 8.
+function getIndexOfFunction() {
+    let numbers = $('#indexof-array')[0].value;
+    let arr = numbers.split(', ');
 
-        let element = $('#indexof-element')[0].value;
-        let index = $('#indexof-index')[0].value;
-
-        let myResult = filterResult.indexOf(element, index);
-        let idResult = $('#indexof-result')[0];
-    
-        idResult.innerHTML = `<div>
-            Індекс шуканого елемента: ${myResult}
-            </div>`;
+    let filterResult = arr.filter(function(item, i, array) {
+        return (item.length  > 0);
     });
-});
 
-$(document).ready(function(){
-    $("#lastindexof-info").click(function(){
+    let element = $('#indexof-element')[0].value;
+    let index = $('#indexof-index')[0].value;
 
-        let numbers = $('#lastindexof-array')[0].value;
-        let arr = numbers.split(', ');
+    let myResult = filterResult.indexOf(element, index);
+    let res = document.getElementsByClassName('indexof-result')[0];
 
-        let filterResult = arr.filter(function(item, i, array) {
-            return (item.length  > 0);
-        });
+    res.innerHTML = `<div>
+        Індекс шуканого елемента: ${myResult}
+        </div>`;
+};
 
-        let element = $('#lastindexof-element')[0].value;
-        let index = $('#lastindexof-index')[0].value;
+// 8.
+function getLastIndexOfFunction() {
+    let numbers = $('#lastindexof-array')[0].value;
+    let arr = numbers.split(', ');
 
-        let myResult = filterResult.lastIndexOf(element, index);
-        let idResult = $('#lastindexof-result')[0];
-    
-        idResult.innerHTML = `<div>
-            Індекс шуканого елемента: ${myResult}
-            </div>`;
+    let filterResult = arr.filter(function(item, i, array) {
+       return (item.length  > 0);
     });
-});
 
-// такий то клас така то функція
+    let element = $('#lastindexof-element')[0].value;
+    let index = $('#lastindexof-index')[0].value;
 
-// по атрибуту старт такої-то функції (в лістенері)
+    let myResult = filterResult.lastIndexOf(element, index);
+    let res = document.getElementsByClassName('lastindexof-result')[0];
 
-// через атрибути
+    res.innerHTML = `<div>
+        Індекс шуканого елемента: ${myResult}
+        </div>`;
+};
 
-// у функцію приходить івент (де елемент по якому ми клікнули)
+// General
 
-// всім кнопкам прописати однаковий клас, по якихось параметрах, які передаємо, визначається, яку викликати функцію
+let asArray = {getLength: getLengthFunction, getSlice: getSliceFunction, getConcat: getConcatFunction, getIncludes: getIncludesFunction,
+    getJoin: getJoinFunction, getSplit: getSplitFunction, getToString: getToStringFunction, getIndexOf: getIndexOfFunction,
+    getLastIndexOf: getLastIndexOfFunction};
 
-// let clickButtonFunction = (id, method) =>
-// {
-//     document.getElementById(id).addEventListener('click', method);   
-// }
+function getFunctionOnClick(event)
+{
+    let myFunction = event.target.getAttribute('button-attribute');
+    asArray[myFunction]();
+}
 
-// for (let i = 0; i < documentationArray.length; i++) {
-//     clickButtonFunction(documentationArray[i].id, documentationArray[i].method);
-// }
+$('.button-result').on('click', getFunctionOnClick);
