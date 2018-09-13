@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat</title>
+  <link rel="stylesheet" href="public/vendors/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body ng-app="appChat">
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <h2 class="text-center header p-3">MeowChat ^-^</h2>  
+      </div>
+    </div>
+  </div>
+  <ui-view></ui-view>
+  <script src="public/vendors/angular.js"></script>
+  <script src="https://unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+  <script src="public/vendors/jquery/jquery-3.2.1.min.js"></script>  
+  <script src="public/vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="public/js/main.js"></script>
+  <script src="public/vendors/angular-local-storage.min.js"></script>
+  <script src="public/vendors/bootstrap/ui-bootstrap-tpls-2.5.0.min.js"></script>
+  <script src="src/components/login/login.js"></script>
+  <script src="src/components/chat/chat.js"></script>
+  <script src="src/components/admin/admin.js"></script>
+  <script src="src/components/moderator/moderator.js"></script>
+</body>
+</html>
