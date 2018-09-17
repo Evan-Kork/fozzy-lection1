@@ -1,0 +1,48 @@
+.App {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+.App-header {
+  width: 100%;
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+.App-title {
+  font-size: 1.5em;
+}
+.App-intro {
+  font-size: large;
+}
+.body {
+  padding-top: 15px;
+  border-bottom: 1px solid black;
+}
+.title {
+  padding-top: 30px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.author {
+  font-weight: 400;
+  padding: 15px 0;
+  font-size: 20px;
+}
+.description {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.datePublish {
+  font-size: 14px;
+}
+.articleUrl {
+  font-style: italic;
+}
+.image img{
+  max-width: 60%;
+}
+/*@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}*/
