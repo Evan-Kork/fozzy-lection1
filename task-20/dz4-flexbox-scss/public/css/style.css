@@ -1,0 +1,143 @@
+/* Common styles*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #323636;
+  background-color: whitesmoke;
+}
+
+body a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #08788b;
+}
+
+body a:hover {
+  color: #1a6ebd;
+}
+
+/* Header styles */
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header .psychologist, header .contacts {
+  padding: 0 10px;
+}
+header .psychologist {
+  font-size: 22px;
+  font-family: Verdana, Tahoma, sans-serif;
+  min-width: 250px;
+  width: 10%;
+}
+header .psychologist .logo-image {
+  width: 55px;
+  padding-right: 10px;
+}
+header .contacts {
+  font-size: 16px;
+}
+header .contacts .name {
+  font-size: 20px;
+}
+header .header-logo {
+  min-width: 200px;
+  height: 210px;
+}
+
+/* Nav styles*/
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-decoration: none;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  padding: 5px 0;
+  list-style: none;
+}
+
+/* Main styles */
+main .top-image {
+  height: 307px;
+  background-image: url("../img/sea.jpg");
+  background-size: cover;
+  padding: 60px 55px;
+}
+main .top-image .description {
+  color: white;
+  border: 1px solid white;
+  padding: 80px 0;
+  text-align: center;
+}
+main .top-image .description .task {
+  font-size: 22px;
+}
+main .top-image .description .study {
+  font-size: 32px;
+}
+
+/* Article styles */
+main article {
+  width: 92%;
+  margin: 0 auto;
+  /* About me styles */
+  /* Categories styles */
+}
+main article .article-header {
+  width: 93%;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0 auto;
+}
+main article .person {
+  padding: 10px 0;
+  margin: 0 auto;
+}
+main article .person .person-image {
+  width: 225px;
+  margin-left: 20px;
+}
+main article .person .person-description {
+  font-size: 18px;
+  text-align: justify;
+}
+main article .categories .services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+main article .categories .services .service {
+  width: 30%;
+  text-align: justify;
+  padding: 5px;
+  margin: 10px;
+  background-color: #e5ecee;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* Media */
+@media (max-width: 768px) {
+  main article .categories .services .service {
+    width: 48%;
+  }
+}
+@media (max-width: 568px) {
+  main article .categories .services .service {
+    width: 98%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

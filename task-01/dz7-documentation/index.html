@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Documentation on JS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="public/js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="accordion mt-1">
+<!--Методы доступа-->
+			<div class="card bg-secondary">
+				<div class="card-header">
+					<h6 class="mb-0 text-uppercase text-white">
+						Методы доступа :
+					</h6>
+				</div>
+			</div>
+<!--Slice 1 -->
+			<div class="card bg-warning">
+				<div class="slice-open-close rem-div card-header bg-warning" data-toggle="collapse" data-target="#collapse-slice" aria-expanded="false" aria-controls="collapse-slice">
+					<h6 class="mb-0">
+						Slice - возвращает новый массив, содержащий копию части исходного массива.
+					</h6>
+				</div>
+				<div id="collapse-slice" class="collapse">
+					<div class="card-body bg-secondary text-white">
+						<div class="input-group mb-2">
+							<input type="text" class="form-control slice-array" value="0,1,2,3,4,5,6,7,8,9">
+							<input type="text" class="form-control data-on-slice" value="1-4">
+							<div class="input-group-append">
+								<button class="slice button btn btn-warning " type="button">OK</button>
+							</div>
+						</div>
+						<div class="row slice-div">
+						</div>
+					</div>
+				</div>
+			</div>
+<!--Concat 2 -->
+			<div class="card bg-warning">
+				<div class="сoncat-open-close rem-div card-header bg-warning" data-toggle="collapse" data-target="#collapse-сoncat" aria-expanded="false" aria-controls="collapse-сoncat">
+					<h6 class="mb-0">
+						Concat - возвращает новый массив состоящий с старого массива и новых элементов.
+					</h6>
+				</div>
+				<div id="collapse-сoncat" class="collapse">
+					<div class="card-body bg-secondary text-white">
+						<div class="input-group mb-2">
+							<input type="text" class="form-control сoncat-array" value="0,1,2,3,4,5,6,7,8,9">
+							<input type="text" class="form-control data-on-сoncat" value="10,11,12,13">
+							<div class="input-group-append">
+								<button class="сoncat button btn btn-warning " type="button">OK</button>
+							</div>
+						</div>
+						<div class="row сoncat-div"></div>
+					</div>
+				</div>
+			</div>
+<!--Includes 3 -->
+			<div class="card bg-warning">
+				<div class="includes-open-close rem-div card-header bg-warning" data-toggle="collapse" data-target="#collapse-includes" aria-expanded="false" aria-controls="collapse-includes">
+					<h6 class="mb-0">
+						Includes - определяет, содержит ли массив определённый элемент, возвращая в зависимости от этого true или false.
+					</h6>
+				</div>
+				<div id="collapse-includes" class="collapse">
+					<div class="card-body bg-secondary text-white">
+						<div class="input-group mb-2">
+							<input type="text" class="form-control includes-array" value="0,1,2,3,4,5,6,7,8,9">
+							<input type="text" class="form-control data-on-includes" value="1">
+							<div class="input-group-append">
+								<button class="includes button btn btn-warning " type="button">OK</button>
+							</div>
+						</div>
+						<div class="row includes-div"></div>
+					</div>
+				</div>
+			</div>
+<!--Join 4 -->
+			<div class="card bg-warning">
+				<div class="join-open-close rem-div card-header bg-warning" data-toggle="collapse" data-target="#collapse-join" aria-expanded="false" aria-controls="collapse-join">
+					<h6 class="mb-0">
+						Join - склеивает строку вставляя между элементами указанный разделитель.
+					</h6>
+				</div>
+				<div id="collapse-join" class="collapse">
+					<div class="card-body bg-secondary text-white">
+						<div class="input-group mb-2">
+							<input type="text" class="form-control join-array" value="0,1,2,3,4,5,6,7,8,9">
+							<input type="text" class="form-control data-on-join" value=";">
+							<div class="input-group-append">
+								<button class="join button btn btn-warning " type="button">OK</button>
+							</div>
+						</div>
+						<div class="row join-div"></div>
+					</div>
+				</div>
+			</div>
+<!--Split 5 -->
+			<div class="card bg-warning">
+				<div class="split-open-close rem-div card-header bg-warning" data-toggle="collapse" data-target="#collapse-split" aria-expanded="false" aria-controls="collapse-split">
+					<h6 class="mb-0">
+						Slpit - превращает строку в массив, разбив ее по разделителю.
+					</h6>
+				</div>
+				<div id="collapse-split" class="collapse">
+					<div class="card-body bg-secondary text-white">
+						<div class="input-group mb-2">
+							<input type="text" class="form-control split-array" value="MishaPetia#Vasia">
+							<input type="text" class="form-control data-on-split" value="#">
+							<div class="input-group-append">
+								<button class="split button btn btn-warning " type="button">OK</button>
+							</div>
+						</div>
+						<div class="row split-div"></div>
+					</div>
+				</div>
+			</div>
+<!--ToString 6 -->
+			<div class="card bg-warning">
+				<div class="toString-open-close rem-div card-header bg-warning" data-toggle="collapse" data-target="#collapse-toString" aria-expanded="false" aria-controls="collapse-toString">
+					<h6 class="mb-0">
+						ToString - переводит масив в строку.
+					</h6>
+				</div>
+				<div id="collapse-toString" class="collapse">
+					<div class="card-body bg-secondary text-white">
+						<div class="input-group mb-2">
+							<input type="text" class="form-control toString-array" value="0,1,2,3,4,5,6,7,8,9">
+							<input type="text" class="form-control data-on-toString" disabled>
+							<div class="input-group-append">
+								<button class="toString button btn btn-warning " type="button">OK</button>
+							</div>
+						</div>
+						<div class="row toString-div"></div>
+					</div>
+				</div>
+			</div>
+<!--IndexOf 7 -->
+			<div class="card bg-warning">
+				<div class="indexOf-open-close rem-div card-header bg-warning" data-toggle="collapse" data-target="#collapse-indexOf" aria-expanded="false" aria-controls="collapse-indexOf">
+					<h6 class="mb-0">
+						IndexOf - возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет.
+					</h6>
+				</div>
+				<div id="collapse-indexOf" class="collapse">
+					<div class="card-body bg-secondary text-white">
+						<div class="input-group mb-2">
+							<input type="text" class="form-control indexOf-array" value="1,2,3,4,5,6,7,8,9,10">
+							<input type="text" class="form-control data-on-indexOf" value="5">
+							<div class="input-group-append">
+								<button class="indexOf button btn btn-warning " type="button">OK</button>
+							</div>
+						</div>
+						<div class="row indexOf-div"></div>
+					</div>
+				</div>
+			</div>
+<!--lastIndexOf 8 -->
+			<div class="card bg-warning">
+				<div class="lastIndexOf-open-close rem-div card-header bg-warning" data-toggle="collapse" data-target="#collapse-lastIndexOf" aria-expanded="false" aria-controls="collapse-lastIndexOf">
+					<h6 class="mb-0">
+						lastIndexOf - возвращает последний индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет. Массив просматривается от конца к началу.
+					</h6>
+				</div>
+				<div id="collapse-lastIndexOf" class="collapse">
+					<div class="card-body bg-secondary text-white">
+						<div class="input-group mb-2">
+							<input type="text" class="form-control lastIndexOf-array" value="0,1,2,3,5,5,5,7,8,9">
+							<input type="text" class="form-control data-on-lastIndexOf" value="5">
+							<div class="input-group-append">
+								<button class="lastIndexOf button btn btn-warning " type="button">OK</button>
+							</div>
+						</div>
+						<div class="row lastIndexOf-div"></div>
+					</div>
+				</div>
+			</div>
+<!--Методы которые меняют массив-->
+			<div class="card bg-secondary">
+				<div class="card-header">
+					<h6 class="mb-0 text-uppercase text-white">
+						Методы которые меняют массив :
+					</h6>
+				</div>
+			</div>
+<!--Fill 9 -->
+			<div class="card bg-warning">
+				<div class="fill-open-close rem-div card-header bg-warning" data-toggle="collapse" data-target="#collapse-fill" aria-expanded="false" aria-controls="collapse-fill">
+					<h6 class="mb-0">
+						Fill - заполняет все элементы массива от начального до конечного индексов одним значением.
+					</h6>
+				</div>
+				<div id="collapse-fill" class="collapse">
+					<div class="card-body bg-secondary text-white">
+						<div class="input-group mb-2">
+							<input type="text" class="form-control fill-array" value="0,1,2,3,5,5,5,7,8,9">
+							<input type="text" class="form-control data-on-fill" value="1">
+							<div class="input-group-append">
+								<button class="fill button btn btn-warning " type="button">OK</button>
+							</div>
+						</div>
+						<div class="row fill-div"></div>
+					</div>
+				</div>
+			</div>
+<!--Pop 10 -->
+			<div class="card bg-warning">
+				<div class="pop-open-close rem-div card-header bg-warning" data-toggle="collapse" data-target="#collapse-pop" aria-expanded="false" aria-controls="collapse-pop">
+					<h6 class="mb-0">
+						Pop - удаляет последний элемент из массива и возвращает его значение. Этот метод изменяет длину массива.
+					</h6>
+				</div>
+				<div id="collapse-pop" class="collapse">
+					<div class="card-body bg-secondary text-white">
+						<div class="input-group mb-2">
+							<input type="text" class="form-control pop-array" value="0,1,2,3,5,5,5,7,8,9">
+							<input type="text" class="form-control data-on-pop" disabled>
+							<div class="input-group-append">
+								<button class="pop button btn btn-warning " type="button">OK</button>
+							</div>
+						</div>
+						<div class="row pop-div"></div>
+					</div>
+				</div>
+			</div>
+<!--Shift 11 -->
+			<div class="card bg-warning">
+				<div class="shift-open-close rem-div card-header bg-warning" data-toggle="collapse" data-target="#collapse-shift" aria-expanded="false" aria-controls="collapse-shift">
+					<h6 class="mb-0">
+						Shift - удаляет первый элемент из массива и возвращает его значение. Этот метод изменяет длину массива.
+					</h6>
+				</div>
+				<div id="collapse-shift" class="collapse">
+					<div class="card-body bg-secondary text-white">
+						<div class="input-group mb-2">
+							<input type="text" class="form-control shift-array" value="0,1,2,3,5,5,5,7,8,9">
+							<input type="text" class="form-control data-on-shift" disabled>
+							<div class="input-group-append">
+								<button class="shift button btn btn-warning " type="button">OK</button>
+							</div>
+						</div>
+						<div class="row shift-div"></div>
+					</div>
+				</div>
+			</div>
+<!--Push 12 -->
+			<div class="card bg-warning">
+				<div class="push-open-close rem-div card-header bg-warning" data-toggle="collapse" data-target="#collapse-push" aria-expanded="false" aria-controls="collapse-push">
+					<h6 class="mb-0">
+						Push - добавляет элемент в конец массива.
+					</h6>
+				</div>
+				<div id="collapse-push" class="collapse">
+					<div class="card-body bg-secondary text-white">
+						<div class="input-group mb-2">
+							<input type="text" class="form-control push-array" value="0,1,2,3,5,5,5,7,8,9">
+							<input type="text" class="form-control data-on-push" value="10">
+							<div class="input-group-append">
+								<button class="push button btn btn-warning " type="button">OK</button>
+							</div>
+						</div>
+						<div class="row push-div"></div>
+					</div>
+				</div>
+			</div>
+<!--UnShift 13 -->
+			<div class="card bg-warning">
+				<div class="unshift-open-close rem-div card-header bg-warning" data-toggle="collapse" data-target="#collapse-unshift" aria-expanded="false" aria-controls="collapse-unshift">
+					<h6 class="mb-0">
+						UnShift - добавляет один или более элементов в начало массива и возвращает новую длину массива.
+					</h6>
+				</div>
+				<div id="collapse-unshift" class="collapse">
+					<div class="card-body bg-secondary text-white">
+						<div class="input-group mb-2">
+							<input type="text" class="form-control unshift-array" value="0,1,2,3,5,5,5,7,8,9">
+							<input type="text" class="form-control data-on-unshift" value="-2,-1">
+							<div class="input-group-append">
+								<button class="unshift button btn btn-warning " type="button">OK</button>
+							</div>
+						</div>
+						<div class="row unshift-div"></div>
+					</div>
+				</div>
+			</div>
+<!--Reverse 14 -->
+			<div class="card bg-warning">
+				<div class="reverse-open-close rem-div card-header bg-warning" data-toggle="collapse" data-target="#collapse-reverse" aria-expanded="false" aria-controls="collapse-reverse">
+					<h6 class="mb-0">
+						Reverse - возвращает массив в обратном порядке.Первый элемент массива становится последним, а последний — первым.
+					</h6>
+				</div>
+				<div id="collapse-reverse" class="collapse">
+					<div class="card-body bg-secondary text-white">
+						<div class="input-group mb-2">
+							<input type="text" class="form-control reverse-array" value="0,1,2,3,5,5,5,7,8,9">
+							<input type="text" class="form-control data-on-reverse" disabled>
+							<div class="input-group-append">
+								<button class="reverse button btn btn-warning " type="button">OK</button>
+							</div>
+						</div>
+						<div class="row reverse-div"></div>
+					</div>
+				</div>
+			</div>
+<!--Методы прохождения по массиву-->
+			<div class="card bg-secondary">
+				<div class="card-header">
+					<h6 class="mb-0 text-uppercase text-white">
+						Методы прохождения по массиву :
+					</h6>
+				</div>
+			</div>
+<!--Sort 15 -->
+			<div class="card bg-warning">
+				<div class="sort-open-close rem-div card-header bg-warning" data-toggle="collapse" data-target="#collapse-sort" aria-expanded="false" aria-controls="collapse-sort">
+					<h6 class="mb-0">
+						Sort - на месте сортирует элементы массива и возвращает отсортированный массив.
+					</h6>
+				</div>
+				<div id="collapse-sort" class="collapse">
+					<div class="card-body bg-secondary text-white">
+						<div class="row">
+							<div class="col mx-3 mb-2 border rounded">
+								Сортировка не обязательно устойчива. Порядок cортировки по умолчанию соответствует порядку кодовых точек Unicode.
+							</div>
+						</div>
+						<div class="input-group mb-2">
+							<input type="text" class="form-control sort-array" value="5,7,1,0,4,3,8,6,9,2">
+							<input type="text" class="form-control data-on-sort" disabled>
+							<div class="input-group-append">
+								<button class="sort button btn btn-warning " type="button">OK</button>
+							</div>
+						</div>
+						<div class="row sort-div"></div>
+					</div>
+				</div>
+			</div>
+<!--Filter 16 -->
+			<div class="card bg-warning">
+				<div class="filter-open-close rem-div card-header bg-warning" data-toggle="collapse" data-target="#collapse-filter" aria-expanded="false" aria-controls="collapse-filter">
+					<h6 class="mb-0">
+						Filter - используется для фильтрации массива через функцию.
+					</h6>
+				</div>
+				<div id="collapse-filter" class="collapse">
+					<div class="card-body bg-secondary text-white">
+						<div class="row">
+							<div class="col mx-3 mb-2 border rounded">
+								Он создаёт новый массив, в который войдут только те элементы arr, для которых вызов callback(item, i, arr) возвратит true.
+							</div>
+						</div>
+						<div class="input-group mb-2">
+							<input type="text" class="form-control filter-array" value="5,7,1,0,4,3,8,6,9,2">
+							<input type="text" class="form-control data-on-filter" value="item > 4">
+							<div class="input-group-append">
+								<button class="filter button btn btn-warning " type="button">OK</button>
+							</div>
+						</div>
+						<div class="row filter-div"></div>
+					</div>
+				</div>
+			</div>
+<!--Map 17 -->
+			<div class="card bg-warning">
+				<div class="map-open-close rem-div card-header bg-warning" data-toggle="collapse" data-target="#collapse-map" aria-expanded="false" aria-controls="collapse-map">
+					<h6 class="mb-0">
+						Map - используется для трансформации массива.
+					</h6>
+				</div>
+				<div id="collapse-map" class="collapse">
+					<div class="card-body bg-secondary text-white">
+						<div class="row">
+							<div class="col mx-3 mb-2 border rounded">
+								Он создаёт новый массив, который будет состоять из результатов вызова callback(item, i, arr) для каждого элемента arr.
+								Так как массив изначально строковый, мы должны поставить перед item '+' чтобы превратить элементы строки в числа.
+							</div>
+						</div>
+						<div class="input-group mb-2">
+							<input type="text" class="form-control map-array" value="1,2,3,4,5,6,7,8,9,10">
+							<input type="text" class="form-control data-on-map" value="+item + 5">
+							<div class="input-group-append">
+								<button class="map button btn btn-warning " type="button">OK</button>
+							</div>
+						</div>
+						<div class="row map-div"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="public/js/array-js.js"></script>
+</body>
+</html>

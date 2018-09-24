@@ -1,0 +1,94 @@
+html, body {
+  background-image: url("../../public/img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%; }
+
+.welcome {
+  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.7); }
+  .welcome .greeting {
+    font-size: 36px; }
+  .welcome .last-visit {
+    margin-right: 10px;
+    font-size: 16px; }
+
+h1 {
+  padding: 20px 0; }
+
+.picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: lightblue;
+  background-image: url("../../public/img/avatar.jpg");
+  background-size: contain; }
+
+.log-in form, .card {
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 20px 0;
+  width: 500px;
+  margin: 200px auto; }
+  .log-in form input:not([type=checkbox]), .card input:not([type=checkbox]) {
+    width: 300px;
+    margin: 0 auto; }
+  .log-in form input:-webkit-autofill, .card input:-webkit-autofill {
+    background-color: lightgreen; }
+  .log-in form p, .card p {
+    margin: 5px 0; }
+
+.register-box .card {
+  width: 700px; }
+
+a.btn, button {
+  background-color: #2e5d04;
+  color: white; }
+
+.profile {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 100px auto;
+  padding: 50px 0; }
+  .profile .info {
+    font-size: 20px; }
+  .profile .buttons {
+    margin-top: 30px; }
+
+.post-section {
+  margin: 100px auto; }
+  .post-section .write-post, .post-section .previous-posts {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px; }
+    .post-section .write-post textarea, .post-section .previous-posts textarea {
+      margin: 0 auto;
+      max-width: 100%; }
+    .post-section .write-post button, .post-section .previous-posts button {
+      margin: 0 auto; }
+  .post-section .previous-posts {
+    margin-top: 44px; }
+    .post-section .previous-posts .post-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 5px 20px; }
+      .post-section .previous-posts .post-container .like-box {
+        width: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+        .post-section .previous-posts .post-container .like-box .like {
+          background-image: url("../../public/img/like.png");
+          width: 20px;
+          height: 20px;
+          background-size: contain;
+          cursor: pointer; }
+      .post-section .previous-posts .post-container .post {
+        font-size: 25px; }
+    .post-section .previous-posts .button-box {
+      text-align: right; }
+
+.chart-box {
+  background-color: rgba(255, 255, 255, 0.7); }
+
+/*# sourceMappingURL=style.css.map */
