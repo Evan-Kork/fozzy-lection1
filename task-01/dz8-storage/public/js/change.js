@@ -40,7 +40,7 @@ function createHistoryDiv(i){
 		+'<div class="col-2 date-history-'+i+'"></div>'
 		+'<div class="col-8 user-history-'+i+'"></div>'
 		+'<div class="col-2 text-right pr-2 pl-1">'
-		+'<img class="c-'+i+' close close-icon" src="source/img/close.svg" style="width: 20px;"></div></div>');
+		+'<img class="c-'+i+' close close-icon" src="public/img/close.svg" style="width: 20px;"></div></div>');
 };
 $('.history').on("click",'.close-icon', function(){
 	var a = $(this).attr('class').split(' ')[0].split('-')[1];
