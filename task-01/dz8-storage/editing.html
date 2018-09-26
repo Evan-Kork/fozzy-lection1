@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Editing</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="public/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="public/js/session.js"></script>
+</head>
+<body class="bg-primary">
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark border-bottom rounded-bottom">
+			<a class="navbar-brand" href="#">
+				<img src="public/img/story.svg" style="width: 36px;">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link home" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link editing" href="#">Editing</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="registration.html">Check In</a>
+					</li>
+				</ul>
+				<a href="login.html"><img style="width: 24px;" src="public/img/logout.svg"></a>
+			</div>
+		</nav>
+		<div class="row py-3 mx-0">
+			<div class="col bg-dark rounded text-white p-3 ">
+				<form id="form-change">
+					<div class="form-group">
+						<label for="name-change">Name</label>
+						<input type="text" class="form-control" id="name-change" required>
+					</div>
+					<div class="form-group">
+						<label for="birthday-change">Birthday</label>
+						<input type="date" class="form-control" id="birthday-change" required>
+					</div>
+					<div class="form-group">
+						<label for="country-change">Country</label>
+						<input type="text" class="form-control" id="country-change" required>
+					</div>
+					<div class="form-group">
+							<label for="about-myself-change">About you</label>
+						<textarea id="about-myself-change" class="form-control" rows="3"></textarea>
+					</div>
+				</form>
+					<div class="row justify-content-end">
+						<div class="col text-right">
+							<button class="btn btn-primary save-change">Save</button>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class="history"></div>
+	</div>
+	<script type="text/javascript" src="public/js/change.js"></script>
+</body>
+</html>
