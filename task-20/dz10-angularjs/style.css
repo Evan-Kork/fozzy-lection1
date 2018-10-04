@@ -1,0 +1,48 @@
+body {
+	background-image:url('creative.jpg');
+	background-size:cover;
+	padding:0;
+	margin:0;
+}
+.chat {
+	background-color:rgba(255, 255, 255, 0.5);
+	height: 100vh;
+	color:black;
+	padding:20px;
+	margin:0 auto;
+}
+.scroll {
+	overflow-y:scroll;
+	height: 100vh;
+}
+.chat h1 {
+	text-align:center;
+	color:midnightblue;
+}
+.messageblock {
+	background-color:rgba(193, 213, 226, 0.4);
+	margin:5px;
+}
+.add {
+	padding:5px;
+	text-align:center;
+}
+.add .block {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+.add .block span {
+	margin:5px;
+}
+.add .block input {
+	margin:5px;
+}
+.add textarea {
+	margin:5px;
+}
+.add button {
+	width:80%;
+	background-color:rgba(193, 213, 226, 0.8);
+	border:1px solid gray;
+}
