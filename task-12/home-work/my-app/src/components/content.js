@@ -9,7 +9,7 @@ class Details extends Component {
 						return (
 							<div key={`${id}-goods-items-active`} className="field-goods">
 								<h2>{item.name}</h2>
-								{/* <img src={require('{{item.img}}')} alt={"mail"}/> */}
+								<div className="brend_img"><img src={item.img} alt=""/></div>
 								<div className="price-field"><span>{item.price}</span></div>
 								<div><span>{item.powered}</span></div>
 								<div><span>{item.ice}</span></div>

@@ -10,7 +10,7 @@ class GoodsList extends Component {
 				<div key={`${goods.id}-list-goods`} className="sidebar_field"><input type="checkbox" 
 					onClick={() => this.props.select(id)} 
 				/>{goods.name}
-					<img src={'../img/goods.img'} alt="img" />
+					<div className="brend_img">{<img src={goods.img} alt="img" />}</div>
 				</div>
 			);
 		});
