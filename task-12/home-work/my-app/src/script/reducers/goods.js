@@ -4,7 +4,7 @@ const INITIAL_STATE = [
 	{
 		id: 1,
 		name: "Bosch",
-		img: "/img-1.jpg",
+		img: "/images//img-1.jpg",
 		price: "1504 грн",
 		powered: "Мощность: 1900 Вт",
 		ice: "Колка льда: Нет",
@@ -15,7 +15,7 @@ const INITIAL_STATE = [
 	{
 		id: 2,
 		name: "Braun",
-		img: "/img-2.jpg",
+		img: "/images//img-2.jpg",
 		price: "2104 грн",
 		powered: "Мощность: 1600 Вт",
 		ice: "Колка льда: Нет",
@@ -26,7 +26,7 @@ const INITIAL_STATE = [
 	{
 		id: 3,
 		name: "Scarlet",
-		img: "/img-3.jpg",
+		img: "/images//img-3.jpg",
 		price: "1904 грн",
 		powered: "Мощность: 2900 Вт",
 		ice: "Колка льда: Нет",
@@ -37,7 +37,7 @@ const INITIAL_STATE = [
 	{
 		id: 4,
 		name: "Ergo",
-		img: "/img-4.jpg",
+		img: "/images/img-4.jpg",
 		price: "1124 грн",
 		powered: "Мощность: 2000 Вт",
 		ice: "Колка льда: Нет",
