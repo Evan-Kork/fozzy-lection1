@@ -4,7 +4,7 @@ const INITIAL_STATE = [
 	{
 		id: 1,
 		name: "Bosch",
-		img: "https://hotline.ua/img/tx/900/900779_s265.jpg",
+		img: "/img-1.jpg",
 		price: "1504 грн",
 		powered: "Мощность: 1900 Вт",
 		ice: "Колка льда: Нет",
@@ -15,7 +15,7 @@ const INITIAL_STATE = [
 	{
 		id: 2,
 		name: "Braun",
-		img: "https://i2.rozetka.ua/goods/7238971/braun_jb_3010_tribute_images_7238971854.jpg",
+		img: "/img-2.jpg",
 		price: "2104 грн",
 		powered: "Мощность: 1600 Вт",
 		ice: "Колка льда: Нет",
@@ -26,7 +26,7 @@ const INITIAL_STATE = [
 	{
 		id: 3,
 		name: "Scarlet",
-		img: "https://hotline.ua/img/tx/169/169736659_s265.jpg",
+		img: "/img-3.jpg",
 		price: "1904 грн",
 		powered: "Мощность: 2900 Вт",
 		ice: "Колка льда: Нет",
@@ -37,7 +37,7 @@ const INITIAL_STATE = [
 	{
 		id: 4,
 		name: "Ergo",
-		img: 'https://i1.foxtrot.com.ua/product/MediumImages/6354000_1.jpg',
+		img: "/img-4.jpg",
 		price: "1124 грн",
 		powered: "Мощность: 2000 Вт",
 		ice: "Колка льда: Нет",
