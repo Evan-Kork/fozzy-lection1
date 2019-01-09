@@ -1,0 +1,25 @@
+.registration_field {
+	text-align: center;
+}
+.errorMesage {
+	display: none;
+	color: red;
+}
+.userField {
+	padding-right: 34px;
+	margin-bottom: 1%;
+}
+.emailField {
+	padding-right: 28px;
+	margin-bottom: 1%;
+}
+.passwordField {
+	margin-bottom: 1%;
+}
+.aboutField{
+	padding-right: 14px;
+	margin-bottom: 2%;
+}
+button.btn_reg {
+	margin-bottom: 10px;
+}
